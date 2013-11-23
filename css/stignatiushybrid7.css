@@ -1,0 +1,298 @@
+@charset "ISO-8859-1";
+
+a { color: #000000; }
+/*a:visited { color: #551a8b; }*/
+a:visited { color: #000000; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+
+
+figure { margin: 0; }
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+
+.clear {clear:both}	
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+ @media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+h1 {font-family: 'Pinyon Script', cursive;}
+h2 {font-family: 'Tangerine', cursive; font-size:2em;}
+h3 {font-family: 'Philosopher', sans-serif;}
+h4 {font-family: 'PT Serif', serif;}
+h5 {font-family: 'Oxygen', sans-serif;}
+h6 {font-family: 'PT Sans', sans-serif; text-transform:uppercase;}
+p {font-family: 'Times New Roman' serif;}
+
+
+
+html { 
+	font-size:100%; 
+	overflow-y:scroll; 
+	-webkit-text-size-adjust:100%; 
+	-ms-text-size-adjust:100%; 
+}
+
+body {
+	margin:0;
+	font-family:sans-serif;
+	text-align:center;
+}
+
+/*#photogallery {
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: -1;
+}
+.gv_galleryWrap {
+	position: relative;
+	background: #222;
+	font-size: 10pt;
+	margin-left:auto;
+	margin-right:auto;
+}
+*/
+
+.container { 
+	width:100%; 
+	min-width:1200px;
+	margin:0 auto; 
+	text-align:left;
+}
+
+.nav { 
+	clear:both;
+	width:100%;
+	min-width:1200px;
+	z-index:4;
+}
+ 
+#backgroundimage { 
+	position:fixed;
+	margin-top:-46px;
+	width:100%; 
+	height:100%;
+	background-image:url("http://www.stignatiuschurch.org/assets/images/021119ChurchFacade01.jpg");
+	background-color:gray;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	opacity:0.4;
+	z-index:-1;
+}
+
+.logo {
+	float: left;
+	clear: left;
+	height: 250px;
+	width: 25%;
+	margin-top:46px;
+	margin-left:10px;
+	margin-bottom:20px;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align:center;
+	background-color:#CCFFFF;
+	border-radius:5px;
+	opacity:0.8;
+}
+
+.header { 
+	float: right;
+	clear: right;
+	height: 250px;
+	width:25%;
+	text-align:center;
+	margin-top:46px;
+	margin-right: 10px;
+	margin-bottom:20px;
+	padding-top:3px;
+	padding-bottom:3px;
+	background-color:#CCFFFF;
+	border-radius:5px;
+	opacity:0.8;
+}
+
+.container #container {
+	width:1200px;
+	margin:0 auto; 
+}
+
+.content {
+	width:600px;
+	margin:0 auto;
+}
+
+.content table,td,th
+{
+padding:10px;
+}
+table
+{
+width:100%;
+}
+th
+{
+height:20px;
+}
+
+.article {
+	position:relative;
+	margin:0 auto;
+	width:600px;
+	height:400px;
+	background-color:#FFFFFF;
+	z-index:1;
+}
+
+.article img {
+	float:left;
+	margin:0px;
+}
+/*
+.article h1, h2 {
+	text-align:center;
+}
+.article h3, h4, h5, h6, p {
+	text-align:justify;
+	padding:0px 10px 10px 0px;
+}
+*/
+.article a {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	text-decoration:none; /* No underlines on the link*/
+	z-index:2;
+}
+
+.article a:link,a:visited
+{
+	font-weight:bold;
+	text-decoration:none;
+	list-style-type: none;
+}
+
+.article a:hover,a:active
+{
+	background-color:#F0F0F0;
+}
+
+.caption {
+	position: absolute;
+	top: 300px;
+	width: 97%;
+	padding: 10px;
+	background: -moz-linear-gradient(top,  rgba(76,76,76,0.01) 0%, rgba(68,68,68,0.86) 24%, rgba(61,61,61,1) 46%, rgba(44,44,44,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,0.01)), color-stop(24%,rgba(68,68,68,0.86)), color-stop(46%,rgba(61,61,61,1)), color-stop(100%,rgba(44,44,44,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(76,76,76,0.01) 0%,rgba(68,68,68,0.86) 24%,rgba(61,61,61,1) 46%,rgba(44,44,44,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(76,76,76,0.01) 0%,rgba(68,68,68,0.86) 24%,rgba(61,61,61,1) 46%,rgba(44,44,44,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(76,76,76,0.01) 0%,rgba(68,68,68,0.86) 24%,rgba(61,61,61,1) 46%,rgba(44,44,44,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(76,76,76,0.01) 0%,rgba(68,68,68,0.86) 24%,rgba(61,61,61,1) 46%,rgba(44,44,44,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#034c4c4c', endColorstr='#2c2c2c',GradientType=0 ); /* IE6-9 */
+	border-radius: 10px;
+	z-index: 3;
+}
+
+.caption h3 {color:#FFFFFF;}
+
+.caption a {
+	color:#FFFFFF
+	text-decoration:none; /* No underlines on the link*/
+}
+
+.infobar {
+	margin-top:20px;
+	margin-bottom:20px;
+	background-color: #CCFFFF;
+	border-radius:10px;
+	opacity:0.8;
+}
+
+.footer {
+	clear: both; 
+	position: absolute;/* this gives IE6 hasLayout to properly clear */
+	bottom: 5px;
+	width: 100%;
+	padding: 5px;
+	background-color: #FFFFFF;
+	opacity:0.8;
+}
+
+.footer ul {
+	list-style-type:none;
+	font-weight:bold;
+	text-align:center;
+}
+
+.footer ul li {
+	display:inline;
+	padding:15px;
+}

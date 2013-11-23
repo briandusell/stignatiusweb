@@ -1,0 +1,472 @@
+@charset "ISO-8859-1";
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+*/
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+html { 
+	font-size:80%; 
+	overflow-y:scroll; 
+	-webkit-text-size-adjust:80%; 
+	-ms-text-size-adjust:80%; 
+}
+
+body {
+	margin:0;
+	font-family:sans-serif;
+	text-align:center;
+}
+/*
+#photogallery {
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	z-index: -1;
+}
+.gv_galleryWrap {
+	position: relative;
+	background: #222;
+	font-size: 10pt;
+	margin-left:auto;
+	margin-right:auto;
+}
+*/
+
+/*.menuTemplate3 { margin:0; width:100%; float:none;
+
+}*/
+ 
+.menuTemplate3 { margin:0; width:100%; float:none;
+    ... (other styles of the .menuTemplate3 class) ...
+} 
+  .menuH
+{
+    /* You will get totally different menu alignment and layout by setting following margin, width, and float with different values.
+    For detailed instruction please visit www.menucool.com/horizontal/change-menu-alignment  */
+    margin: 0; width: 100%; float:none;
+    /*following "behavior" works for IE6, IE7, and IE8. Other browsers will ignore it.*/
+    /*Note: Unlike image file, htc file path is relative to the page, not this CSS file.*/
+    behavior: url("/horizontal/menuh/cssmenu.htc");
+    height: 36px;
+    /*background: #D4D4D4 url(bg.gif) repeat-x 0 0;*/
+    background: #C0C0C0 url(bg.gif) repeat-x 0 0;
+	border: 1px solid #BBB;
+    position:relative;/*! for IE htc*/
+    z-index:4;/*H2*/
+    font: sans-serif;
+    font-size: 16px;
+	list-style: none;
+    padding: 0;
+}
+
+.menuH li
+{
+    padding: 0;
+    /*margin: 0;
+    display: block; TODO: I am testing them if they can be removed. If can, remove them.*/
+    float: left;
+    height: 36px;
+    position: relative;/*move it into .menuH if you want submenu to be positioned relative to the whole menu instead of this li element*/
+}
+.menuH li:hover, .menuH li.onhover
+{
+	background: white url(bg.gif) repeat-x 0 -48px;
+}
+
+ul.menuH a
+{
+    padding: 0 30px;
+    line-height: 36px; /*Note: keep this value the same as the height of .menuH and .menuH li */
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    outline: 0;
+    text-decoration: none;
+}
+.menuH a:hover
+{
+    color: #0000FF;
+}
+.menuH a.arrow
+{
+    background: url(arrow.gif) no-repeat right center;
+}
+.menuH ul a.arrow
+{
+    background: url(right.gif) no-repeat 97% center;
+}
+ 
+        
+/*Used to align a top-level item to the right*/        
+.menuH .menuRight
+{
+    float: right;
+    margin-right: 0px;
+}
+        
+/*for the top-level separators*/
+.menuH li.separator
+{
+    font-size:0;
+    overflow:hidden;
+    border-left:1px solid #F7F7F7;
+    border-right:1px solid #BBBBBB;
+}
+               
+        
+/*######sub level###########*/
+        
+ul.menuH ul
+{
+    width:200px;
+    position: absolute;
+    left: -9999px;
+    border: 1px solid #DDD;
+    border-top: 0; 
+    background: #FFF;
+	text-align: left;
+    list-style: none; margin: 0;  
+    /*Following 1px(padding-right) will determine how much it is overlapped by the sub-sub-menu */
+    padding: 0 1px 10px 0;   
+}
+
+.menuH li li
+{
+    float: none;
+    white-space:nowrap;
+    height: 26px;
+}
+.menuH li li:hover, .menuH li li.onhover
+{
+    background:#f7f7f7;
+}
+.menuH ul a
+{
+    padding: 0 20px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #000;
+    text-align: left;
+}
+
+.menuH ul a:hover
+{
+    color: #0000FF;
+}
+
+.menuH li:hover ul, .menuH li.onhover ul
+{
+    left: -1px;/*Use this property to change offset of the dropdown*/
+    top: auto;
+}
+
+.menuH li:hover .dropToLeft, .menuH li.onhover .dropToLeft
+{
+    left: auto;
+    right: -1px;
+    top: auto;
+}
+.menuH ul ul
+{
+    border-top: 1px solid #DDD;
+}
+
+.menuH li:hover ul ul, .menuH li:hover ul ul ul, .menuH li:hover ul ul ul ul,
+.menuH li.onhover ul ul, .menuH li.onhover ul ul ul, .menuH li.onhover ul ul ul ul
+{
+    left: -9999px;
+    top:0;
+}
+
+.menuH li li:hover ul, .menuH li li li:hover ul, .menuH li li li li:hover ul,
+.menuH li li.onhover ul, .menuH li li li.onhover ul, .menuH li li li li.onhover ul
+{
+    left: 200px;
+}
+        
+/*####### special effects ##########*/
+        
+.decor1 
+{
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari and Chrome */
+    border-radius: 3px; /* Opera 10.5+, future browsers, and now also our behavior htc file */
+
+    -moz-box-shadow: 0px 1px 4px #eee; /* Firefox */
+    -webkit-box-shadow: 0px 1px 4px #eee; /* Safari and Chrome */
+    box-shadow: 0px 1px 4px #eee; /* Opera 10.5+, future browsers and IE6+ using our behavior htc file */
+            
+}
+.menuH ul 
+{
+    -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
+
+    -moz-box-shadow: 0px 6px 6px #CCC;
+    -webkit-box-shadow: 0px 6px 6px #CCC;
+    box-shadow: 0px 6px 6px #CCC;  
+    
+    /*for older IE browsers, the htc file fix will disable this feature when box-shadow was also applied.*/
+    filter:alpha(opacity=90);
+    opacity: 0.90;  
+            
+    /* Gradient background */
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EEEEEE)); 
+}
+
+.container { 
+	width:100%; 
+	min-width:1200px;
+	margin:0 auto; 
+	text-align:left;
+}
+ 
+#backgroundimage { 
+	position:fixed;
+	margin:0;
+	width:100%; 
+	height:100%;
+	background-image:url("http://www.stignatiuschurch.org/assets/images/021119ChurchFacade01.jpg");
+	background-color:gray;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	opacity:0.4;
+	z-index:-1;
+}
+
+.navbar { 
+	clear:both;
+	min-width:1200px;
+	background-color:#8B0000;
+}
+
+.header { 
+	width:100%; 
+	text-align:center;
+	margin-top:15px;
+	margin-bottom:10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	/*border-top:3px solid #B00000;
+	border-bottom:3px solid #B00000;*/
+	color:#FFFFFF;
+	background-color:#505050;
+	opacity:0.8;
+}
+/*
+.container #container {
+	width:1200px;
+	position:relative;
+	margin:0 auto; 
+	border:1px solid #000000;
+}
+*/
+.content {
+	
+	clear:both;
+	width:100%;
+	margin:0 auto;;
+}
+
+.content table,td,th
+{
+padding:10px;
+}
+table
+{
+width:100%;
+}
+th
+{
+height:20px;
+}
+
+.article {
+	position:relative;
+	float:left;
+	display:inline;
+	width:600px;
+	height:600px;
+	margin:5px;
+	background-color:#FFFFCC;	
+}
+
+.article img {
+	position:absolute;
+	margin:0px;
+	padding:0px 10px 0px 0px;
+	z-index:-1;
+}
+.article h1, h2, h3 {
+	position: relative;
+	top:400px;
+	text-align:center;
+	padding:10px;
+}
+.article h4, h5, h6, p {
+position: relative;
+	top:400px;
+	text-align:justify;
+	padding:10px;
+}
+
+
+.article a {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	text-decoration:none; /* No underlines on the link*/
+	z-index: 2;
+}
+
+.article a:link,a:visited
+{
+	text-decoration:none;
+	list-style-type: none;
+}
+
+.article a:hover,a:active
+{
+	background-color:#F0F0F0 ;
+}
+
+.infobar {
+	float:left;
+	clear:both;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	width:100%;
+	margin-top:10px;
+	margin-bottom:15px;
+	background-color: #FFFFFF;
+	border-radius:10px;
+	opacity:0.8;
+}
+
+.footer {
+	clear: both; 
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	width: 100%;
+	margin-top:10px;
+	padding: 10px;
+	text-align: center;
+	color:#FFFFFF;
+	background-color:#505050;
+	opacity:0.8;
+}
+
+.footer ul {
+	list-style-type:none;
+	font-weight:bold;
+	text-align:center;
+}
+
+.footer ul li {
+	display:inline;
+	padding:15px;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #000000; }
+/*a:visited { color: #551a8b; }*/
+a:visited { color: #000000; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+
+
+figure { margin: 0; }
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+
+.clear {clear:both}	
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+ @media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

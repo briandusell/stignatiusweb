@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>St. Ignatius Church, Chicago, IL</title>
+	<!-- The base tag tells the browser to look for files by default. -->
+	<base href="http://www.stignatiuschurch.org">
+	
+	<!-- First, add jQuery (and jQuery UI if using custom easing or animation -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+	<!-- Second, add the Timer and Easing plugins -->
+	<script type="text/javascript" src="/assets/js/jquery.timers-1.2.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.easing.1.3.js"></script>
+
+	<!-- Third, add the GalleryView Javascript and CSS files -->
+	<script type="text/javascript" src="/assets/js/jquery.galleryview-3.0-dev.js"></script>
+	<link type="text/css" rel="stylesheet" href="/assets/css/jquery.galleryview-3.0-dev.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/menubar.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/stignatiusmain.css">
+	<!-- Lastly, call the galleryView() function on your unordered list(s) -->
+	<!-- #myGallery is located at .header .top_info -->
+	<script type="text/javascript">
+		$(function(){
+			$('#myGallery').galleryView({
+			panel_width: 770,
+			panel_height: 180,
+			panel_animation: 'crossfade',
+			show_filmstrip: false,
+			show_filmstrip_nav: false,
+			autoplay: true,
+			frame_width: 10,
+			frame_height: 10,
+			show_infobar: false,
+			})
+		});
+    </script>
+	<!-- This script makes the .sidebar and .content equal height within .container #container -->
+	<script type="text/javascript" src="/assets/js/jQuery.equalHeights.js"></script>
+    <script>
+	$(function(){ $('#container').equalHeights(); });
+	</script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="header">
+			<div class="headerwrap">
+				<div class="logo">
+					<h1>St. Ignatius Church</h1>
+					<h3>6559 North Glenwood Avenue<br />
+					Chicago, IL 60626<br />
+					(773) 764-5936</h3>
+					<ul>
+						<li><a href="/assets/pages/IgnatiusMap.html">Map</a></li>
+						<li><a href="/assets/pages/Bulletins.html">Bulletin</a></li>
+						<li><a href="http://www.parishpay.com/customer/donation.asp?id=1773">Online Giving</a></li>
+					</ul>
+					
+				</div><!--.logo END-->
+				<div class="top_info">
+					<ul id="myGallery">
+						<li><img src="/assets/images/120623ChurchTour04.JPG" alt="Baldachino" /></li>
+						<li><img src="/assets/images/130328HolyThursday01Crop.JPG" alt="Holy Thursday" /></li>
+						<li><img src="/assets/images/021119ChurchFacade01.jpg" alt="Church Facade" /></li>
+						<li><img src="/assets/images/130615IgnatiusSaints.jpg" alt="Ignatius Saints" /></li>
+					</ul>
+				</div><!--.top_info END-->
+			
+				<div class="navbar">
+					<ul class="menuH decor 1">
+					<li><a class="arrow"><a href="http://www.stignatiuschurch.org">Home</a></li>
+					<li><a href="/assets/pages/AboutTheParish.html" class="arrow">About the Parish</a>
+						<ul>
+							<li><a href="/assets/pages/ScheduleMassRectory.html">Schedules</a>
+								<!--<ul>	
+									<li><a href="#">Mass Times</a></li>
+									<li><a href="#">Confession</a></li>
+									<li><a href="#">Office Hours</a></li>
+									<li><a href="#">Food Pantry Hours</a></li>
+								</ul>-->
+							</li>
+							<li><a href="/assets/pages/StaffDirectory.html">Staff Directory</a></li>
+							<li><a href="/assets/pages/ParishHistory.html">Parish History</a></li>
+							<li><a class="arrow"><a href="/assets/pdf/EnglishRegistration.pdf" class="arrow">Join the Parish</a>
+								<ul>	
+									<li><a href="/assets/pdf/EnglishRegistration.pdf">English Registration</a></li>
+									<li><a href="/assets/pdf/SpanishRegistration.pdf">Spanish Registration</a></li>
+									<!--<li><a href="#">Welcome Sessions</a></li>-->
+								</ul>
+							</li>
+							<li><a href="http://www.parishpay.com/customer/donation.asp?id=1773" class="arrow">Support the Parish</a>
+								<ul>	
+									<li><a href="/assets/pages/CapitalCampaign.html">Capital Campaign</a></li>
+									<li><a href="http://www.parishpay.com/customer/donation.asp?id=1773">Online Giving</a></li>
+								</ul>
+							</li>
+							<li><a href="/assets/pages/RestorationChurch.html" class="arrow">Restoration Projects</a>
+								<ul>	
+									<!--<li><a href="#">Current Projects</a></li>-->
+									<!--<li><a href="#">Chapel Restoration</a></li>-->
+									<li><a href="/assets/pages/RestorationChurch.html">Church Restoration</a></li>
+									<!--<li><a href="#">HNR/Canteen Restoration</a></li>
+									<li><a href="#">Tower Chimes</a></li>-->
+									<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>						
+								</ul>
+							</li>
+							<li><a href="/assets/pages/ParishPhotos.html">Photographs</a></li>
+						</ul>
+						<div class="clear"></div>
+					</li>
+					<li><a href="/assets/pages/MinistriesMain.html" class="arrow">Ministries</a>
+						<ul>
+							<li><a href="/assets/pages/LiturgicalMinistries.html" class="arrow">Liturgical Ministries</a>
+								<ul>	
+									<li><a href="/assets/pdf/LMSchedule.pdf">Minister Schedule</a></li>
+									<li><a href="/assets/pages/LCCharter.html">Liturgy Committee Charter</a></li>
+									<li><a href="/assets/pages/LCJobDescription.html">Lit. Comm. Job Description</a></li>
+									<!--<li><a href="#">Item 4</a></li>-->
+								</ul>
+							</li>
+							<li><a href="/assets/pages/MusicMinistryMain.html" class="arrow">Music Ministry</a>
+								<ul>	
+									<li><a href="/assets/pages/MusicMinistryMain.html">About</a></li>
+									<li><a href="/assets/pages/MusicChoirRehSched.html">Rehearsal Schedule</a></li>
+									<li><a href="/assets/pages/MusicCantorSchedules.html">Cantor Schedule</a></li>
+									<li><a href="/assets/pages/MusicChoirRepertoire.html">Choir Repertoire</a></li>
+									<li><a href="/assets/pages/MusicWeddingPlanning.html">Wedding Music</a></li>
+									<li><a href="/assets/pages/MusicPhotos.html">Music Photos</a></li>
+									<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
+								</ul>
+							</li>
+						</ul>			
+						<div class="clear"></div>
+					</li>
+					<li><a href="/assets/pages/IgnatianServicesMain.html" class="arrow">Ignatian Services</a>
+						<ul>
+							<li><a href="/assets/pages/IgnatianServicesMain.html">About</a></li>
+							<!--<li><a href="#">Donations</a></li>
+							<li><a href="#">Volunteering</a></li>
+							<li><a href="#" class="arrow">Events</a>
+								<ul>	
+									<li><a href="#">Repack Nights</a></li>
+									<li><a href="#">Hunger Walk</a></li>
+									<li><a href="#">Thanksgiving</a></li>
+									<li><a href="#">Tree of Giving</a></li>
+								</ul>
+							</li>-->
+							<li><a href="/assets/pages/IgnatianServicesPhotos.html">IS Photographs</a></li>
+						</ul>
+						<div class="clear"></div>
+					</li>
+					<!--<li><a href="#" class="arrow">Religious Education</a>
+					<ul>
+						<li><a href="#">CCD Registration</a></li>
+						<li><a href="#">CCD Calendar</a></li>
+						<li><a href="#">Confirmation</a></li>
+						<li><a href="#">RCIA Registration</a></li>
+						<li><a href="#">RCIA Calendar</a></li>
+						<li><a href="#">Adult Education</a></li>
+					</ul>			
+						<div class="clear"></div>
+					</li>
+					<li><a href="#" class="arrow">Sacraments</a>
+					<ul>
+						<li><a href="#">Baptism</a></li>
+						<li><a href="#">First Communion</a></li>
+						<li><a href="#">Confirmation</a></li>
+						<li><a href="#" class="arrow">Marriage</a>
+							<ul>	
+								<li><a href="#">Guidelines</a></li>
+								<li><a href="#">Wedding Music</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Anointing</a></li>
+						<li><a href="#">Reconciliation</a></li>
+						<li><a href="#" class="arrow">Vocations</a>
+							<ul>	
+								<li><a href="#">Diaconate</a></li>
+								<li><a href="#">Priesthood</a></li>
+							</ul>
+						</li>
+					</ul>
+						<div class="clear"></div>-->
+					<li><a href="/assets/pages/Groups.html" class="arrow">Groups</a>
+					<ul>
+						<!--<li><a href="/assets/pages/">Parish Council</a></li>
+						<li><a href="/assets/pages/">Finance Council</a></li>
+						<li><a href="/assets/pages/">Liturgy Committee</a></li>-->
+						<li><a href="/assets/pages/CirculoDeOracion.html">Circulo de Oraci&#243;n</a></li>
+						<!--<li><a href="/assets/pages/">Rosario</a></li>-->
+						<li><a href="http://www.kofc-university1687.org/Pages/default.aspx">Knights of Columbus</a></li>
+						<li><a href="/assets/pages/GlenolaClub.html" class="arrow">Glenola Club</a>
+							<ul>	
+								<li><a href="/assets/pages/GlenolaHistory.html">Glenola History</a></li>
+								<li><a href="/assets/pages/GlenolaPhotos.html">Glenola Photos</a></li>
+							</ul>
+						</li>
+						<!--<li><a href="/assets/pages/">Hermandad</a></li>
+						<li><a href="/assets/pages/">Events Committee</a></li>-->
+					</ul>
+						<div class="clear"></div>
+					<li><a href="/assets/pages/Links.html">Links</a></li>
+					<li><!-- AddThis Button BEGIN -->
+						<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+						<a class="addthis_button_preferred_1"></a>
+						<a class="addthis_button_preferred_2"></a>
+						<a class="addthis_button_preferred_3"></a>
+						<a class="addthis_button_preferred_4"></a>
+						<a class="addthis_button_compact"></a>
+						<a class="addthis_counter addthis_bubble_style"></a>
+						</div>
+						<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+						<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51cabaef03c9a8db"></script>
+						<!-- AddThis Button END -->
+					</li>
+						<div class="clear"></div>
+						
+				</div><!--.navbar END-->
+			</div><!--.headerwrap END-->
+		</div><!--.header END-->
+	
+		<div class="container" id="container">
+			<div class="sidebar"> 
+				<h3>Rev. Joseph M. Jackson, Ph. D., pastor</h3>
+				<p>Rev. Kinoti Kithuri, associate<br/>
+				Rev. William Grogan, resident<br/>
+				Rev. Patrick McAteer, S. J., resident<br/>
+				Rev. Raul Mora, deacon<br/>
+				Rev. Rogelio Soto, deacon</p>
+				<p><strong>Weekend Mass Schedule</strong></p>
+				<ul>
+					<li>Sat 4:00 p.m. &#8211; Chapel</li>
+					<li>Sun 8:00 a.m. &#8211; Church</li>
+					<li>Sun 10:00 a.m. &#8211; Church</li>
+					<li>Sun 12:00 p.m. &#8211; Church (Spanish)</li>
+					<li>Sun 6:00 p.m. &#8211; Chapel</li>
+				</ul>
+				<p><strong>Weekday Masses</strong></p>
+				<ul>
+					<li>Weekday Mass Monday &#8211; Friday<br />
+					at 7:00 a.m. and 8:00 a.m.</li>
+					<li>Saturday Daily Mass at 8:00 a.m.</li>
+				</ul>
+				<h4>Adoration Friday 6:30 p.m. &#8211; 8:30 p.m..</h4>
+				<h4>Reconciliation Saturday: 3:30 &#8211; 4:00 p.m.</h4>
+				
+			</div><!--.sidebar END-->
+				
+			<div class="content">
+				<h2 align="center">Links to Local Catholic Web Sites</h2>
+
+<p><a href="http://www.archdiocese-chgo.org/" target="window1">
+Archdiocese of Chicago</a> -- See what's going on in and around the Chicagoland area</p>
+
+<p><a href="http://www.catholicnewworld.com/" target="window1">
+The Catholic New World</a> -- Newspaper for the Archdiocese of Chicago</p>
+
+<p><a href="http://www.northsidecatholicacad.org" target="window1">Northside Catholic Academy</a> -- our Parish School</p>
+
+<p><a href="http://www.stignatiuschurch.org//pmcasj/index.html" target="window1">
+Fr. McAteer's Web Page</a> -- Material developed by our resident priest, Fr. McAteer.</p>
+
+<p><a href="http://www.marketday.com/" target="window1">
+Market Day</a> -- Place your order here! Market Day is an important fundraiser for St. Ignatius, and we need your help to reach our goal of 100 orders per month</p>
+
+<p><a href="http://www.luc.edu/" target="window1">
+Loyola University</a> -- Chicago's Jesuit University with the main campus in Rogers Park and facilities downtown</p>
+
+<p><a href="http://www.familyministries.org" target="window1">
+Family Ministries</a>-- parishioners who would like to register for PreCana or marriage education classes, or want information about the Golden Wedding Mass, FOCCUS, Divorce and Annulment Support Ministry, Natural Family Planning, or Hispanic Family Ministries. The website is in English, Spanish, and Polish.</p>
+
+<h2 align="center">Useful Resources for Catholics on the Web:</h2>
+
+<p><a href="http://www.usccb.org/bible/index.cfm" target="window1">
+Daily Readings</a> -- Daily Readings from the Lectionary for Mass and links to the NABRE ("New American Bible, Revised Edition).</p>
+
+<p><a href="http://www.usccb.org/" target="window1">
+United States Conference of Catholic Bishops</a></p>
+
+<p><a href="http://www.biblegateway.com" target="window1">
+The Bible Gateway</a> -- Search Engine that allows you to search various passages using keywords. It searches through several different versions of the bible and in different languages.</p>
+
+<p><a href="http://www.newadvent.org/cathen/" target="window1">
+The Catholic Encyclopedia</a> -- An A to Z reference that includes not only the Church's teachings, but also what Catholics themselves have done through history.</p>
+
+<p><a href="http://www.catholic.org/" target="window1">
+Catholic Online</a> -- Another online news service, providing access to various Catholic magazines and newspapers as well as papal encyclicals and Church documents.</p>
+
+<p><a href="http://www.ewtn.com/" target="window1">
+EWTN</a> --A global Roman Catholic Media Network</p>
+
+<p><a href="http://www.catholic.org/saints/" target="window1" name="saints">
+Saints</a> -- Ever wondered about Patron Saints or if your birthday falls on a Saint's Feast Day?</p>
+
+<p><a href="/assets/pages/indexhybrid4.html" target="window1" name="prototype">Prototype</a></p>
+			</div><!--.content END-->
+		</div><!--.container #container END-->
+				
+		<div class="footer">
+			<ul>
+				<li>St. Ignatius Church</li>
+				<li>6559 North Glenwood Avenue</li>
+				<li>Chicago, IL 60626</li>
+				<li>Tel:(773) 764-5936</li>
+				<li>Fax:(773) 764-4360</li>
+			</ul>
+		</div><!--.footer END-->
+	</div><!--.container END-->
+</body>
+</html>
