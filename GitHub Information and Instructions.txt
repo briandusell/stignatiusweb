@@ -1,0 +1,44 @@
+Notes Git
+ssh key
+Documents and Settings/Music Office/.ssh/id_rsa.pub
+
+remote repository name in github
+git@github.com:briandusell/stignatiusweb.git
+
+
+commands
+
+
+-to get the latest from the remote repo
+git pull origin master
+
+-get status of files
+git status
+red -- changed but not committed
+green -- added to list of files to be committed
+
+-to add files
+git add .
+adds all files
+
+-to add specific files
+git add <filename>
+
+-to commit  changes
+git commit -m"message description"
+
+-to push changes to the remote repo (github)
+git push origin master
+
+
+
+On home computer
+1.  Go to the folder where you want the repo to live.
+2.  git clone git@github.com:briandusell/stignatiusweb.git 
+This will create/clone the repo from github to the folder in 1.  
+
+Typical workflow
+1.  git pull to get all the latest changes
+2.  make changes
+3.  Prepare your changes for pushing
+     git status 
