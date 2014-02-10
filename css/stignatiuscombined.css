@@ -198,11 +198,12 @@ body {
 	background-color: #DDDDDD;
 	clear: both;
 	text-align: center;
-	width:100%;
+	width: 100%;
 }
 .title a {color:#000000;}
+.title span {font-size:18pt; font-weight:bold;}
 
-.article { font-family: 'Open Sans', sans-serif; padding:3px; text-align: justify;}
+.article { font-family: 'Open Sans', sans-serif; padding-left:10px; padding-right:10px; text-align: justify;}
 
 .announcement {	clear: both; display:inline-block; font-size: 14px;	line-height: 135%; width: 100%;}
 .announcement span { display: block; margin-top: 5px;}
@@ -462,19 +463,23 @@ body {
 	.logo { 
 		font-size:24px;
 	}
+	.title span {font-size:24pt;}
 	.section {
-	column-count: 2;
-	column-gap: 50px;
-	/* Firefox */
-	-moz-column-count: 2;
-	-moz-column-gap: 50px;
-	/* Safari and Chrome */
-	-webkit-column-count:2;
-	-webkit-column-gap: 50px;
-	padding-left:30px; padding-right:30px;
+		column-count: 2;
+		column-gap: 60px;
+		/* Firefox */
+		-moz-column-count: 2;
+		-moz-column-gap: 60px;
+		/* Safari and Chrome */
+		-webkit-column-count:2;
+		-webkit-column-gap: 60px;
+		padding-left:30px; 
+		padding-right:30px;
 	}
-	.announcement {	}
-	
+	.article {
+		padding-left:30px; 
+		padding-right:30px;	
+	}
 	.columnleft {
 		margin-left: 10px;
 	}
