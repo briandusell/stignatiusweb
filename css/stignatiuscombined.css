@@ -196,7 +196,8 @@ body {
 }
 .cycle-slideshow { display:none; }
 .cycle-pager { display:none; }
-
+#photogallery { text-align: center; padding-top: 20px; padding-bottom: 20px;}
+.gv_galleryWrap { margin: 0 auto;}
 .title {
 	background-color: #DDDDDD;
 	clear: both;
