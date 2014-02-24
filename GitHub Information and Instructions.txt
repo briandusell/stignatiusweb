@@ -32,6 +32,9 @@ git push origin master
 
 
 
+
+
+
 On home computer
 1.  Go to the folder where you want the repo to live.
 2.  git clone git@github.com:briandusell/stignatiusweb.git 
