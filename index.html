@@ -14,7 +14,7 @@
 <base href="http://www.stignatiuschurch.org">
 
 <link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" >
 
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -86,50 +86,54 @@ jQuery( document ).ready( function( $ ) {
 							<li><a href="/assets/pages/ParishPhotos.html">Photographs</a></li>
 						</ul>
 					</li>
-					<li class="has-submenu"><a href="#">Ignatian Services</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/IgnatianServicesMain.html">About</a></li>
-							<li><a href="/assets/pages/IgnatianServicesPhotos.html">IS Photographs</a></li>	        			 
-						</ul>
-					</li>
 					<li class="has-submenu"><a href="#">Ministries</a>
 						<ul class="sub-menu">
 							<li><a href="/assets/pages/MinistriesMain.html">About</a></li>
-							<li class="has-submenu"><a href="#">Liturgical Ministries</a>
-								<ul>
-									<li><a href="/assets/pages/LiturgicalMinistries.html">About</a></li>
-									<li><a href="/assets/pdf/LMSchedule.pdf">Minister Schedule</a></li>
-									<li><a href="/assets/pages/LCCharter.html">Liturgy Committee Charter</a></li>
-									<li><a href="/assets/pages/LCJobDescription.html">Lit. Comm. Job Description</a></li>
-								</ul>
-							 </li>
-							 <li class="has-submenu"><a href="#">Music Ministry</a>
-								<ul>
-									<li><a href="/assets/pages/MusicMinistryMain.html">About</a></li>
-									<li><a href="/assets/pages/MusicChoirRehSched.html">Rehearsal Schedule</a></li>
-									<li><a href="/assets/pages/MusicCantorSchedules.html">Cantor Schedule</a></li>
-									<li><a href="/assets/pages/MusicChoirRepertoire.html">Choir Repertoire</a></li>
-									<li><a href="/assets/pages/MusicWeddingPlanning.html">Wedding Music</a></li>
-									<li><a href="/assets/pages/MusicPhotos.html">Music Photos</a></li>
-									<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
-								</ul>
-							 </li> 
+							<li><a href="/assets/pdf/LMSchedule.pdf">Minister Schedule</a></li>
+							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee Charter</a></li>
+							<li><a href="/assets/pages/LCJobDescription.html">Liturgy Committee Job Description</a></li>
 						</ul>
 					</li>
+					<li class="has-submenu"><a href="#">Ignatian Services</a>
+						<ul class="sub-menu">
+							<li><a href="/assets/pages/IgnatianServicesMain.html">About</a></li>
+							<li><a href="/assets/pages/IgnatianServicesPhotos.html">Ignatian Services Photos</a></li>	        			 
+						</ul>
+					</li>
+					<li class="has-submenu"><a href="#">Music</a>
+						<ul>
+							<li><a href="/assets/pages/MusicMinistryMain.html">About</a></li>
+							<li class="has-submenu"><a href="#">Choir Materials</a>
+								<ul>
+									<li><a href="/assets/pages/MusicChoirRehSched.html">Rehearsal Schedule</a></li>
+									<li><a href="/assets/pages/MusicChoirRepertoire.html">Choir Repertoire</a></li>
+									<li><a href="/assets/pages/MusicCantorSchedules.html">Cantor Schedule</a></li>
+								</ul>
+							</li>
+							<li class="has-submenu"><a href="#">Wedding Music</a>
+								<ul>
+									<li><a href="/assets/pages/MusicWeddingPlanning.html">Wedding Music Planning</a></li>
+									<li><a href="/assets/pages/MusicWeddingOrgan.html">Wedding Organ Selections</a></li>
+									<li><a href="/assets/pages/MusicWeddingVocal.html">Wedding Vocal Selections</a></li>
+								</ul>
+							</li>
+							<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
+							<li><a href="/assets/pages/MusicPhotos.html">Music Photos</a></li>
+						</ul>
+					 </li> 
 					<li class="has-submenu"><a href="#">Groups</a>
 						<ul class="sub-menu">
 							<li><a href="/assets/pages/Groups.html">About</a></li>
-							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></li>
 							<li><a href="/assets/pages/CirculoDeOracion.html">Circulo de Oraci&#243;n</a></li>
-							<li><a href="http://www.kofc-university1687.org/Pages/default.aspx">Knights of Columbus</a></li>
-							<li><a href="http://hermandadsenordelosmilagroschicago.org/index.html">Hermandad del Se&#241;or de los Milagros</a></li>
 							<li class="has-submenu"><a href="#">Glenola Club</a>
 								<ul>
 									<li><a href="/assets/pages/GlenolaClub.html">About</a></li>
-									<li><a href="/assets/pages/GlenolaHistory.html">Glenola History</a></li>
 									<li><a href="/assets/pages/GlenolaPhotos.html">Glenola Photos</a></li>
 								</ul>
-							</li>	        			 
+							</li>
+							<li><a href="http://hermandadsenordelosmilagroschicago.org/index.html">Hermandad del Se&#241;or de los Milagros</a></li>
+							<li><a href="http://www.kofc-university1687.org/Pages/default.aspx">Knights of Columbus</a></li>
+							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></li>
 						</ul>
 					</li>
 					<li><a href="/assets/pages/Links.html">Links</a></li>
@@ -143,50 +147,32 @@ jQuery( document ).ready( function( $ ) {
 			</nav>
 			<div class="clear"></div>
 		</header>
-			<!-- <div class="cycle-slideshow" 
-				data-cycle-fx="fade"
-				data-cycle-center-horz="true"
-				data-cycle-center-vert="true"
-				data-cycle-slides="> div"
-				data-cycle-slides="> a"								
-				data-cycle-pager=".cycle-pager"
-				data-cycle-pause-on-hover="true"
-				>
-				<div class="cycle-prev"></div>
-				<div class="cycle-next"></div>
-				
-				<div>
-					<a href="index.html#I2"><img src="http://www.stignatiuschurch.org/assets/images/140218KnightsDinnerCrop.JPG"height="auto" width="100%"></a>
-					<div class="cycle-overlay">Knights Of Columbus Spaghetti Dinner<br/>Saturday, February 22 - Holy Name Room</div> 
-				</div>
-				<div>
-					<a href="index.html#I4"><img src="http://www.stignatiuschurch.org/assets/images/140218StPatPartyCrop.JPG"height="auto" width="100%"></a>
-					<div class="cycle-overlay">St. Patrick's Day Party<br/>Saturday, March 8 - St. Ignatius Gymnasium</div>
-				</div>
-				<div>
-					<a href="index.html#I5"><img src="http://www.stignatiuschurch.org/assets/images/140218BroadwayCellarsCrop.jpg" height="auto" width="100%"></a>
-					<div class="cycle-overlay">Broadway Cellars Share Day<br/>Saturday, March 8 - Broadway Cellars Restaurant</div>
-				</div>
-				<div>
-					<a href="/assets/pages/CapitalCampaign.html">
-						<img src="http://www.stignatiuschurch.org/assets/images/140218CapitalCampaignCrop.JPG" height="auto" width="100%">
-					</a>
-					<div class="cycle-overlay">St. Ignatius Parish Capital Campaign<br/>Celebrating Our Faith - Building Our Future</div>
-				</div>
-			</div>	
-			<div class="cycle-pager"></div> -->
-
-<i class="fa fa-chevron-left fa-5x"></i>
+		<div class="cycle-slideshow" 
+			data-cycle-fx="fade"
+			data-cycle-timeout="6000"
+			data-cycle-center-horz="true"
+			data-cycle-center-vert="true"
+			data-cycle-slides="> div"
+			data-cycle-slides="> a"								
+			data-cycle-pager=".cycle-pager"
+			>
 			
-			<div class="cycle-slideshow"
-				data-cycle-fx="scrollHorz"
-				data-cycle-timeout="0">
-				<div class="cycle-prev"><i class="fa fa-chevron-left fa-5x"></i></div>
-				<div class="cycle-next"><i class="fa fa-chevron-right fa-5x"></i></div>
-					<img src="http://www.stignatiuschurch.org/assets/images/140218KnightsDinnerCrop.JPG"height="auto" width="100%">
-					<img src="http://www.stignatiuschurch.org/assets/images/140218StPatPartyCrop.JPG"height="auto" width="100%">
-					<img src="http://www.stignatiuschurch.org/assets/images/140218BroadwayCellarsCrop.jpg" height="auto" width="100%">
-			</div>	
+			<div>
+				<a href="index.html#I4"><img src="http://www.stignatiuschurch.org/assets/images/140218StPatPartyCrop.JPG"height="auto" width="100%"></a>
+				<div class="cycle-overlay">St. Patrick's Day Party<br/>Saturday, March 8 - St. Ignatius Gymnasium</div>
+			</div>
+			<div>
+				<a href="index.html#I5"><img src="http://www.stignatiuschurch.org/assets/images/140218BroadwayCellarsCrop.jpg" height="auto" width="100%"></a>
+				<div class="cycle-overlay">Broadway Cellars Share Day<br/>Saturday, March 8 - Broadway Cellars Restaurant</div>
+			</div>
+			<div>
+				<a href="/assets/pages/CapitalCampaign.html">
+					<img src="http://www.stignatiuschurch.org/assets/images/140218CapitalCampaignCrop.JPG" height="auto" width="100%">
+				</a>
+				<div class="cycle-overlay">St. Ignatius Parish Capital Campaign<br/>Celebrating Our Faith - Building Our Future</div>
+			</div>
+		</div>	
+		<div class="cycle-pager"></div>
 		<div class ="title"><span>Parish Events</span></div>
 			<div class="section">
 				<div class="announcement">
@@ -198,26 +184,19 @@ jQuery( document ).ready( function( $ ) {
 					</p>
 				</div>
 				<div class="announcement">
-					<a id="I2"><h2>Knights of Columbus Spaghetti Dinner</h2></a> 
-					<p>
-						<span class="when">Saturday, February 22, 5 - 10 p.m.</span>
-						<span class="where">Holy Name Room and Canteen</span>
-						<span class="detail">
-						The University Council #1687 Knights of Columbus presents our annual Spaghetti Dinner Saturday, February 22, 2014. Social Hour in the Canteen 5 p.m.;
-						Dinner is served at 5:45 p.m.; Entertainment begins at 6:15 p.m.; 50/50 raffles; Door Prizes; Live Entertainment; Ticket includes all the spaghetti you can eat, one drink, bread, and salad. Water, soda, wine and beer are available for purchase in the Canteen. Advance tickets are available at the St. Ignatius Rectory and after Sunday masses.<br/>
-						Ticket prices:<br/>
-						In advance: $10.00 Adult, $5.00 Children<br/>
-						At the door: $12.00 Adult, $7.00 Children <br/>
-						$30 for a family (2 adults, and 2 or more children under 12)
-						</span>
-					</p>
-				</div>
-				<div class="announcement">
 					<a id="I3"><h2>Market Day</h2></a>
 					<p>
 						<span class="when">Pickup Saturday, March 1, 12-1 p.m.</span>
 						<span class="where">Holy Name Room</span>
 						<span class="detail">St. Ignatius participates in the Market Day monthly grocery fundraising program. A portion of the profits go to assist parish programs. Order food items online through <a href="www.marketday.com">Market Day's convenient website</a> and pick up your purchases from the Holy Name Room once a month. The next Market Day Pick up is 12-1 p.m. in the Holy Name Room, Saturday, October 26</span>
+					</p>
+				</div>
+				<div class="announcement">
+					<a id="I7"><h2>Ash Wednesday Masses</h2></a>
+					<p>
+						<span class="when">Wednesday, March 5, 7 a.m., 8 a.m., 3 p.m., 7 p.m.</span>
+						<span class="where">Main Church and Chapel</span>
+						<span class="detail">The season of Lent begins on Ash Wednesday, March 5th. Masses are at 7 a.m., 8 a.m. and 7 p.m. with a 3 p.m. prayer service in the Chapel. The 7 p.m. evening mass will be bilingual English and Spanish.</span>
 					</p>
 				</div>
 				<div class="announcement">
@@ -257,44 +236,45 @@ jQuery( document ).ready( function( $ ) {
 						<span class="detail">Please join us for the family mass on the second Sunday of each month at the 10 a.m. mass.</span>
 					</p>
 				</div>
-				<!-- <div class="announcement">
-					<h2>Saturday Mass Time Change to&nbsp;4&nbsp;p.m.</h2> 
+				<div class="announcement">
+					<a id="I8"><h2>Saturday Vigil Mass Time Change to&nbsp;5&nbsp;p.m. begins Saturday March 15th</h2></a>
 					<p>
-						<span class="when">Saturday afternoons at 4 p.m.</span>
+						<span class="when">Saturday afternoons at 5 p.m.</span>
 						<span class="where">Chapel</span>
-						<span class="detail">The start time for the St. Ignatius Saturday Vigil Mass is changed to 4 p.m. during the winter months. This mass meets in the Chapel every Saturday. Confessions are likewise moved to 3:30 - 4:00 p.m. in the Chapel immediately preceding the mass.</span>
-					</p>
-				</div> -->
-			</div>
-		<div class="title"><h1>Schedules and Information</h1></div>
-			<div class="section">
-				<div class="announcement">
-					<h2><a href="/assets/pdf/LMSchedule.pdf">Liturgical Minister Schedule</a></h2>
-					<p>
-						<span class="when">February 2014</span>
-						<span class="detail">Wondering when you are scheduled to be a Lector or Eucharistic Minister? Please click on the link above to view the schedule.</span>
-					</p>
-				</div>
-				<div class="announcement">
-					<h2>Archdiocesan Video "Draw Near"</h2>
-					<iframe width="100%" height="auto" src="http://www.youtube.com/embed/co0qalRkEJs" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="announcement">
-					<h2><a href="/assets/pdf/FY2012_AnnualReport.pdf">Parish Annual Report</a></h2>
-					<p>
-						<span class="when">As of 06/30/2013</span>
-						<span class="detail">Read our <a href="/assets/pdf/FY2012_AnnualReport.pdf">St. Ignatius Parish Annual Report</a> which is filled with information about our parish's ministries and finances.</span>
-					</p>
-				</div>
-				<div class="announcement">
-					<h2><a href="/assets/pages/CapitalCampaign.html">St. Ignatius Parish Capital Campaign</a></h2>
-					<p>
-						<span class="when">Contribute Now</span>
-						<span class="where"></span>
-						<span class="detail">Support the future of our parish. Please contribute to the Celebrating Our Faith Building Our Future St. Ignatius Parish Capital Campaign. In March of 2012, St. Ignatius launched a multi-year capital fund raising campaign with a goal of raising $500,000 to enhance our parish ministries and continue the maintenance and restoration of our magnificent church. To date, (June 2013), we have raised nearly $400,000 toward our $500,000 goal.</span>
+						<span class="detail">The start time for the St. Ignatius Saturday Vigil Mass changes to 5 p.m. during daylight savings time. The first Saturday 5 p.m. mass of the season will be Saturday, March 15th. Confessions are likewise rescheduled to 4:30 - 5:00 p.m. in the Chapel immediately preceding the mass.</span>
 					</p>
 				</div>
 			</div>
+		<div class="title"><span>Schedules and Information</span></div>
+		<div class="section">
+			<div class="announcement">
+				<h2><a href="/assets/pdf/LMSchedule.pdf">Liturgical Minister Schedule</a></h2>
+				<p>
+					<span class="when">March 2014</span>
+					<span class="detail">Wondering when you are scheduled to be a Lector or Eucharistic Minister? Please click on the link above to view the schedule.</span>
+				</p>
+			</div>
+			<div class="announcement">
+				<h2>Archdiocesan Video "Draw Near"</h2>
+				<iframe width="100%" height="250" src="http://www.youtube.com/embed/co0qalRkEJs" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="announcement">
+				<h2><a href="/assets/pdf/FY2012_AnnualReport.pdf">Parish Annual Report</a></h2>
+				<p>
+					<span class="when">As of 06/30/2013</span>
+					<span class="detail">Read our <a href="/assets/pdf/FY2012_AnnualReport.pdf">St. Ignatius Parish Annual Report</a> which is filled with information about our parish's ministries and finances.</span>
+				</p>
+			</div>
+			<div class="announcement">
+				<h2><a href="/assets/pages/CapitalCampaign.html">St. Ignatius Parish Capital Campaign</a></h2>
+				<p>
+					<span class="when">Contribute Now</span>
+					<span class="where"></span>
+					<span class="detail">Support the future of our parish. Please contribute to the Celebrating Our Faith Building Our Future St. Ignatius Parish Capital Campaign. In March of 2012, St. Ignatius launched a multi-year capital fund raising campaign with a goal of raising $500,000 to enhance our parish ministries and continue the maintenance and restoration of our magnificent church. To date, (June 2013), we have raised nearly $400,000 toward our $500,000 goal.</span>
+				</p>
+			</div>
+		</div>
+		<div class="clear"></div>
 		<div class="footer">
 			<div class="columnleft">
 				<p><b>Weekend Mass Schedule</b><br/>
