@@ -9,39 +9,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow" />
-<meta name="copyright" content="Copyright (c) January 2014" />
+<meta name="copyright" content="Copyright (c) March 2014" />
 <meta name="description" content="The Capital Campaign information page for St. Ignatius Church, Chicago, IL"/>
 <base href="http://www.stignatiuschurch.org">
 
-<link rel="stylesheet" type="text/css" href="/assets/css/stignatiuscombined.css">
+<link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="/assets/js/jquery.cycle2.min.js"></script>
-<script src="/assets/js/jquery.cycle2.center.min.js"></script>
-<script src="/assets/js/jquery.cycle2.caption2.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
 
 <script>
 jQuery( document ).ready( function( $ ) {
 	
-		$('body').addClass('js');
-		  var $menu = $('#menu'),
-		  	  $menulink = $('.menu-link'),
-		  	  $menuTrigger = $('.has-submenu > a');
+	$('body').addClass('js');
+	  var $menu = $('#menu'),
+		  $menulink = $('.menu-link'),
+		  $menuTrigger = $('.has-submenu > a');
 
-		$menulink.click(function(e) {
-			e.preventDefault();
-			$menulink.toggleClass('active');
-			$menu.toggleClass('active');
-		});
+	$menulink.click(function(e) {
+		e.preventDefault();
+		$menulink.toggleClass('active');
+		$menu.toggleClass('active');
+	});
 
-		$menuTrigger.click(function(e) {
-			e.preventDefault();
-			var $this = $(this);
-			$this.toggleClass('active').next('ul').toggleClass('active');
-		});
-
-		
+	$menuTrigger.click(function(e) {
+		e.preventDefault();
+		var $this = $(this);
+		$this.toggleClass('active').next('ul').toggleClass('active');
+	});		
 });
 </script>
 

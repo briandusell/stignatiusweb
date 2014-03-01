@@ -209,8 +209,10 @@ body {
 
 .article { font-family: 'Open Sans', sans-serif; padding-left:10px; padding-right:10px; text-align: justify;}
 .article img { display: inline; float: left; padding-right: 20px; padding-bottom: 20px;}
+.igarticle { font-family: 'Open Sans', sans-serif; padding-left:10px; padding-right:10px; text-align: justify;}
+.igarticle img { display: block; padding-top: 20px; margin:0 auto;}
 
-.announcement {	clear: both; display:inline-block; font-size: 14px;	line-height: 135%; width: 100%;}
+.announcement {	clear: both; display: inline-block; font-size: 14px; line-height: 135%; width: 100%;}
 .announcement span { display: block; margin-top: 5px;}
 .announcement h2 { font-family: Garamond, serif; line-height: 120%;}
 .announcement p { font-family: 'Open Sans', sans-serif;}
@@ -537,6 +539,10 @@ body {
 		padding-right:30px;
 	}
 	.article {
+		padding-left:30px; 
+		padding-right:30px;	
+	}
+	.igarticle {
 		padding-left:30px; 
 		padding-right:30px;	
 	}

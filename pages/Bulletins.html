@@ -13,32 +13,30 @@
 <meta name="description" content="The bulletin archive for St. Ignatius Church, Chicago, IL"/>
 <base href="http://www.stignatiuschurch.org">
 
-<link rel="stylesheet" type="text/css" href="/assets/css/stignatiuscombined.css">
+<link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
 
 <script>
 jQuery( document ).ready( function( $ ) {
 	
-		$('body').addClass('js');
-		  var $menu = $('#menu'),
-		  	  $menulink = $('.menu-link'),
-		  	  $menuTrigger = $('.has-submenu > a');
+	$('body').addClass('js');
+	  var $menu = $('#menu'),
+		  $menulink = $('.menu-link'),
+		  $menuTrigger = $('.has-submenu > a');
 
-		$menulink.click(function(e) {
-			e.preventDefault();
-			$menulink.toggleClass('active');
-			$menu.toggleClass('active');
-		});
+	$menulink.click(function(e) {
+		e.preventDefault();
+		$menulink.toggleClass('active');
+		$menu.toggleClass('active');
+	});
 
-		$menuTrigger.click(function(e) {
-			e.preventDefault();
-			var $this = $(this);
-			$this.toggleClass('active').next('ul').toggleClass('active');
-		});
-
-		
+	$menuTrigger.click(function(e) {
+		e.preventDefault();
+		var $this = $(this);
+		$this.toggleClass('active').next('ul').toggleClass('active');
+	});	
 });
 </script>
 
@@ -145,6 +143,8 @@ jQuery( document ).ready( function( $ ) {
 		</header>
 		<div class ="title"><span>Bulletin Archive</span></div>
 		<div class="section">
+			<p><a href="/assets/pdf/bulletinarchive/140302.pdf" target="_blank">8 Ordinary, March 2, 2014</a></p>
+			<p><a href="/assets/pdf/bulletinarchive/140223.pdf" target="_blank">7 Ordinary, February 23, 2014</a></p>
 			<p><a href="/assets/pdf/bulletinarchive/140216.pdf" target="_blank">6 Ordinary, February 16, 2014</a></p>
 			<p><a href="/assets/pdf/bulletinarchive/140209.pdf" target="_blank">5 Ordinary, February 09, 2014</a></p>
 			<p><a href="/assets/pdf/bulletinarchive/140202.pdf" target="_blank">Presentation of the Lord, February 02, 2014</a></p>
