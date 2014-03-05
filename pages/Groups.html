@@ -13,32 +13,30 @@
 <meta name="description" content="The parish organization page for St. Ignatius Church, Chicago, IL"/>
 <base href="http://www.stignatiuschurch.org">
 
-<link rel="stylesheet" type="text/css" href="/assets/css/stignatiuscombined.css">
+<link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
 
 <script>
 jQuery( document ).ready( function( $ ) {
 	
-		$('body').addClass('js');
-		  var $menu = $('#menu'),
-		  	  $menulink = $('.menu-link'),
-		  	  $menuTrigger = $('.has-submenu > a');
+	$('body').addClass('js');
+	  var $menu = $('#menu'),
+		  $menulink = $('.menu-link'),
+		  $menuTrigger = $('.has-submenu > a');
 
-		$menulink.click(function(e) {
-			e.preventDefault();
-			$menulink.toggleClass('active');
-			$menu.toggleClass('active');
-		});
+	$menulink.click(function(e) {
+		e.preventDefault();
+		$menulink.toggleClass('active');
+		$menu.toggleClass('active');
+	});
 
-		$menuTrigger.click(function(e) {
-			e.preventDefault();
-			var $this = $(this);
-			$this.toggleClass('active').next('ul').toggleClass('active');
-		});
-
-		
+	$menuTrigger.click(function(e) {
+		e.preventDefault();
+		var $this = $(this);
+		$this.toggleClass('active').next('ul').toggleClass('active');
+	});
 });
 </script>
 
@@ -69,8 +67,8 @@ jQuery( document ).ready( function( $ ) {
 							<li><a href="/assets/pages/AboutTheParish.html#A6">Parish History</a></li>
 							<li class="has-submenu"><a href="#">Join the Parish</a>
 								<ul>
-									<li><a href="/assets/pdf/EnglishRegistration.pdf">English Registration</a></li>
-									<li><a href="/assets/pdf/SpanishRegistration.pdf">Spanish Registration</a></li>
+									<li><a href="/assets/pdf/EnglishRegistration.pdf" target="_blank">English Registration</a></li>
+									<li><a href="/assets/pdf/SpanishRegistration.pdf" target="_blank">Spanish Registration</a></li>
 								</ul>
 							</li>
 							<li class="has-submenu"><a href="#">Restoration Projects</a>
@@ -85,7 +83,7 @@ jQuery( document ).ready( function( $ ) {
 					<li class="has-submenu"><a href="#">Ministries</a>
 						<ul class="sub-menu">
 							<li><a href="/assets/pages/MinistriesMain.html">About</a></li>
-							<li><a href="/assets/pdf/LMSchedule.pdf">Minister Schedule</a></li>
+							<li><a href="/assets/pdf/LMSchedule.pdf" target="_blank">Minister Schedule</a></li>
 							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee Charter</a></li>
 							<li><a href="/assets/pages/LCJobDescription.html">Liturgy Committee Job Description</a></li>
 						</ul>
@@ -127,15 +125,15 @@ jQuery( document ).ready( function( $ ) {
 									<li><a href="/assets/pages/GlenolaPhotos.html">Glenola Photos</a></li>
 								</ul>
 							</li>
-							<li><a href="http://hermandadsenordelosmilagroschicago.org/index.html">Hermandad del Se&#241;or de los Milagros</a></li>
-							<li><a href="http://www.kofc-university1687.org/Pages/default.aspx">Knights of Columbus</a></li>
+							<li><a href="http://hermandadsenordelosmilagroschicago.org/index.html" target="_blank">Hermandad del Se&#241;or de los Milagros</a></li>
+							<li><a href="http://www.kofc-university1687.org/Pages/default.aspx" target="_blank">Knights of Columbus</a></li>
 							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></li>
 						</ul>
 					</li>
 					<li><a href="/assets/pages/Links.html">Links</a></li>
 					<li class="has-submenu"><a href="#">Giving</a>
 						<ul>
-							<li><a href="https://www.parishpay.com/nonprofit/login.html?pc=m9wuf360">Online Giving</a></li>
+							<li><a href="https://www.parishpay.com/nonprofit/login.html?pc=m9wuf360" target="_blank">Online Giving</a></li>
 							<li><a href="/assets/pages/CapitalCampaign.html">Capital Campaign</a></li>
 						</ul>
 					</li>
