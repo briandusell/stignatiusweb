@@ -471,7 +471,7 @@ body {
 	.logo { 
 		font-size:24px;
 	}
-	.cycle-slideshow { display:block; width: 90%; height: auto; margin: auto; overflow: hidden; }
+	.cycle-slideshow { display:block; width: 80%; height: auto; margin: auto; overflow: hidden; }
 	.cycle-slideshow img { filter:alpha(opacity=0); }
 
 	/* anchors */
