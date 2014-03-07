@@ -212,21 +212,21 @@ body {
 .igarticle { font-family: 'Open Sans', sans-serif; padding-left:10px; padding-right:10px; text-align: justify;}
 .igarticle img { display: block; padding-top: 20px; margin:0 auto;}
 
-.announcement {	clear: both; display: inline-block; font-size: 14px; line-height: 135%; width: 100%;}
+.announcement {	clear: both; display: inline-block; font-size: 14px; line-height: 135%; padding-top: 15px; padding-bottom: 15px; width: 100%;}
 .announcement span { display: block; margin-top: 5px;}
 .announcement h2 { font-family: Garamond, serif; line-height: 120%;}
 .announcement p { font-family: 'Open Sans', sans-serif;}
 .announcement li { font-family: 'Open Sans', sans-serif;}
 .announcement .detail {text-align: justify;}
 
-.group {	 clear: both; display: inline-block; width: 100%;}
+.group {	 clear: both; display: inline-block; padding-top: 15px; padding-bottom: 15px; width: 100%;}
 .group span { display: block; margin-top: 5px;}
 .group h2 { font-family: Garamond, serif; line-height: 120%;}
 .group p { font-family: 'Open Sans', sans-serif;}
 .group li { font-family: 'Open Sans', sans-serif;}
 .group .detail {text-align: justify;}
 
-.link { clear: both; display: inline-block; width: 100%;}
+.link { clear: both; display: inline-block; padding-top: 15px; padding-bottom: 15px; width: 100%;}
 .link span { display: block; margin-top: 5px;}
 .link h2 { font-family: Garamond, serif; line-height: 120%;}
 .link p { font-family: 'Open Sans', sans-serif;}
@@ -239,6 +239,13 @@ body {
 	width: 100%;
 	height: auto;
 }
+.heading { 
+	font-family: Garamond, serif; 
+	font-size: 14pt; 
+	font-weight: bold; 
+	line-height: 125%;
+}
+
 .when {
 	font-weight: bold;
 }
@@ -573,7 +580,7 @@ body {
 		line-height: 125%;
 	}
 	.group {	}
-	
+	.heading { font-size: 18pt; }
 	.columnleft {
 		float: left;
 		margin-left:20px;
