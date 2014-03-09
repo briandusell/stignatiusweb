@@ -207,8 +207,8 @@ body {
 .title a {color:#000000;}
 .title span {font-size:18pt; font-weight:bold;}
 
-.article { font-family: 'Open Sans', sans-serif; padding-left:10px; padding-right:10px; text-align: justify;}
-.article img { display: inline; float: left; padding-right: 20px; padding-bottom: 20px;}
+.article { font-family: 'Open Sans', sans-serif; margin-top:20px; margin-bottom: 20px; padding-left:10px; padding-right:10px; text-align: justify;}
+.article img { float: left; padding-right: 20px; padding-bottom: 20px;}
 .igarticle { font-family: 'Open Sans', sans-serif; padding-left:10px; padding-right:10px; text-align: justify;}
 .igarticle img { display: block; padding-top: 20px; margin:0 auto;}
 
@@ -233,7 +233,7 @@ body {
 .link li { font-family: 'Open Sans', sans-serif;}
 .link .detail {text-align: justify;}
 
-.section { font-family: 'Open Sans', sans-serif; padding-left:10px; padding-right:10px;}
+.section { font-family: 'Open Sans', sans-serif; padding-left:10px; padding-right:10px; }
 
 .video embed, .video object, .video iframe {
 	width: 100%;
@@ -575,11 +575,8 @@ body {
 	.logo { 
 		font-size:30px;
 	}
-	.announcement {
-		font-size:16px;
-		line-height: 125%;
-	}
-	.group {	}
+	.announcement { font-size:16px; line-height: 125%;}
+	.article { font-size:16px; line-height: 125%;}
 	.heading { font-size: 18pt; }
 	.columnleft {
 		float: left;
