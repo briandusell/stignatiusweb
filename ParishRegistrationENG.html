@@ -1,20 +1,26 @@
+
 <!doctype html>
 <html lang="en">
 <head>
 
-<title>St. Ignatius Church, Chicago | Staff Directory</title>
+<title>St. Ignatius Church, Chicago | Index</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index,follow" />
-<meta name="copyright" content="Copyright (c) March 2014" />
-<meta name="description" content="The Staff Directory page for St. Ignatius Church, Chicago, IL"/>
+<meta name="copyright" content="Copyright (c) February 2014" />
+<meta name="description" content="The main index page for St. Ignatius Church, Chicago, IL"/>
 <base href="http://www.stignatiuschurch.org">
 
 <link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" >
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.cycle2.center.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.cycle2.caption2.min.js"></script>
+
 <script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
 
 <script>
@@ -43,7 +49,7 @@ jQuery( document ).ready( function( $ ) {
 <body>
 	<div class="container">										
 		<div class="image">
-			<img src="/assets/images/HFCrop3.jpg" alt="St. Ignatius" width="100%" height="auto">
+			<img src="http://www.stignatiuschurch.org/assets/images/140120aPatWinCrop.jpg" alt="St. Ignatius" width="100%" height="auto">
 		</div>
 		<div class="logo">
 			<span>St. Ignatius Church &#8211; Chicago,&nbsp;IL</span>
@@ -54,15 +60,15 @@ jQuery( document ).ready( function( $ ) {
 			
 			<nav id="menu" class="menu">
 				<ul>
-					<li><a href="http://www.stignatiuschurch.org">Home</a></li>
+					<li><a href="http://www.stignatiuschurch.org"><b>Home</b></a></li>
 					<li><a href="/assets/pages/AboutTheParish.html#A2">Map</a></li>
 					<li><a href="/assets/pages/AboutTheParish.html#A3">Mass&nbsp;Schedule</a></li>
-					<li class="has-submenu"><a href="#"><b>About&nbsp;the&nbsp;Parish</b></a>
+					<li class="has-submenu"><a href="#">About&nbsp;the&nbsp;Parish</a>
 						<ul class="sub-menu">
 							<li><a href="/assets/pages/AboutTheParish.html">Parish Information</a></li>
 							<li><a href="/assets/pages/Bulletins.html">Bulletin</a></li>
 							<li><a href="/assets/pages/AboutTheParish.html#A4">Office Hours</a></li>
-							<li><a href="/assets/pages/StaffDirectory.html"><b>Parish Staff</b></a></li>
+							<li><a href="/assets/pages/StaffDirectory.html">Parish Staff</a></li>
 							<li><a href="/assets/pages/AboutTheParish.html#A6">Parish History</a></li>
 							<li class="has-submenu"><a href="#">Join the Parish</a>
 								<ul>
@@ -140,116 +146,32 @@ jQuery( document ).ready( function( $ ) {
 			</nav>
 			<div class="clear"></div>
 		</header>
-		<div class ="title"><span>St. Ignatius Pastoral Team</span></div>
-		<div class="section">
-			<div class="group">
-				<span class="heading">Rev. Joseph M. Jackson, Ph. D.</span> 
-				<span class="when">Pastor</span>
-				<span class="when">e-mail:<a href="mailto:mjdooley69@stignatiuschurch.org">mjdooley69@stignatiuschurch.org</a></span>
-				<span class="where">Rectory phone extension 10</span>
-			</div>
-			<div class="group">
-				<span class="heading">Fr. Kinoti Kithuri</span> 
-				<span class="when">Associate Pastor</span>
-				<span class="when">e-mail: <a href="mailto:keynotes1972@yahoo.com">keynotes1972@yahoo.com</a></span>
-				<span class="where">Rectory phone extension 25</span>
-			</div>
-			<div class="group">
-				<span class="heading">Fr. Patrick McAteer, SJ</span> 
-				<span class="when">Resident Priest</span>
-				<span class="when">e-mail: <a href="mailto:mcateer@stignatiuschurch.org">mcateer@stignatiuschurch.org</a></span>
-				<span class="where">Rectory phone extension 24</span>
-			</div>
-			<div class="group">
-				<span class="heading">Rev. William Grogan</span> 
-				<span class="when">Resident Priest</span>
-				<span class="when">e-mail: <a href="mailto:wgrogan@luc.edu">wgrogan@luc.edu</a></span>
-				<span class="where">Rectory phone extension 10</span>
-			</div>
-			<div class="group">
-				<span class="heading">Rev. Raul Mora</span> 
-				<span class="when">Deacon</span>
-				<span class="when">e-mail: <a href="mailto:lisa_soto12@yahoo.com">lisa_soto12@yahoo.com</a></span>
-				<span class="where">Rectory phone extension 10</span>
-			</div>
-			<div class="group">
-				<span class="heading">Rev. Rogelio Soto</span> 
-				<span class="when">Deacon</span>
-				<span class="when">e-mail: <a href="mailto:lisa_soto12@yahoo.com">lisa_soto12@yahoo.com</a></span>
-				<span class="where">Rectory phone extension 10</span>
-			</div>
+		<div class ="title"><span>St. Ignatius Parish Registration Form</span></div>
+		<div class="regisform">
+		<form action="">
+			First name: <input type="text" name="FirstName" value=""><br/>
+			Last name: <input type="text" name="LastName" value=""><br/>
+			<input type="submit" value="Submit">
+		</form>
+		<form action="" method="get">
+		  <input type="radio" name="sex" value="Male"> Male<br/>
+		  <input type="radio" name="sex" value="Female" checked="checked"> Female<br/>
+		  <input type="submit" value="Submit">
+		</form>
+		<form action="">
+			<select name="cars">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			</select>
+		</form>
 		</div>
-		<div class ="title"><span>St. Ignatius Parish Staff</span></div>
-		<div class="section">
-			<div class="group">
-				<span class="heading">Mariella Dorn</span> 
-				<span class="when">Bookkeeper</span>
-				<span class="when">e-mail: <a href="mailto:business@stignatiuschurch.org">business@stignatiuschurch.org</a></span>
-				<span class="where">Rectory phone extension 13</span>
-			</div>
-			<div class="group">
-				<span class="heading">Brian DuSell</span> 
-				<span class="when">Director of Music Ministry</span>
-				<span class="when">e-mail: <a href="mailto:music@stignatiuschurch.org">music@stignatiuschurch.org</a></span>
-				<span class="where">Rectory phone extension 17</span>
-			</div>
-			<div class="group">
-				<span class="heading">Patrick Gipson</span> 
-				<span class="when">Development Campaign Coordinator</span>
-				<span class="when">e-mail: <a href="mailto:patgipson@gmail.com">patgipson@gmail.com</a></span>
-				<span class="where">Rectory phone extension 15</span>
-			</div>
-			<div class="group">
-				<span class="heading">Kathy Morris</span> 
-				<span class="when">Pastoral Assistant / Director of Ignatian Services</span>
-				<span class="when">e-mail: <a href="mailto:is@stignatiuschurch.org">is@stignatiuschurch.org</a></span>
-				<span class="where">Rectory phone extension 16</span>
-			</div>
-			<div class="group">
-				<span class="heading">M. Mercedes Mac Laughlin</span> 
-				<span class="when">Minister of Family Faith Life</span>
-				<span class="when">e-mail: <a href="mailto:mercedes@stignatiuschurch.org">mercedes@stignatiuschurch.org</a></span>
-				<span class="where">Rectory phone extension 10</span>
-			</div>
-			<div class="group">
-				<span class="heading">Patrick O'Malley</span> 
-				<span class="when">Buildings Engineer</span>
-				<span class="when">Rectory phone extension 30</span>
-			</div>
-			<div class="group">
-				<span class="heading">Sue Pazik</span> 
-				<span class="when">Tuesday/Thursday Day Receptionist</span>
-				<span class="when">e-mail: <a href="mailto:spazik@stignatiuschurch.org">spazik@stignatiuschurch.org</a></span>
-				<span class="where">Rectory phone extension 10</span>
-			</div>
-			<div class="group">
-				<span class="heading">Patrick Schultz</span> 
-				<span class="when">Business Manager</span>
-				<span class="when">e-mail: <a href="mailto:business@stignatiuschurch.org">business@stignatiuschurch.org</a></span>
-				<span class="where">Rectory phone extension 13</span>
-			</div>
-			<div class="group">
-				<span class="heading">Elizabeth Soto</span> 
-				<span class="when">Religious Education (CCD) Coordinator</span>
-				<span class="when">e-mail: <a href="mailto:lisa_soto12@yahoo.com">lisa_soto12@yahoo.com</a></span>
-				<span class="where">Rectory phone extension 10</span>
-			</div>
-			<div class="group">
-				<span class="heading">Christine Timcheck</span> 
-				<span class="when">Volunteer and Welcoming Coordinator</span>
-				<span class="when">e-mail: <a href="mailto:volunteer@stignatiuschurch.org">volunteer@stignatiuschurch.org</a></span>
-				<span class="where">Rectory phone extension 12</span>
-			</div>
-			<div class="group">
-				<span class="heading">Jeanette Reid</span> 
-				<span class="when">Weekend Receptionist</span>
-				<span class="where">Rectory phone extension 10</span>
-			</div>
-		</div><!-- .section END -->
+		<div class="clear"></div>
 		<div class="footer">
 			<div class="columnleft">
 				<p><b>Weekend Mass Schedule</b><br/>
-				Sat 5:00 p.m. &#8211; Chapel<br/>
+				Sat 4:00 p.m. &#8211; Chapel<br/>
 				Sun 8:00 a.m. &#8211; Church<br/>
 				Sun 10:00 a.m. &#8211; Church<br/>
 				Sun 12:00 p.m. &#8211; Church (Spanish)<br/>
@@ -260,7 +182,7 @@ jQuery( document ).ready( function( $ ) {
 				<p><b>Adoration</b><br/>
 				Friday 6:30 p.m. &#8211; 8:30 p.m.</p>
 				<p><b>Reconciliation</b><br/>
-				Saturday 4:30 p.m. &#8211; 5:00 p.m.</p>
+				Saturday 3:30 p.m. &#8211; 4:00 p.m.</p>
 			</div>
 			<div class="columncenter">
 				<p><b>Rev. Joseph M. Jackson, Ph. D., pastor</b><br/>
