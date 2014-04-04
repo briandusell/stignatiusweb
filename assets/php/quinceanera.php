@@ -29,7 +29,7 @@
 
 <?php
 // The message
-$message = . $_POST["fname"]  $_POST["mname"]  $_POST["lname"]  $_POST["telephone"] ;
+$message = $_POST["fname"] . $_POST["mname"] . $_POST["lname"] . $_POST["telephone"] ;
 
 // In case any of our lines are larger than 70 characters, we should use wordwrap()
 $message = wordwrap($message, 70, "\r\n");
