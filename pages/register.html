@@ -3,26 +3,25 @@
 <html>
 	<body>
 	<h1> Parish Registration </h1>
-	<form action="http://www.stignatiuschurch.org/assets/php/quinceanera.php" method="post">
+	<form action="http://www.stignatiuschurch.org/assets/php/welcome.php" method="post">
 		<p>
-		First name <input type="text" class="txt-med" name="fname" value="" />
-		Middle name <input type="text" class="txt-med" name="mname" value="" />
-		Last name <input type="text" class="txt-med" name="lname" value="" />
+		First name <input type="text" class="txt-med" name="cfname" value="" /> 
+		Middle name <input type="text" class="txt-med" name="cmname" value="" /> 
+		Last name <input type="text" class="txt-med" name="clname" value="" /> 
 		</p>
 		<p>
-		Address1 <input type="text" class="txt-med" name="streetaddress" value="" /><br/>
-		Address2 <input type="text" class="txt-med" name="aptsuite" value="" /><br/>
-		City <input type="text" class="txt-med" name="city" value="" />,
-		State <input type="text" class="txt-med" name="state" value="" />
-		Zip <input type="text" class="txt-med" name="zip" value="" />
+		Address1 <input type="text" class="txt-med" name="streetaddress" size="35" value="" /><br/>
+		Address2 <input type="text" class="txt-med" name="aptsuite" size="35" value="" /><br/>
+		City <input type="text" class="txt-med" size="12" name="city" value="" />,
+		State <input type="text" class="txt-med" size="10" name="state" value="" />
+		Zip <input type="text" class="txt-med" size="10" name="zip" value="" />
 		</p>
-		<p>
-		Gender: 
-		<input type="radio" name="gender" value="Male">Male</input>
-		<input type="radio" name="gender" value="Female">Female</input>
+		<p>Telephone <input type="text" class="txt-med" name="telephone" size="35" value="" /></p>
+		<p>Email: <input type="text" class="txt-med" name="email" size="35" value="" /></p>
+		<p>Baptized
+		<input type="radio" name="1yesno" value="yes">Yes</input>
+		<input type="radio" name="1yesno" value="no">No</input>
 		</p>
-		<p>Email: <input type="text" class="txt-med" name="email" value="" /></p>
-		
 		<input type="submit">
 	</form>
 	</body>
