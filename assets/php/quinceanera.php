@@ -29,7 +29,34 @@
 
 <?php
 // The message
-$message = $_POST["fname"] . $_POST["mname"] . $_POST["lname"] . $_POST["telephone"] ;
+$message = <<<EMAIL
+Dear Mercedes,
+
+$_POST[cfname] $_POST[clname] has sent a request for a Quinceañera.
+
+Her requested date for the quinceanera is:
+
+Her information is:
+First name: $_POST[cfname]
+Middle name: $_POST[cmname]
+Last name: $_POST[clname]
+
+She is registered? $_POST["1yesno"]
+She is baptized? $_POST["2yesno"]
+She has had first communion? $_POST ["3yesno"]
+She has been confirmed? $_POST["4yesno"]
+
+Her mailing address is: 
+$_POST["streetaddress"] 
+$_POST["aptsuite"] 
+$_POST["city"] $_POST["state"] $_POST["zip"]
+
+Telephone number: $_POST[telephone]
+E-mail Address: $_POST [email] 
+
+Her parents are: $_POST[mfname]  $_POST[mlname] and  $_POST[ffname] $_POST[flname]
+
+EMAIL;
 
 // In case any of our lines are larger than 70 characters, we should use wordwrap()
 $message = wordwrap($message, 70, "\r\n");
@@ -37,7 +64,6 @@ $message = wordwrap($message, 70, "\r\n");
 // Send
 mail('music@stignatiuschurch.org', 'Information email from quinceanera.php', $message);
 ?>
-
 
 </body>
 </html>
