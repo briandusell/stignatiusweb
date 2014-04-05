@@ -30,23 +30,24 @@
 <?php
 // The message
 
-$message = "Dear Mercedes," . $_POST["cfname"] . $_POST["clname"] . " has sent a request for a Quinceañera. Her requested date for the Quinceañera is: 
-Her information is:  First name:" . $_POST[cfname] . "Middle name:" . $_POST[cmname] . "Last name:" . $_POST[clname] .
+$message = "Dear Mercedes, " . $_POST["cfname"] . " " . $_POST["clname"] . " has sent a request for a Quinceañera. 
+Her requested date for the Quinceañera is: 
+Her information is:  First name: " . $_POST["cfname"] . " " . "Middle name: " . $_POST["cmname"] . " " . "Last name: " . $_POST["clname"] .
 
-"She is registered?" . $_POST["1yesno"] .
-"She is baptized?" . $_POST["2yesno"] .
-"She has had first communion?" . $_POST ["3yesno"] .
-"She has been confirmed?" . $_POST["4yesno"] .
+"She is registered?" . " " . $_POST["1yesno"] .
+"She is baptized?" . " " . $_POST["2yesno"] .
+"She has had first communion?" . " " . $_POST ["3yesno"] .
+"She has been confirmed?" . " " . $_POST["4yesno"] .
 
-"Her mailing address is:" .
-$_POST["streetaddress"] .
-$_POST["aptsuite"] .
-$_POST["city"] . $_POST["state"] . $_POST["zip"] .
+"Her mailing address is:" . " " .
+$_POST["streetaddress"] . " " .
+$_POST["aptsuite"] . " " .
+$_POST["city"] . " " . $_POST["state"] . " " . $_POST["zip"] . " " .
 
-"Telephone number:" . $_POST[telephone] .
-"E-mail Address:" . $_POST [email] .
+"Telephone number:" . " " . $_POST["telephone"] .
+"E-mail Address:" . " " . $_POST ["email"] .
 
-"Her parents are:" . $_POST[mfname] . $_POST[mlname] . "and" . $_POST[ffname] . $_POST[flname] . "This information is information that she filled out on the web form." ;
+"Her parents are:" . $_POST["mfname"] . " " . $_POST["mlname"] . "and" . $_POST["ffname"] . " " . $_POST["flname"] . "This information is information that she filled out on the web form." ;
 
 // In case any of our lines are larger than 70 characters, we should use wordwrap()
 $message = wordwrap($message, 70, "\r\n");
@@ -57,3 +58,4 @@ mail('music@stignatiuschurch.org', 'Information email from quinceanera.php', $me
 
 </body>
 </html>
+ 	
