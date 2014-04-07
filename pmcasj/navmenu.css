@@ -1,0 +1,118 @@
+body {
+	background-repeat:repeat;	
+	font-family:Times New Roman;
+	margin:0;	
+}
+
+.container {
+	margin:0 auto;
+	min-height:100%;
+	position:absolute;
+	width:100%;
+}
+
+.header {
+	background-image: -webkit-linear-gradient(top, #FFFFFF , #D3D3D3);
+	background-image: -moz-linear-gradient(top, #FFFFFF , #D3D3D3);
+	background-image: -ms-linear-gradient(top, #FFFFFF , #D3D3D3);
+	background-image: -o-linear-gradient(top, #FFFFFF , #D3D3D3);
+	background-image: linear-gradient(top, #FFFFFF , #D3D3D3);
+	border:1px solid #696969;
+	border-radius:90px;
+	margin:5px 5px 5px 200px;
+	padding:5px;
+	position:absolute;
+	text-align:center;
+	width:82%;	
+}
+
+.menu3 {
+    position:absolute;
+	width:150px;
+	height:36px;
+	margin-top:0px;
+	margin-left:20px;
+	text-align:center;
+	z-index:2;	  
+}
+
+.menu3 a {
+   
+	background-image: -webkit-linear-gradient(top, white , lightgray);
+	background-image: -moz-linear-gradient(top, white , lightgray);
+	background-image: -ms-linear-gradient(top, white , lightgray);
+	background-image: -o-linear-gradient(top, white , lightgray);
+	background-image: linear-gradient(top, white , lightgray);
+    border: 1px solid #696969;
+	border-radius: 15px; 
+	display: block;
+	font: normal 12px Arial;
+	line-height: 24px;   
+	margin: 5px;
+    padding: 3 20px;   
+}
+
+.menu3 a:hover, div.menu3 a.current
+{
+    background:#E9ECF0;
+    color:#000000;
+	line-height: 24px;   
+}
+
+.menu3sub
+{
+    background:#E9ECF0; 
+	border:1px solid #696969;
+	height:6px;
+}
+
+.image {
+	display:inline;
+	float:left;
+	font-size:80%; 
+	padding-right:20px;
+	padding-bottom:20px;
+	text-align:center;
+}
+
+.content {
+	padding: 185px 20px 20px 200px;
+}
+.content h1, h2 {
+	text-align:center;
+}
+
+.content p {
+	text-align:justify;
+}
+
+.article {
+	clear:both;
+	display:block;
+	padding-top:5px;
+}
+
+.bookcontent {
+	background: #CCCCFF;
+	border-radius:5px;
+	column-count:2;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding:10px;	
+}
+
+.bookcontent p {
+	font-style: italic;
+}
+
+.footer {
+	float:left;
+	clear:both;
+	width:100%;
+}
+
+a:link { text-decoration:none; color: #000000;}
+a:visited { text-decoration:none; color: #000000;}
+a:hover { text-decoration:none; color: blue;}

@@ -10,8 +10,11 @@
 <?php echo $_POST["3yesno"]; ?>
 <h4>Have you been confirmed?</h4> 
 <?php echo $_POST["4yesno"]; ?>
+
 <h4>Requested Date of Quinceanera</h4> 
-<?php echo $_POST["month"]; ?> <?php echo $_POST["day"]; ?> <?php echo $_POST["year"]; ?>
+<h4>Your first date choice is:</h4> <?php echo $_POST["1month"]; ?> <?php echo $_POST["1day"]; ?> <?php echo $_POST["1year"]; ?>
+<h4>Your first date choice is:</h4> <?php echo $_POST["2month"]; ?> <?php echo $_POST["2day"]; ?> <?php echo $_POST["2year"]; ?>
+
 <h4>Your Name Is:</h4>
 <?php echo $_POST["cfname"]; ?> <?php echo $_POST["cmname"]; ?> <?php echo $_POST["clname"]; ?>
 
@@ -30,30 +33,32 @@
 <?php
 // The message
 
-$message = "Dear Mercedes, " . $_POST["cfname"] . " " . $_POST["clname"] . " has sent a request for a Quinceañera. 
-Her requested date for the Quinceañera is: 
-Her information is:  First name: " . $_POST["cfname"] . " " . "Middle name: " . $_POST["cmname"] . " " . "Last name: " . $_POST["clname"] .
-
-"She is registered?" . " " . $_POST["1yesno"] .
-"She is baptized?" . " " . $_POST["2yesno"] .
-"She has had first communion?" . " " . $_POST ["3yesno"] .
-"She has been confirmed?" . " " . $_POST["4yesno"] .
-
-"Her mailing address is:" . " " .
-$_POST["streetaddress"] . " " .
-$_POST["aptsuite"] . " " .
-$_POST["city"] . " " . $_POST["state"] . " " . $_POST["zip"] . " " .
-
-"Telephone number:" . " " . $_POST["telephone"] .
-"E-mail Address:" . " " . $_POST ["email"] .
-
-"Her parents are:" . $_POST["mfname"] . " " . $_POST["mlname"] . "and" . $_POST["ffname"] . " " . $_POST["flname"] . "This information is information that she filled out on the web form." ;
+$message = "Dear Mercedes," . "\r\n" . 
+$_POST["cfname"] . " " . $_POST["clname"] . " has sent a request for a Quinceanera." . "\r\n" .
+"Her first choice date for the Quinceanera is:" . "\r\n" .
+$_POST["1month"] . " " . $_POST["1day"]  . " " . $_POST["1year"] . "\r\n" .
+"Her second choice date for the Quinceanera is: \r\n" .
+$_POST["2month"] . " " . $_POST["2day"]  . " " . $_POST["2year"] . "\r\n" .
+"Her full name is: " . $_POST["cfname"] . " "  . $_POST["cmname"] . " " . $_POST["clname"] . ". \r\n" . 
+"She is registered?" . " " . $_POST["1yesno"] . "\r\n" . 
+"She is baptized?" . " " . $_POST["2yesno"] . "\r\n" . 
+"She has had first communion?" . " " . $_POST ["3yesno"] . "\r\n" . 
+"She has been confirmed?" . " " . $_POST["4yesno"] . "\r\n" . 
+"Her mailing address is:" . "\r\n" .
+$_POST["streetaddress"] . "\r\n" .
+$_POST["aptsuite"] . "\r\n" .
+$_POST["city"] . ", " . $_POST["state"] . " " . $_POST["zip"] . "\r\n" .
+"Telephone number:" . " " . $_POST["telephone"] . "\r\n" .
+"E-mail Address:" . " " . $_POST ["email"] . "\r\n" .
+"Her parents are:" . $_POST["mfname"] . " " . $_POST["mlname"] . " and " . $_POST["ffname"] . " " . $_POST["flname"] . "\r\n" . 
+"This information is information that she filled out on the web form. \r\n" . "Regards," . "\r\n" . 
+"Brian" ;
 
 // In case any of our lines are larger than 70 characters, we should use wordwrap()
 $message = wordwrap($message, 70, "\r\n");
 
 // Send
-mail('music@stignatiuschurch.org', 'Information email from quinceanera.php', $message);
+mail('music@stignatiuschurch.org', 'Quinceanera Date Request from the Website', $message);
 ?>
 
 </body>
