@@ -218,32 +218,32 @@ jQuery( document ).ready( function( $ ) {
 				<span class="detail">Director of Ignatian Services</span>
 			</div>
 		</div><!--.section END-->
-		<div class ="title"><span>St. Ignatius Volunteer Ministry Interest Form</span></div>
-		<div class="article">
+		<div class ="title"><span>St. Ignatius Volunteer Ministry Interest&nbsp;Form</span></div>
+		<div class="formstyle">
 			<form action="http://www.stignatiuschurch.org/assets/php/ministrymain.php" method="post">
 				<h4>Your Name</h4>
-				<p>First name <input type="text" class="txt-med" name="fname" value="" />
-				Last name <input type="text" class="txt-med" name="lname" value="" />
-				</p>
+				<span class="formline">First&nbsp;name&nbsp;<input type="text" class="txt-med" name="fname" value="" required /></span>
+				<span class="formline">Last&nbsp;name&nbsp;<input type="text" class="txt-med" name="lname" value="" required /><span>
+				
 				<h4>Address Information</h4>
 				<p>
-				Street Address <input type="text" class="txt-med" name="streetaddress" size="35" value="" /></p>
-				<p>Apt/Suite <input type="text" class="txt-med" name="aptsuite" size="15" value="" /></p>
-				<p>City <input type="text" class="txt-med" name="city" size="10" value="" />
-				State <input type="text" class="txt-med" name="state" size="10" value="" />
-				Zip <input type="text" class="txt-med" name="zip" size="10" value="" />
+				Street&nbsp;Address <input type="text" class="txt-med" name="streetaddress" size="35" value="" /></p>
+				<p>Apt/Suite&nbsp;<input type="text" class="txt-med" name="aptsuite" size="15" value="" /></p>
+				<span class="formline">City&nbsp;<input type="text" class="txt-med" name="city" size="10" value="" /></span>
+				<span class="formline">State&nbsp;<input type="text" class="txt-med" name="state" size="10" value="" /></span>
+				<span class="formline">Zip&nbsp;<input type="text" class="txt-med" name="zip" size="10" value="" /></span>
 				</p>
 				<h4>Telephone and e-mail</h4>
 				<p>Telephone (mobile): <input type="text" class="txt-med" name="ctelephone" size="13" value="" /></p>
 				<p>Telephone (home): <input type="text" class="txt-med" name="htelephone" size="13" value="" /></p>
-				<p>E-mail: <input type="text" class="txt-med" name="email" size="35" value="" /></p>
+				<p>E-mail: <input type="email" class="txt-med" name="email" size="35" value="" placeholder="name@something.com" required /></p>
 				<p>Are you a registered parishioner? 
 					<input type="radio" name="1yesno" value="Yes">Yes</input>
 					<input type="radio" name="1yesno" value="No">No</input>
 				</p>
 				<p>Which ministry is your first choice in which to participate?
 				<select name="1ministrytype">
-					<option value="select">Select an option</option>
+					<option value="">Select an option</option>
 					<option value="Altar Server">Altar Server</option>
 					<option value="Baptismal Preparation">Baptismal Preparation</option>
 					<option value="Bereavement">Bereavement Ministry</option>
@@ -262,7 +262,7 @@ jQuery( document ).ready( function( $ ) {
 				</select></p>
 				<p>Which ministry is your second choice in which to participate?
 				<select name="2ministrytype">
-					<option value="select">Select an option</option>
+					<option value="">Select an option</option>
 					<option value="Altar Server">Altar Server</option>
 					<option value="Baptismal Preparation">Baptismal Preparation</option>
 					<option value="Bereavement">Bereavement Ministry</option>
@@ -280,7 +280,7 @@ jQuery( document ).ready( function( $ ) {
 					<option value="Wedding Coordinator">Wedding Coordinator</option>
 				</select></p>
 				<p>What other areas of volunteer ministry interest you? <input type="text" class="txt-med" name="otherinterest" value="" /></p>
-				<p><input type="submit"></p>
+				<p><input type="submit" value="Submit Form" /></p>
 			</form>
 		</div>
 		<div class="footer">

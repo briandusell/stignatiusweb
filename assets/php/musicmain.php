@@ -26,7 +26,7 @@
 	<h4>Are you able to attend weekly choir practices?</h4> 
 	<p><?php echo $_POST["4yesno"]; ?></p>
 	<h4>In what area of the music ministry would you like to participate?</h4>
-	<p><?php echo $_POST["ministrytype"]; ?></p>
+	<p><?php echo $_POST["interestarea"]; ?></p>
 	<h4>What other areas of the music ministry interest you?</h4>
 	<p><?php echo $_POST["otherinterest"]; ?></p>
 </div>
@@ -40,7 +40,7 @@ $message = "Dear Brian," . "\r\n" .
 "Can read music?" . " " . $_POST["2yesno"] . "\r\n" . 
 "Plays a musical instrument?" . " " . $_POST ["3yesno"] . "\r\n" . 
 "Can attend weekly choir practices?" . " " . $_POST["4yesno"] . "\r\n" . 
-"I am interested in " . " " . $_POST["ministrytype"] . "\r\n" . 
+"I am interested in " . " " . $_POST["interestarea"] . "\r\n" . 
 "I am also interested in " . " " . $_POST["otherinterest"] . "\r\n" . 
 "My mailing address is:" . "\r\n" .
 $_POST["streetaddress"] . "\r\n" .
