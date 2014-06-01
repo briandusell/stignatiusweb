@@ -67,7 +67,7 @@ jQuery( document ).ready( function( $ ) {
 							<li><a href="/assets/pages/AboutTheParish.html#A6">Parish History</a></li>
 							<li class="has-submenu"><a href="#">Join the Parish</a>
 								<ul>
-									<li><a href="/assets/pdf/EnglishRegistration.pdf" target="_blank">English Registration</a></li>
+									<li><a href="/assets/pages/ParishRegistrationENG.html" target="_blank">English Registration</a></li>
 									<li><a href="/assets/pdf/SpanishRegistration.pdf" target="_blank">Spanish Registration</a></li>
 								</ul>
 							</li>
@@ -217,6 +217,7 @@ jQuery( document ).ready( function( $ ) {
 			<a href="/assets/pdf/WeddingMusicPlanningForm.pdf" target="_blank">You may also download a PDF copy of the Wedding Music Planning Form here.</a></p>
 			<ul>
 				<li>Wedding Ceremony: Day of Week, Date, and Time</li>
+				<li>Wedding Rehearsal: Day of Week, Date, and Time</li>
 				<li>Bride's Name, E-mail, and Telephone no.</li>
 				<li>Groom's Name, E-mail, and Telephone no.</li>
 				<li>Cantor's Name, E-mail and Telephone no., and Fee</li>
@@ -239,7 +240,56 @@ jQuery( document ).ready( function( $ ) {
 				<li>Recessional</li>
 			</ul>
 			<p>Please refer to the <a href="/assets/pages/MusicWeddingOrgan.html">Wedding Organ Music</a>and <a href="/assets/pages/MusicWeddingVocal.html">Wedding Vocal Music</a> pages which have audio examples of wedding music recorded at St. Ignatius. Please listen to the examples and complete the form as much as possible in advance of your wedding music planning meeting. These examples represent only some of the most well known and frequently performed musical selections for weddings. Remember, that while the default mode for weddings in the church is to perform the Prelude, Processionals, and Recessional on the organ with the rest of the liturgy accompanied on the piano, you may request to have the entire liturgy accompanied by either instrument.</p>
-		</div>			
+		</div>	
+		<div class ="title"><span>Wedding Music Planning Form</span></div>		
+		<div class="formstyle">
+			<form action="http://www.stignatiuschurch.org/assets/php/musicmain.php" method="post">
+				<h4>Your Name</h4>
+				<span class="formline">First&nbsp;name&nbsp;<input type="text" class="txt-med" name="fname" value="" required /></span>
+				<span class="formline">Last&nbsp;name&nbsp;<input type="text" class="txt-med" name="lname" value="" required /><span>
+				
+				<h4>Address Information</h4>
+				<p>
+				Street&nbsp;Address <input type="text" class="txt-med" name="streetaddress" size="35" value="" /></p>
+				<p>Apt/Suite&nbsp;<input type="text" class="txt-med" name="aptsuite" size="15" value="" /></p>
+				<span class="formline">City&nbsp;<input type="text" class="txt-med" name="city" size="10" value="" /></span>
+				<span class="formline">State&nbsp;<input type="text" class="txt-med" name="state" size="10" value="" /></span>
+				<span class="formline">Zip&nbsp;<input type="text" class="txt-med" name="zip" size="10" value="" /></span>
+				</p>
+				<h4>Telephone and e-mail</h4>
+				<p>Telephone&nbsp;(mobile): <input type="text" class="txt-med" name="ctelephone" size="13" value="" /></p>
+				<p>Telephone&nbsp;(home): <input type="text" class="txt-med" name="htelephone" size="13" value="" /></p>
+				<p>E-mail: <input type="email" class="txt-med" name="email" size="35" placeholder="name@something.com" value="" required /></p>
+				<p>Have you sung in a choir before? 
+					<input type="radio" name="1yesno" value="Yes">Yes</input>
+					<input type="radio" name="1yesno" value="No">No</input>
+				</p>
+				<p>Can you read music? 
+					<input type="radio" name="2yesno" value="Yes">Yes</input>
+					<input type="radio" name="2yesno" value="No">No</input>
+				</p>
+				<p>Do you play a musical instrument? 
+					<input type="radio" name="3yesno" value="Yes">Yes</input>
+					<input type="radio" name="3yesno" value="No">No</input>
+				</p>
+				<p>Are you able to attend weekly choir practices? 
+					<input type="radio" name="4yesno" value="Yes">Yes</input>
+					<input type="radio" name="4yesno" value="No">No</input>
+				</p>
+				<p>In what area of the music ministry would you like to participate? 
+				<select name="interestarea">
+					<option value="">Select One</option>
+					<option value="Parish Choir">Parish Choir</option>
+					<option value="Coro Hispano">Coro Hispano</option>
+					<option value="Cantor">Cantor</option>
+					<option value="Coro de Niños">Coro de Niños</option>
+					<option value="Children's Choir">Children's Choir</option>
+					<option value="Instrumentalist">Instrumentalist</option>
+				</select>
+				<p>What other areas of the music ministry interest you? <input type="text" class="txt-med" name="otherinterest" value="" /></p>
+				<p><input type="submit" value="Submit Form" /></p>
+			</form>
+		</div>
 		<div class="footer">
 			<div class="columnleft">
 				<p><b>Weekend Mass Schedule</b><br/>

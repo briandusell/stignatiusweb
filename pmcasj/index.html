@@ -3,120 +3,154 @@
 <html>
 	<head>
 		<meta http-equiv="content-Type" content="text/html" charset="UTF-8" />
-		<title>St. Ignatius Church, Chicago | Fr. Pat McAteer, S.J. Home</title>
-		<meta name="author" content="Fr. Patrick McAteer, SJ" />
-		<meta name="description" content="The website of Fr. Patrick McAteer, SJ a resident priest of St. Ignatius Catholic Church, Chicago IL. offering Catholic Perspective on Healing and Spiritual Growth" />
-		<meta name="keywords" content="Patrick McAteer; st. ignatius; religious art; spiritual exercises; lenten retreat; st. ignatius chicago il" />
-		<base href="http://www.stignatiuschurch.org" />
-		<link type="text/css" rel="stylesheet" href="/pmcasj/navmenu.css">
+		<title>Fr. Pat McAteer, S.J. Home</title>
+		<meta name="author" content="Fr. Patrick McAteer, SJ">
+		<meta name="description" content="Catholic Perspective on Healing and Spiritual Growth, the website of Fr. Patrick McAteer, SJ">
+		<meta name="keywords" content="Patrick McAteer; st. ignatius; religious art; spiritual exercises; lenten retreat; st. ignatius chicago il">
+		<base href="http://www.stignatiuschurch.org">
+		<link type="text/css" rel="stylesheet" href="pmcasj/mcateerstyle.css">
+		
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
+
+<script>
+jQuery( document ).ready( function( $ ) {
+	
+		$('body').addClass('js');
+		  var $menu = $('#menu'),
+		  	  $menulink = $('.menu-link'),
+		  	  $menuTrigger = $('.has-submenu > a');
+
+		$menulink.click(function(e) {
+			e.preventDefault();
+			$menulink.toggleClass('active');
+			$menu.toggleClass('active');
+		});
+
+		$menuTrigger.click(function(e) {
+			e.preventDefault();
+			var $this = $(this);
+			$this.toggleClass('active').next('ul').toggleClass('active');
+		});
+
+		
+});
+</script>
 	</head>
-	<body style="background: #CCCCFF">
+	<body>
 		<div class="container">
-			<div class="header">
+			<div class="logo">
 				<h2>A Catholic Perspective on Healing and Spiritual Growth</h2>
-				<h4>The most personally challenging of life's events are meant to bring us back to God.</h4>
-				<h4>Fr. Patrick McAteer, S.J., Chicago, IL</h4>
+				<h3>Fr. Patrick McAteer, S.J., Chicago, IL</h3>
 			</div>
-			<div class="menu3">
-				<a href="/pmcasj/index.html">Home</a>
-				<a href="/pmcasj/Homilies.html">Homilies</a>
-				<a href="/pmcasj/SpiritualReflections.html">Spiritual Reflections</a>
-				<a href="/pmcasj/RachelPage.html">Rachel Recovery</a>
-				<a href="/pmcasj/Rachel'sStory.html">Rachel's Story</a>
-				<a href="/pmcasj/RachelRecoveryLiturgy.html">Rachel Liturgy</a>
-				<a href="/pmcasj/Jesus.html">Jesus</a>
-				<a href="/pmcasj/MaryAndAngels.html">Mary and Angels</a>
-				<a href="/pmcasj/Madonna.html">Madonna</a>
-				<a href="/pmcasj/St.Joseph.html">St. Joseph</a>
-				<a href="/pmcasj/St.IgnatiusParishHistory.html">St. Ignatius</a>
-				<a href="/pmcasj/SpiritualExercises.html">Spiritual Exercises</a>
-				<a href="/pmcasj/Links.html">Links</a>
-				<a href="/pmcasj/MeetFr.Patrick.html">Meet Fr. Patrick</a>
-				<a href="mailto:mcateer@stignatiuschurch.org">E-mail Fr. McAteer</a>
-			</div><!--.menu3 END-->
+			<header class="head cf">
+				<a class="menu-link" href="#menu">Menu</a>
+				<nav id="menu" class="menu">
+					<ul>
+						<li><a href="/pmcasj/index.html"><b>Home</b></a></li>
+						<li><a href="/pmcasj/MeetFr.Patrick.html">Meet Fr. Patrick</a></li>
+						<li><a href="/pmcasj/Homilies.html">Homilies</a></li>
+						<li class="has-submenu"><a href="#">Spirituality
+							<ul>
+								<li><a href="/pmcasj/SpiritualReflections.html">Spiritual Reflections</a></li>
+								<li><a href="/pmcasj/SpiritualExercises.html">Spiritual Exercises</a></li>
+								<li><a href="/pmcasj/Jesus.html">Jesus</a></li>
+								<li><a href="/pmcasj/MaryAndAngels.html">Mary and Angels</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#">Rachel Ministries
+							<ul class="sub-menu">
+								<li><a href="/pmcasj/RachelPage.html">Rachel Recovery</a></li>
+								<li><a href="/pmcasj/Rachel'sStory.html">Rachel's Story</a></li>
+								<li><a href="/pmcasj/RachelRecoveryLiturgy.html">Rachel Liturgy</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#">St. Ignatius Church
+							<ul>
+								<li><a href="/pmcasj/St.IgnatiusParishHistory.html">Parish History</a></li>
+								<li><a href="/pmcasj/Madonna.html">Madonna</a></li>
+								<li><a href="/pmcasj/St.Joseph.html">St. Joseph</a></li>
+							</ul>
+						</li>
+						<li><a href="/pmcasj/Links.html">Links</a></li>
+						<li><a href="mailto:mcateer@stignatiuschurch.org">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</header>
 			<div class="content">	
-				<div class="article">
-					<h2>About Fr. Pat</h2>
-					<div class="image" style="position:relative; width:150px"><img src="/pmcasj/images/IrishSolstice2.JPG" alt="Irish Solstice" width="150" height="207">
-						<i>Jesus is the Light of the World "As long as I am in the world I am the light of the world." (John 9:5).</i>
+				<div class="columns">
+					<div class="article">
+						<div class="articletitle">
+							<h2>About Fr. Pat</h2>
+						</div>
+						<div class="image"><img src="/pmcasj/images/McAteerPortrait.JPG" alt="Fr. Patrick McAteer photo" width="150" height="240"></div>
+						<p><b>Fr. Patrick J. McAteer, S.J.</b>, is a Catholic priest in the Society of Jesus, and is a resident priest at St. Ignatius Catholic Church in Chicago, Illinois. On this website, he shares his wisdom and spiritual guidance through homilies, spiritual reflections, and other related articles about St. Ignatius Parish and Ignatian spirituality. Author of the book "Loved Back into Life", Fr. McAteer ministers to women who are healing from the trauma of abortion. The Rachel pages of this site are devoted to this ministry.</p>  
+						<div class="clear"></div>
+					</div><!-- .article END -->
+					<div class="article">
+						<div class="articletitle">
+							<h2>Homilies</h2>
+						</div>
+						<div class="image" style="position:relative; width:150px"><img src="/pmcasj/images/AngelIgnatius.JPG" alt="alternate text" width="150" height="200">
+							<i>Angels Universal and Personal</i>
+						</div>
+						<p>Fr. Pat creates weekly homilies based upon the Sunday readings and his most recent homily is printed below. To read more of his homilies, please go to the <a href="/pmcasj/Homilies.html">Homilies</a> page.</p>
+						<div class="clear"></div>
 					</div>
-					<p><b>Fr. Patrick J. Mc Ateer, S.J.</b>, is a Catholic priest in the Society of Jesus, and is a resident priest at St. Ignatius Catholic Church in Chicago, Illinois. On this website, he shares his wisdom and spiritual guidance through homilies, spiritual reflections, and other related articles about St. Ignatius Parish and Ignatian spirituality. Author of the book "Loved Back into Life", Fr. McAteer ministers to women who are healing from the trauma of abortion. The Rachel pages of this site are devoted to this ministry.</p>  
-				</div><!-- .article END -->
-				<div class="article">
-					<h2>Homilies</h2>
-					<div class="image" style="position:relative; width:150px"><img src="/pmcasj/images/AngelIgnatius.JPG" alt="alternate text" width="150" height="200">
-						<i>Angels Universal and Personal</i>
-					</div>
-					<p>Fr. Pat creates weekly homilies based upon the Sunday readings and his most recent homily is printed below. To read more of his homilies, please go to the <a href="/pmcasj/Homilies.html">Homilies</a> page.</p>
-					<h3>Passion Sunday Mass, April 13, 2014, Year A</h3>
-					<p>Isaiah 50:3-7; Psalm 22:2, 8-9, 17-20, 23-24; Philippians 2:6-11; Matthew 26:14 -27:66</p>
-					<h4>Introduction</h4>
-					<p>Today’s first reading is excerpted from the suffering servant songs in the book of the prophet Isaiah. In one week we will again celebrate the passion and death of the true Suffering Servant Jesus Christ. He is the one foretold by the prophets in Israel's history. The suffering and passion described in the song will eventually be experienced and fulfilled by Jesus. The innocent servant of God will take upon himself the sins of the guilty and die in Jerusalem that they and the world may live. The Lord gave him a well trained tongue that he might speak to the weary. He did not rebel but gave his back to those who beat him. He did not shield his face from buffets and spitting. The Lord God is his help and he will not be shamed. </p>
-					<p>The Gospel of today’s Mass is the entire Passion story of Matthew, which is much too long for our study.  So I will discuss the Gospel reading associated with the Blessing of the Palms, a rite which usually precedes Mass and which many hear; this reading from Matthew is very familiar to us: Jesus approaches Jerusalem on a donkey with people throwing palms before him. </p>  
 					
-					<h4>Psalm Response</h4>
+					<div class="article">
+						<div class="articletitle">
+							<h2>Rachel Reconciliation and Recovery Program</h2>
+						</div>
+						<div class="image" style="position:relative; width:150px"><img src="/pmcasj/images/RachelComfort.GIF" alt="alternate text" width="150" height="301">
+							<i>"Neither do I condemn you." (John 8:11)</i>
+						</div>
+						<p>The <b>Rachel Reconciliation and Recovery Program</b> is a ministry to women seeking healing and spiritual guidance from post-abortion trauma. Fr. McAteer has a particular carism for this ministry and believes that healing from trauma brings spiritual freedom and personal development. Please view the Rachel Ministries pages of this website or contact Fr. McAteer for more information.</p>
+						<p>Rachel wept for her children: "In Ramah is heard the sound of moaning, of bitter weeping! 
+						Rachel mourns her children, she refuses to be consoled because her children are no more. 
+						Thus says the Lord: Cease your cries of mourning, wipe the tears from your eyes. 
+						The sorrow you have shown shall have its reward, says the Lord, 
+						they shall return from the enemy's land" (Jeremiah 31:15-17).</p>
+						<div class="clear"></div>
+					</div><!-- .article END -->
 					
-					<p><b>My God, my God, why have you abandoned me?</b></p> 
-					<p>All who see me scoff at me;<br/>
-					they mock me with parted lips, they wag their heads:<br/>
-					“He relied on the Lord; let him deliver him,<br/>
-					let him rescue him, if he love him.” <b>Response</b></p>
+					<div class="article">
+						<div class="articletitle">
+							<h2>Retreats</h2>
+						</div>
+						<div class="image" style="position:relative; width:150px"><img src="/pmcasj/images/St.Ignatius.JPG" alt="alternate text" width="150" height="226">
+							<i>Freedom through the Spiritual Exercises of St. Ignatius Loyola</i>
+						</div>
+						<p>Fr. McAteer regularly offers spiritual retreats often at the Marytown center in Libertyville, IL. Recent retreats include an Advent/Christmas retreat in December 2013 and a Lenten retreat in March 2014. Check this website often for information about Fr. McAteer's next spiritual retreat.</p>
+						<div class="clear"></div>
+					</div><!-- .article END -->
 					
-					<p>Indeed, many dogs surround me,<br/>
-					a pack of evildoers close in upon me,<br/>
-					they have pierced my hands and my feet;<br/>
-					I can count all my bones. <b>Response</b></p>
-					
-					<p>They divide my garments among them,<br/>
-					and for my vesture they cast lots. <br/>
-					But you, O Lord, be not far from me;<br/>
-					O my help, hasten to aid me. <b>Response</b></p>
-					
-					<p>I will proclaim your name to my brethren;<br/>
-					in the midst of the assembly I will praise you;<br/>
-					“You who fear the Lord, praise him; all you descendants of Jacob, <br/>
-					give glory to him; revere him, all you descendants of Israel!” <b>Response</b></p>
-					
-					<h4>Gospel</h4>
-					<p>To arrive precisely at Jerusalem, one must descend the entire Mount of Olives into a valley (where lies the Garden of Olives), then climb a second, lower mountain, Mount Sion, till one reaches the top of this second mountain, on which is Jerusalem.  At Bethphage, about two miles from Jerusalem, Jesus asks for a mule and its colt; he will ride the rest of the way down the mountain.  Intentional on the part of Matthew is the abruptness and authority and knowledge Jesus exhibits in getting control of these animals.  To a Jew of this time, Jesus is beginning to act like a prophet one sees in the OT.  He need only refer to himself as ‘the Master’, and his wish will be granted.  We know only of Martha, Mary and Lazarus on this Mount of Olives, but their presence suggests that Jesus had followers even this close to Jerusalem, and indeed in it (recall his commandeering the Upper Room for his Last Supper).  What is most startling about this Matthean story is Jesus’ riding on an animal with its colt toward Jerusalem.  Though he needs only one animal for the ride, he chooses two, precisely to make people recall the OT promise at the heart of this event: it is the arrival of the king, seated on an ass, together with its colt.  In brief, Jesus continues as prophet, now not speaking, but acting, and the two animals are essential to his revelation.  Those who knew the OT text recognized that he was, for the only time in his life, consciously revealing his identity: he is king of Jerusalem.  Along the entire route of the journey there were palms trees; these yielded their branches to be waved in honor of the king, and placed as a pleasant road for his journey.  Everything here is tied to one’s understanding of ‘King of Jerusalem’.  Put briefly, all that Israel could hope for depends on the goodness, power and wisdom of the King; Jesus provides nothing less than that, as he acts out his conviction that he is King of Israel.  Finally, it is the crowd Jesus has drawn (many of which had been accompanying him from Galilee) that expresses its understanding of Jesus’ authority and wisdom: he is a prophet, i.e. God is speaking through him in his royal action.  Jesus did not enter Jerusalem seated on the ass; he rode it for the time it took to convey his revelation to the crowds around him.  Though this action of Jesus was singular, it probably happened with many other pilgrims streaming around him; indeed, the Passover, for which Jesus has come to Jerusalem, was attended by many thousands of Jews, even from other lands.  I add a note here.  The Greek text (and subsequent English translation) says simply, “…and he sat on them.”  Many scholars understand “them” to refer to the two animals: Jesus was seated on the ass and its colt.  This is a rather awkward picture.  But look at the text again; it says, “They brought the ass and the colt and laid their cloaks over them, and he sat upon them”.  The last word “them” can as easily refer to “their cloaks” as to the animals.  Thus, I would prefer to understand the sentence to say: “They brought the ass and the colt and laid their cloaks over them and he sat upon their cloaks”.  Not all scholars agree with this interpretation.</p>
-					<p>Through these prophetic actions, Jesus has followed the tradition and indicated that he is King of Jerusalem. He will continue his journey to that city and the following week be put to death there, for that is how Jerusalem dealt with prophets. He had prepared the Jews by telling them that he would ‘destroy this temple and in three days rebuild it,’ but they did not understand. In a short time he will reveal by rising from the dead that he is King of the heavenly Jerusalem and of the world. </p>
-					<h4>Reflection</h4>
-					<p><b>From the above.</b></p>
+					<div class="article">
+						<div class="articletitle">
+							<h2>Spiritual Direction and Counseling</h2>
+						</div>
+						<div class="image" style="position:relative; width:150px"><img src="/pmcasj/images/MaryOnCloud.JPG" alt="alternate text" width="150" height="234">
+							<i>"Behold I am the handmaid of the Lord. May it be done to me according to your word." (Luke 1:38)</i>
+						</div>
+						<p>Fr. McAteer is also available for indiviual spiritual direction and counseling by appointment.<br/> 
+						<a href="mailto:mcateer@stignatiuschurch.org">For more information please contact Fr. McAteer via e-mail.</a>
+						<div class="clear"></div>
+					</div><!-- .article END -->
+					<div class="clear"></div>
 				</div>
-				<div class="article">
-					<h2>Rachel Reconciliation and Recovery Program</h2>
-					<div class="image" style="position:relative; width:150px"><img src="/pmcasj/images/RachelComfort.GIF" alt="alternate text" width="150" height="301">
-						<i>"Neither do I condemn you." (John 8:11)</i>
-					</div>
-					<p>The <b>Rachel Reconciliation and Recovery Program</b> is a ministry to women seeking healing and spiritual guidance from post-abortion trauma. Fr. McAteer has a particular carism for this ministry and believes that healing from trauma brings spiritual freedom and personal development. Please view the Rachel pages of this website or contact Fr. McAteer for more information.</p>
-					<p>Rachel wept for her children: "In Ramah is heard the sound of moaning, of bitter weeping! 
-					Rachel mourns her children, she refuses to be consoled because her children are no more. 
-					Thus says the Lord: Cease your cries of mourning, wipe the tears from your eyes. 
-					The sorrow you have shown shall have its reward, says the Lord, 
-					they shall return from the enemy's land" (Jeremiah 31:15-17).</p>
-				</div><!-- .article END -->
-				<div class="article">
-					<h2>Retreats</h2>
-					<div class="image" style="position:relative; width:150px"><img src="/pmcasj/images/St.Ignatius.JPG" alt="alternate text" width="150" height="226">
-						<i>Freedom through the Spiritual Exercises of St. Ignatius Loyola</i>
-					</div>
-					<p>Fr. McAteer regularly offers spiritual retreats often at the Marytown center in Libertyville, IL. his next retreat at the Marytown Center entitled <b>"Mary's Christmas Gift to the World"</b> will begin Friday evening December 20, 2013 at 7 p.m. and will conclude on Sunday, December 22 at 1 p.m.  The cost is $140.00 for the weekend for those who will stay at Marytown and $50 for commuter retreatants. The registration cost includes all meals. <a href="mailto:mcateer@stignatiuschurch.org">Please contact Fr. McAteer for reservations and more information.</a></p>
-				</div><!-- .article END -->
-				
-				<div class="article">
-				<h2>Spiritual Direction and Counseling</h2>
-				<div class="image" style="position:relative; width:150px"><img src="/pmcasj/images/MaryOnCloud.JPG" alt="alternate text" width="150" height="234">
-					<i>"Behold I am the handmaid of the Lord. May it be done to me according to your word." (Luke 1:38)</i>
-				</div>
-				<p>Fr. McAteer is also available for indiviual spiritual direction and counseling by appointment. <a href="mailto:mcateer@stignatiuschurch.org">For more information please contact Fr. McAteer via e-mail.</a>
-				</div><!-- .article END -->
-												
-				<div class="article">
-					<p>This website was last updated on April 14, 2014.</p>
-				</div><!-- .article END -->
 			</div><!--.content END-->
+			<hr>
 			<div class="footer"> 
+				<p><b>Fr. Patrick McAteer, SJ</b><br/>
+				St. Ignatius Church<br/>
+				6559 North Glenwood Avenue<br/>
+				Chicago, IL 60626<br/>
+				Tel: (773) 764-5936<br/>
+				Email: <a href="mailto:mcateer@stignatiuschurch.org">mcateer@stignatiuschurch.org</a></p>
 				<!-- Start of StatCounter Code -->
+				<p>This website was last updated on May 26, 2014.</p>
+				<p>Visits to this website:</p>
                     <script type="text/javascript" language="javascript">
                     var sc_project=403379; 
                     var sc_partition=2; 

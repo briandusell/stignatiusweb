@@ -28,13 +28,13 @@ body {
 
 .menu3 {
     position:absolute;
-	width:150px;
-	height:36px;
-	margin-top:0px;
-	margin-left:20px;
 	text-align:center;
-	z-index:2;	  
 }
+
+.menu3 ul { 
+	list-style: none;
+	padding: 0px;
+	}
 
 .menu3 a {
    
@@ -49,7 +49,8 @@ body {
 	font: normal 12px Arial;
 	line-height: 24px;   
 	margin: 5px;
-    padding: 3 20px;   
+	padding-left:10px;
+	padding-right:10px;
 }
 
 .menu3 a:hover, div.menu3 a.current
@@ -75,6 +76,12 @@ body {
 	text-align:center;
 }
 
+.bookimage {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
 .content {
 	padding: 185px 20px 20px 200px;
 }
@@ -91,10 +98,14 @@ body {
 	display:block;
 	padding-top:5px;
 }
-
+.biography{
+	background: #FFFFFF;
+	border-radius: 10px;
+	padding:10px;
+}
 .bookcontent {
-	background: #CCCCFF;
-	border-radius:5px;
+	background: #FFFFFF;
+	border-radius:10px;
 	column-count:2;
 	-moz-column-count:2; /* Firefox */
 	-webkit-column-count:2; /* Safari and Chrome */
@@ -103,8 +114,18 @@ body {
 	padding:10px;	
 }
 
+.bookcontent ul {
+	list-style: none;
+}
+
 .bookcontent p {
 	font-style: italic;
+}
+
+.publisherinfo {
+	background: #FFFFFF;
+	border-radius:10px;
+	padding:10px;	
 }
 
 .footer {
