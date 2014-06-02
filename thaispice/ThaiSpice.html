@@ -1,0 +1,661 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Thai Spice Restaurant, Chicago, IL</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content="Brian DuSell">
+		<meta name="description" content="The index page for Thai Spice Restaurant, Chicago, IL">
+		<meta name="keywords" content="Thai Spice, Restaurant, Chicago, Thai Food, Devon Avenue, Pad Thai, Pad Si Ew, Fried Rice, Egg Rolls, Cucumber Salad">
+		<!-- <base href="http://www.thaispicechicago.com">
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"> -->
+		<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				background-image:url('assets/images/background1.PNG');
+			}
+			.container {
+				background: #FFFFFF;
+				border: 10px solid GoldenRod;
+				margin: 0 auto;
+				max-width:1000px;
+			}
+			.title1 {color: GoldenRod; font-size:36pt; font-weight:bold; font-family: 'Arizonia', cursive;}
+			.title2 {color: GoldenRod; font-size:18pt; font-weight:bold; display: block;}
+			.title3 {color: GoldenRod; font-size:14pt; font-weight:bold; display: block;}
+			.title4 {color: GoldenRod; font-size:12pt; font-weight:bold; display: block;}
+			.logo {
+				background-image: -webkit-linear-gradient(left, #FF0000, #CC0000, #FF0000);
+				background-image: -moz-linear-gradient(left, #FF0000, #CC0000, #FF0000);
+				background-image: -ms-linear-gradient(left, #FF0000, #CC0000, #FF0000);
+				background-image: -o-linear-gradient(left, #FF0000, #CC0000, #FF0000);
+				background-image: linear-gradient(left, #FF0000, #CC0000, #FF0000);
+				padding-top:10px;
+				padding-bottom:20px;
+				text-align:center;
+			}
+			.clear { 
+				clear:both;
+			}
+				
+			.menu-link { 
+				display: none;
+				float: right;
+				text-decoration: none;
+				padding: 19px 10px;
+			}
+			.menu {
+				background: White;
+				float: left; 
+				width: 100%;
+				-webkit-transition: all 0.3s ease-out;  
+				-moz-transition: all 0.3s ease-out;
+				-ms-transition: all 0.3s ease-out;
+				-o-transition: all 0.3s ease-out;
+				transition: all 0.3s ease-out; 
+			}
+			.menu ul { 
+				padding: 0px;
+				margin: 0px;
+				list-style: none;
+				position: relative;
+				display: inline-table;
+			}
+			.menu > li > ul.sub-menu {
+				min-width: 10em;
+				padding: 4px 0;
+				background-color: #f4f4f4;
+				border: 1px solid #CCC;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+				-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+				box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+				-webkit-background-clip: padding-box;
+				-moz-background-clip: padding;
+				background-clip: padding-box;
+			}
+			.menu ul:after {
+				content: ""; clear: both; display: block;
+			}
+			.menu ul li {
+				padding: 0px; 
+			}
+			.menu > ul > li { 
+				display: inline-block;
+			}
+			.menu ul li a { color:#FFFFFF;
+				/* color: rgba(112, 112, 112, 0.9); */
+				color:#000000;
+				display: block;
+				font-size: 1.25em;
+				text-decoration: none;
+			}
+			.menu ul li > a { 
+				height:15px;
+				padding: 19px 12px;	
+			}
+			.menu ul > li a:hover {
+				background-color: rgba(112, 112, 112, 0.9);
+				color: #fff;
+			}
+			.menu ul ul { 
+				display: none; 
+				position: absolute; 
+				top:100%;
+				min-width: 160px;
+				background-color: #f4f4f4;
+				border: 1px solid #CCC;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+				-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+				box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+			}
+			.menu ul li:hover > ul {
+				display: block;
+			}
+			.menu ul ul > li {
+				position: relative;
+			}
+			.menu ul ul > li a {
+				padding: 5px 15px 5px 10px;
+				height: auto;
+				background-color: #f4f4f4;
+				-webkit-transition: background-color 0.2s ease-out;  
+				-moz-transition: background-color 0.2s ease-out;
+				-ms-transition: background-color 0.2s ease-out;
+				-o-transition: background-color 0.2s ease-out;
+				transition: background-color 0.2s ease-out; 
+			}
+			.menu ul ul > li a:hover {
+				background-color: rgba(112, 112, 112, 0.9);
+				color: #fff;
+			}
+			.menu ul ul ul {
+				position: absolute; 
+				left: 100%; 
+				top:0;
+			}
+
+			@media screen and (max-width: 960px) {
+			
+			a.menu-link {
+				display: block;
+				color: #fff;
+				background-color: rgba(112, 112, 112, 0.9);
+			}
+			.menu {
+				clear: both;
+				min-width: inherit;
+				float: none;
+				z-index: 4;
+			}
+			.menu, .menu > ul ul {
+				overflow: hidden;
+				max-height: 0;
+				background-color: #f4f4f4;
+			}
+			.menu > li > ul.sub-menu {
+			padding: 0px;
+			border: none;
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;
+			border-radius: 0px;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			-webkit-background-clip: padding-box;
+			-moz-background-clip: padding;
+			background-clip: padding-box;
+			}
+			.menu.active, .menu > ul ul.active {
+				max-height: 55em;
+			}
+			.menu ul {
+				display: inline;
+			}
+			.menu > ul {
+				border-top: 1px solid #808080;
+			}
+			.menu li, .menu > ul > li {
+				display: block;
+			}
+			.menu li a {
+				color: #000;
+				display: block;
+				padding: 0.8em;
+				border-bottom: 1px solid #808080;
+				position: relative;
+			}
+			.menu li.has-submenu > a:after {
+				content: '+';
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: block;
+				font-size: 1.5em;
+				padding: 0.55em 0.5em;
+			}
+			.menu li.has-submenu > a.active:after {
+				content: "-";
+			}
+			.menu ul ul > li a {
+				background-color: #e4e4e4;
+				height:15px;
+				padding: 19px 18px 19px 30px;
+				z-index: 4;
+			}
+			.menu ul ul, .menu ul ul ul {
+				display: inherit;
+				position: relative;
+				left: auto; top:auto;
+				box-shadow: none; 
+				border:none;
+				}
+			}
+			.title {
+				background-image: -webkit-linear-gradient(top, #FFFFFF , #D3D3D3);
+				background-image: -moz-linear-gradient(top, #FFFFFF , #D3D3D3);
+				background-image: -ms-linear-gradient(top, #FFFFFF , #D3D3D3);
+				background-image: -o-linear-gradient(top, #FFFFFF , #D3D3D3);
+				background-image: linear-gradient(top, #FFFFFF , #D3D3D3);
+				border-radius: 50px;
+				clear: both;
+				margin: 0 auto;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				text-align: center;
+				width: 40%;
+			}
+			.title a {color:#000000;}
+			.title span {
+				font-size:18pt; 
+				font-weight:bold;
+			}
+			.story {
+				padding:10px;
+			}
+			.columns {
+				clear: both;
+				columns: 2;
+				-webkit-columns: 2; /* Safari and Chrome */
+				-moz-columns: 2; /* Firefox */
+			}
+			.menusection {
+				display: inline-block; 
+				padding: 10px; 
+				width:100%;
+			}
+			.menusection li {
+				list-style:none;
+			}
+			.menuitem {
+				display: block;
+				font-weight: bold;
+				font: 14px;
+				padding-top: 5px;
+			}
+			.section {
+				text-align: center;
+				padding: 10px;
+			}
+			.footer {
+				padding:10px;
+			}	
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+		<script>
+		jQuery( document ).ready( function( $ ) {
+			
+			$('body').addClass('js');
+			  var $menu = $('#menu'),
+				  $menulink = $('.menu-link'),
+				  $menuTrigger = $('.has-submenu > a');
+
+			$menulink.click(function(e) {
+				e.preventDefault();
+				$menulink.toggleClass('active');
+				$menu.toggleClass('active');
+			});
+
+			$menuTrigger.click(function(e) {
+				e.preventDefault();
+				var $this = $(this);
+				$this.toggleClass('active').next('ul').toggleClass('active');
+			});
+		});
+		</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-42534150-1', 'stignatius.org');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo">
+				<span class="title1">Thai Spice Restaurant</span>
+			</div> <!-- .logo END -->
+			<div class="cycle-slideshow"
+				data-cycle-pager=".cycle-pager"
+				>
+				<img src="assets/images/WestDiningCrop.jpg" alt="West Dining Room" width="100%">
+				<img src="assets/images/EastDiningCrop.jpg" alt="East Dining Room" width="100%">
+				<img src="assets/images/Counter2Crop.jpg" alt="Front Counter" width="100%">
+				<img src="assets/images/FacadeDayCrop.jpg" alt="Front Facade" width="100%">			
+			</div><!-- .cycle-slideshow END -->
+			<div class="logo">
+				<span class="title2">1320 West Devon Avenue, Chicago, IL (773) 973-0504</span>
+				<span class="title3">Store Hours: Tuesday-Thursday 5 - 10 p.m., Friday-Saturday 5 - 11 p.m., Sunday 5 - 10 p.m.</span>
+				<span class="title3">Dine-in or Carry Out, $3.00 additional charge for Delivery.</span>
+				<span class="title4">Serving Chicago Since 1993</span>
+			</div> <!-- .logo END -->
+			<header class="head cf">
+				<a class="menu-link" href="#menu">Menu</a>
+				<nav id="menu" class="menu">
+					<ul>
+						<li><a href="ThaiSpice.html">Home</a></li>
+						<li><a href="ThaiSpice.html#A1">Store Hours</a></li>
+						<li><a href="ThaiSpice.html#A2">Menu</a></li>
+						<li><a href="ThaiSpice.html#A3">Map</a></li>
+						<li><a href="ThaiSpice.html#A4">Directions</a></li>
+						<li><a href="ThaiSpice.html#A5">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header> <!-- header nav END -->	
+			<div class ="title"><span>Our Story</span></div>
+			<div class="story">
+				<p><b>Sawadee!</b> Opened in 1993, Thai Spice Restaurant is known for its delightful and intimate dining experience. Thai Spice serves excellent northern Thai food, with quality and taste to meet your liking. Thai Spice uses only the freshest ingredients and spices and cooks them with our traditional methods that have been handed down through generations. The consistency of our flavor and service is noteworthy. Well, its because we've had the same incredible chef since the day we opened for business! Each entree is individually prepared. Please allow some time while Thai Spice creates your generously proportioned meals.</p>
+			</div>
+			<div class ="title"><span><a id="A2">The Thai Spice Menu</a></span></div>
+			<div class="columns">
+				<div class="menusection">
+					<h3>Appetizers</h3>
+					<ul>
+						<li><span class="menuitem">Sampling Platter</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Satay Chicken (4 pieces)</span>
+						<span class="ItemDescription">chicken breast seasoned with Thai herbs</span>
+						<span class="ItemPrice">$7.95</span></li>
+						<li><span class="menuitem">Spring Roll (1 roll)</span>
+						<span class="ItemDescription">bean sprout, cucumber, tofu, egg</span>
+						<span class="ItemPrice">$4.95</span></li>
+						<li><span class="menuitem">Egg Roll (2 rolls)</span>
+						<span class="ItemDescription">beef, noodle, onion, carrot</span>
+						<span class="ItemPrice">$4.95</span></li>
+						<li><span class="menuitem">Crab Puff (5 pieces)</span>
+						<span class="ItemDescription">crab meat, cheese</span>
+						<span class="ItemPrice">$6.95</span></li>
+						<li><span class="menuitem">Chicken Potstickers (5 pieces)</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$4.95</span></li>
+						<li><span class="menuitem">Vegetable Potstickers (5 pieces)</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$4.95</span></li>						
+						<li><span class="menuitem">Fried Tofu (4 pieces)</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$4.95</span></li>
+						<li><span class="menuitem">Calamari</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$10.95</span></li>
+						<li><span class="menuitem">Larb Chicken</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$10.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">		
+					<h3>Soups</h3>
+					<ul>
+						<li><span class="menuitem">Miso</span>
+						<span class="ItemDescription">mushroom, tofu</span>
+						<span class="ItemPrice">$4.95</span></li>
+						<li><span class="menuitem">Tom Yum</span>
+						<span class="ItemDescription">mushroom, lemon grass</span>
+						<span class="ItemPrice">$8.95</span></li>
+						<li><span class="menuitem">Tom Kar Kai</span>
+						<span class="ItemDescription">mushroom, cocnut milk, galangal</span>
+						<span class="ItemPrice">$9.95</span></li>
+						<li><span class="menuitem">Tofu Soup</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$7.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">	
+					<h3>Salads</h3>
+					<ul>
+						<li><span class="menuitem">Beef Salad</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$11.95</span></li>
+						<li><span class="menuitem">Cucumber Salad</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$7.95</span></li>
+						<li><span class="menuitem">Papaya Salad</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$10.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">
+					<h3>Side Orders (add to any Entree)</h3>
+					<ul>
+						<li>Rice
+							<ul>
+								<li><span class="menuitem">Small Portion</span>
+									<span class="ItemDescription">White Thai Rice</span>
+									<span class="ItemPrice">$1.95</span></li>
+								<li><span class="menuitem">Large Portion</span>
+									<span class="ItemDescription">White Thai Rice</span>
+									<span class="ItemPrice">$2.95</span></li>
+							</ul>
+						</li>
+						<li>Shrimp
+							<ul>
+								<li><span class="menuitem">Small Order</span>
+									<span class="ItemDescription"></span>
+									<span class="ItemPrice">$1.95</span></li>
+								<li><span class="menuitem">Large Order</span>
+									<span class="ItemDescription"></span>
+									<span class="ItemPrice">$3.95</span></li>
+							</ul>
+						</li>
+						<li><span class="menuitem">Beef</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$1.95</span></li>
+						<li><span class="menuitem">Chicken</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$.95</span></li>
+						<li><span class="menuitem">Pork</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$1.95</span></li>
+						<li><span class="menuitem">Tofu</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">
+					<h3>Fried Rice</h3>
+					<ul>
+						<li><span class="menuitem">Fried Rice</span>
+						<span class="ItemDescription">broccoli, egg, carrot, onion, bean sprout</span>
+						<span class="ItemPrice">$10.95</span></li>
+						<li><span class="menuitem">Curry Fried Rice</span>
+						<span class="ItemDescription">green onion, carrot, onion</span>
+						<span class="ItemPrice">$11.95</span></li>
+						<li><span class="menuitem">Basil Fried Rice</span>
+						<span class="ItemDescription">mushroom, onion, basil, pepper</span>
+						<span class="ItemPrice">$11.95</span></li>
+						<li><span class="menuitem">Pineapple Fried Rice</span>
+						<span class="ItemDescription">onion, baby corn, shrimp, chicken, pineapple</span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Seafood Fried Rice</span>
+						<span class="ItemDescription">shrimp, calamari, crab meat, green onion</span>
+						<span class="ItemPrice">$21.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">
+					<h3>Thai Style Stir Fried Noodles</h3>
+					<ul>
+						<li><span class="menuitem">Pad Thai</span>
+						<span class="ItemDescription">tofu, egg, bean sprout, peanut</span>
+						<span class="ItemPrice">$15.95</span></li>
+						<li><span class="menuitem">Pad Siew</span>
+						<span class="ItemDescription">flat noodle, broccoli, egg</span>
+						<span class="ItemPrice">$14.95</span></li>
+						<li><span class="menuitem">Lad Nar</span>
+						<span class="ItemDescription">pan fried flat noodle, broccoli, thick gravy</span>
+						<span class="ItemPrice">$14.95</span></li>
+						<li><span class="menuitem">Pad Kee Mao</span>
+						<span class="ItemDescription">flat noodles, broccoli, carrot, peapod, bean sprout, egg</span>
+						<span class="ItemPrice">$15.95</span></li>
+						<li><span class="menuitem">Panang Noodle</span>
+						<span class="ItemDescription">coconut milk, basil</span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Crispy Basket</span>
+						<span class="ItemDescription">peapod, mushroom, onion, bean sprout, carrot, bamboo</span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Pad Woon Sen</span>
+						<span class="ItemDescription">glass noodle, shrimp, chicken</span>
+						<span class="ItemPrice">$17.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">
+					<h3>Thai Curry</h3>
+					<ul>
+						<li><span class="menuitem">Green Curry</span>
+						<span class="ItemDescription">coconut milk, green pea, bamboo, basil, hot pepper</span>
+						<span class="ItemPrice">$15.95</span></li>
+						<li><span class="menuitem">Panang Curry</span>
+						<span class="ItemDescription">coconut milk, basil, hot pepper</span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Kang Dang</span>
+						<span class="ItemDescription">coconut milk, bamboo, basil, hot pepper</span>
+						<span class="ItemPrice">$15.95</span></li>
+						<li><span class="menuitem">Mussamun Curry</span>
+						<span class="ItemDescription">coconut milk, potatoes, peanut</span>
+						<span class="ItemPrice">$15.95</span></li>
+						<li><span class="menuitem">Karee Curry</span>
+						<span class="ItemDescription">coconut milk, potatoes, onion, tomato</span>
+						<span class="ItemPrice">$15.95</span></li>
+						<li><span class="menuitem">Hot Jungle Curry</span>
+						<span class="ItemDescription">eggplants, bamboo, baby corn, basil</span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Green Curry Salmon</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Curry Vegetarian</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$15.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">
+					<h3>Main Courses</h3>
+					<ul>
+						<li><span class="menuitem">Padga Prow</span>
+						<span class="ItemDescription">basil, mushroom, onion, bell pepper</span>
+						<span class="ItemPrice">$14.95</span></li>
+						<li><span class="menuitem">Thai Spice Gaprow Kai</span>
+						<span class="ItemDescription">ground chicken, basil ,egg, spicy sauce</span>
+						<span class="ItemPrice">$15.95</span></li>
+						<li><span class="menuitem">Pad Prik</span>
+						<span class="ItemDescription">baby corn, mushroom, onion, bamboo</span>
+						<span class="ItemPrice">$11.95</span></li>
+						<li><span class="menuitem">Cashew Delight Chicken</span>
+						<span class="ItemDescription">bell pepper, mushroom, peapod</span>
+						<span class="ItemPrice">$15.95</span></li>
+						<li><span class="menuitem">Three Flavored Red Snapper</span>
+						<span class="ItemDescription">topped with spicy sweet and sour sauce</span>
+						<span class="ItemPrice">$37.95</span></li>
+						<li><span class="menuitem">Crispy Pomfret Fish</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$21.95</span></li>
+						<li><span class="menuitem">Green Curry Salmon</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Seafood Combo</span>
+						<span class="ItemDescription">shrimp, calamari, crab meat, mussel</span>
+						<span class="ItemPrice">$27.95</span></li>
+						<li><span class="menuitem">Basil Mussel</span>
+						<span class="ItemDescription">New Zealand half shell mussels</span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Basil Squid</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Mongolian Beef</span>
+						<span class="ItemDescription">spicy beef, ginger, green onion</span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Pepper Steak</span>
+						<span class="ItemDescription">bell pepper, tomato, onion, peapod</span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Sweet and Sour Vegetables</span>
+						<span class="ItemDescription">bell pepper, tomato, onion, pineapple, carrot</span>
+						<span class="ItemPrice">$17.95</span></li>
+						<li><span class="menuitem">Mixed Vegetables Delight</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$11.95</span></li>
+						<li><span class="menuitem">Supreme Mixed Vegetables</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$15.95</span></li>
+						<li><span class="menuitem">Curry Vegetarian</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$15.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">
+					<h3>Add-Ons</h3>
+					<ul>
+						<li><span class="menuitem">Crab Cakes</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$11.95</span></li>
+						<li><span class="menuitem">Edamame</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$4.95</span></li>
+						<li><span class="menuitem">Wasabi Garlic Mashed Potatoes</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$5.95</span></li>
+						<li><span class="menuitem">Coconut Shrimp</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$10.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">
+					<h3>Desserts</h3>
+					<ul>
+						<li><span class="menuitem">Thai Custard</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$3.95</span></li>
+						<li><span class="menuitem">Steamed Yuca (coconut)</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$3.95</span></li>
+						<li><span class="menuitem">Lychee Fruit</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$3.95</span></li>
+						<li><span class="menuitem">Rambutan Thai Fruit</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$3.95</span></li>
+						<li><span class="menuitem">Banana Sweet Rice</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$3.95</span></li>
+						<li><span class="menuitem"> Japanese Mochi Ice Cream</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$5.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">
+					<h3>Beverages</h3>
+					<ul>
+						<li><span class="menuitem">Thai Iced Tea</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$1.95</span></li>
+						<li><span class="menuitem">Thai Iced Coffee</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$1.95</span></li>
+						<li><span class="menuitem">Iced Tea</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$1.50</span></li>
+						<li><span class="menuitem">Hot Tea</span>
+						<span class="ItemDescription"></span>
+						<span class="ItemPrice">$1.50</span></li>
+						<li><span class="menuitem">Fruit Juices</span>
+						<span class="ItemDescription">orange, apple, pineapple, mango</span>
+						<span class="ItemPrice">$2.50</span></li>
+						<li><span class="menuitem">Soft Drinks</span>
+						<span class="ItemDescription">Coca Cola, Diet Coke, Sprite</span>
+						<span class="ItemPrice">$1.95</span></li>
+					</ul>
+				</div><!-- .menusection END -->
+				<div class="menusection">
+					<h4>Parties of 5 or more subject to a 17% service charge.<br/>
+					Menu prices subject to change without notice.</h4>
+				</div><!-- .menusection END -->
+			</div><!-- .columns END -->
+			<div class ="title"><span><a id="A3">Google &reg; Map</a></span></div>
+			<div class="section">
+				<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=1320%20West%20Devon%20Avenue%2C%20Chicago%2C%20IL%2C%20United%20States&key=AIzaSyCB4bk-mZF8RU6H0x0lBY6QtPSLDlm5_fI"></iframe>					
+			</div> <!-- .section END -->
+			<div class ="title"><span><a id="A4">Directions</a></span></div>
+			<div class="story">
+				<p>Thai Spice Restaurant is located at 1320 West Devon Avenue between Lakewood and Wayne avenues on the north side of the street in the Rogers Park neighborhood of Chicago. The restaurant is two and a half blocks west of Sheridan Road and the north shore campus of Loyola University Chicago.</p>
+				<p>Thai Spice Restaurant is also easily accessible via mass transit being two blocks south and two blocks west of the Loyola Red Line "EL" stop. For easy walking from the Loyola "EL" station, walk south to Devon Avenue and then west two and a half blocks to the restaurant.</p>
+			</div>				
+			<div class="footer"><a id="A5"></a>
+				<div class ="title"><span><a id="A5">Contact Us</a></span></div>
+				<p>You may contact Anthony and Vatsana at:</p>
+				<p><b>Thai Spice Restaurant</b><br/>
+				1320 West Devon Avenue<br/>
+				Chicago, IL 60626<br/>
+				Tel: (773) 973-0504</p>
+				<span>Email: <a href="mailto:anthony@thaispicechicago.com">anthony@thaispicechicago.com</a></span>
+			</div><!--.footer END-->			
+		</div><!-- .container END -->
+	</body>
+</html>
