@@ -4,6 +4,7 @@
 	<head>
 		<title>Thai Spice Restaurant, Chicago, IL</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Brian DuSell">
 		<meta name="description" content="The index page for Thai Spice Restaurant, Chicago, IL">
 		<meta name="keywords" content="Thai Spice, Restaurant, Chicago, Thai Food, Devon Avenue, Pad Thai, Pad Si Ew, Fried Rice, Egg Rolls, Cucumber Salad">
@@ -11,19 +12,27 @@
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"> -->
 		<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
 		<style>
+			html { 
+			font-size: 80%; 
+			overflow-y: scroll; 
+			-webkit-text-size-adjust:680%; 
+			-ms-text-size-adjust:80%; 
+			}
 			body {
 				background-image:url('assets/images/background1.PNG');
 			}
+			.clear {clear: both;}
 			.container {
 				background: #FFFFFF;
 				border: 10px solid GoldenRod;
 				margin: 0 auto;
 				max-width:1000px;
 			}
-			.title1 {color: GoldenRod; font-size:36pt; font-weight:bold; font-family: 'Arizonia', cursive;}
-			.title2 {color: GoldenRod; font-size:18pt; font-weight:bold; display: block;}
-			.title3 {color: GoldenRod; font-size:14pt; font-weight:bold; display: block;}
-			.title4 {color: GoldenRod; font-size:12pt; font-weight:bold; display: block;}
+			.container > a {margin-left:10px;}
+			.title1 {color: GoldenRod; font-size:24pt; font-weight:bold; font-family: 'Arizonia', cursive;}
+			.title2 {color: GoldenRod; font-size:14pt; font-weight:bold; display: block;}
+			.title3 {color: GoldenRod; font-size:12pt; font-weight:bold; display: block;}
+			.title4 {color: GoldenRod; font-size:10pt; font-weight:bold; display: block;}
 			.logo {
 				background-image: -webkit-linear-gradient(left, #FF0000, #CC0000, #FF0000);
 				background-image: -moz-linear-gradient(left, #FF0000, #CC0000, #FF0000);
@@ -31,7 +40,7 @@
 				background-image: -o-linear-gradient(left, #FF0000, #CC0000, #FF0000);
 				background-image: linear-gradient(left, #FF0000, #CC0000, #FF0000);
 				padding-top:10px;
-				padding-bottom:20px;
+				padding-bottom:10px;
 				text-align:center;
 			}
 			.clear { 
@@ -45,14 +54,18 @@
 				padding: 19px 10px;
 			}
 			.menu {
-				background: White;
+				background-image: -webkit-linear-gradient(left, #FF0000, #CC0000, #FF0000);
+				background-image: -moz-linear-gradient(left, #FF0000, #CC0000, #FF0000);
+				background-image: -ms-linear-gradient(left, #FF0000, #CC0000, #FF0000);
+				background-image: -o-linear-gradient(left, #FF0000, #CC0000, #FF0000);
+				background-image: linear-gradient(left, #FF0000, #CC0000, #FF0000);
 				float: left; 
-				width: 100%;
 				-webkit-transition: all 0.3s ease-out;  
 				-moz-transition: all 0.3s ease-out;
 				-ms-transition: all 0.3s ease-out;
 				-o-transition: all 0.3s ease-out;
 				transition: all 0.3s ease-out; 
+				width: 100%;
 			}
 			.menu ul { 
 				padding: 0px;
@@ -86,9 +99,8 @@
 			.menu > ul > li { 
 				display: inline-block;
 			}
-			.menu ul li a { color:#FFFFFF;
-				/* color: rgba(112, 112, 112, 0.9); */
-				color:#000000;
+			.menu ul li a { 
+				color: #FFFFFF;
 				display: block;
 				font-size: 1.25em;
 				text-decoration: none;
@@ -139,7 +151,7 @@
 				top:0;
 			}
 
-			@media screen and (max-width: 960px) {
+			@media screen and (max-width: 600px) {
 			
 			a.menu-link {
 				display: block;
@@ -224,30 +236,32 @@
 				border-radius: 50px;
 				clear: both;
 				margin: 0 auto;
-				margin-top: 5px;
+				margin-top: 10px;
 				margin-bottom: 5px;
 				padding-top: 5px;
 				padding-bottom: 5px;
 				text-align: center;
-				width: 40%;
+				width: 80%;
 			}
 			.title a {color:#000000;}
 			.title span {
-				font-size:18pt; 
+				font-size:14pt; 
 				font-weight:bold;
 			}
 			.story {
 				padding:10px;
+				text-align: justify;
 			}
 			.columns {
 				clear: both;
 				columns: 2;
 				-webkit-columns: 2; /* Safari and Chrome */
 				-moz-columns: 2; /* Firefox */
+				padding-left: 10px;
+				padding-right: 10px;
 			}
 			.menusection {
 				display: inline-block; 
-				padding: 10px; 
 				width:100%;
 			}
 			.menusection li {
@@ -259,6 +273,10 @@
 				font: 14px;
 				padding-top: 5px;
 			}
+			ul.noindent {
+				margin: 0px;
+				padding: 0px;
+			}
 			.section {
 				text-align: center;
 				padding: 10px;
@@ -266,6 +284,17 @@
 			.footer {
 				padding:10px;
 			}	
+			@media screen and (min-width: 600px) { 
+				html {font-size: 100%;}
+				.title1 {color: GoldenRod; font-size:36pt;}
+				.title2 {color: GoldenRod; font-size:24pt;}
+				.title3 {color: GoldenRod; font-size:14pt;}
+				.title4 {color: GoldenRod; font-size:12pt;}
+				.title {width: 40%;}
+				.title span {
+					font-size:18pt; 
+				}
+			}
 		</style>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
@@ -302,7 +331,22 @@
 		</script>
 	</head>
 	<body>
+		<a id="top"></a>
 		<div class="container">
+			<header class="head cf">
+				<a class="menu-link" href="#menu">Navigation</a>
+				<nav id="menu" class="menu">
+					<ul>
+						<li><a href="ThaiSpice.html">Home</a></li>
+						<li><a href="ThaiSpice.html#A1">Our Story</a></li>
+						<li><a href="ThaiSpice.html#A2">Menu</a></li>
+						<li><a href="ThaiSpice.html#A3">Map</a></li>
+						<li><a href="ThaiSpice.html#A4">Directions</a></li>
+						<li><a href="ThaiSpice.html#A5">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header> <!-- header nav END -->	
+			<div class="clear"></div>
 			<div class="logo">
 				<span class="title1">Thai Spice Restaurant</span>
 			</div> <!-- .logo END -->
@@ -315,33 +359,23 @@
 				<img src="assets/images/FacadeDayCrop.jpg" alt="Front Facade" width="100%">			
 			</div><!-- .cycle-slideshow END -->
 			<div class="logo">
-				<span class="title2">1320 West Devon Avenue, Chicago, IL (773) 973-0504</span>
-				<span class="title3">Store Hours: Tuesday-Thursday 5 - 10 p.m., Friday-Saturday 5 - 11 p.m., Sunday 5 - 10 p.m.</span>
-				<span class="title3">Dine-in or Carry Out, $3.00 additional charge for Delivery.</span>
+				<span class="title2">1320 West Devon Avenue, Chicago,&nbsp;IL (773)&nbsp;973&nbsp;-&nbsp;0504</span>
+				<span class="title3">Store Hours: Tuesday&nbsp;-&nbsp;Thursday&nbsp;5&nbsp;-&nbsp;10&nbsp;p.m., Friday&nbsp;-&nbsp;Saturday&nbsp;5&nbsp;-&nbsp;11&nbsp;p.m., Sunday&nbsp;5&nbsp;-&nbsp;10&nbsp;p.m.</span>
+				<span class="title3">Dine-in or Carry Out, $3.00&nbsp;additional&nbsp;charge for&nbsp;Delivery.</span>
 				<span class="title4">Serving Chicago Since 1993</span>
 			</div> <!-- .logo END -->
-			<header class="head cf">
-				<a class="menu-link" href="#menu">Menu</a>
-				<nav id="menu" class="menu">
-					<ul>
-						<li><a href="ThaiSpice.html">Home</a></li>
-						<li><a href="ThaiSpice.html#A1">Store Hours</a></li>
-						<li><a href="ThaiSpice.html#A2">Menu</a></li>
-						<li><a href="ThaiSpice.html#A3">Map</a></li>
-						<li><a href="ThaiSpice.html#A4">Directions</a></li>
-						<li><a href="ThaiSpice.html#A5">Contact Us</a></li>
-					</ul>
-				</nav>
-			</header> <!-- header nav END -->	
-			<div class ="title"><span>Our Story</span></div>
+			
+			<div class ="title"><span><a id="A1"></a>Our Story</span></div>
+			<a href="ThaiSpice.html#top">Return to Top &#10548;</a>
 			<div class="story">
 				<p><b>Sawadee!</b> Opened in 1993, Thai Spice Restaurant is known for its delightful and intimate dining experience. Thai Spice serves excellent northern Thai food, with quality and taste to meet your liking. Thai Spice uses only the freshest ingredients and spices and cooks them with our traditional methods that have been handed down through generations. The consistency of our flavor and service is noteworthy. Well, its because we've had the same incredible chef since the day we opened for business! Each entree is individually prepared. Please allow some time while Thai Spice creates your generously proportioned meals.</p>
 			</div>
-			<div class ="title"><span><a id="A2">The Thai Spice Menu</a></span></div>
+			<div class ="title"><span><a id="A2"></a>The Thai Spice Menu</span></div>
+			<a href="ThaiSpice.html#top">Return to Top &#10548;</a>
 			<div class="columns">
 				<div class="menusection">
 					<h3>Appetizers</h3>
-					<ul>
+					<ul class="noindent">
 						<li><span class="menuitem">Sampling Platter</span>
 						<span class="ItemDescription"></span>
 						<span class="ItemPrice">$17.95</span></li>
@@ -376,7 +410,7 @@
 				</div><!-- .menusection END -->
 				<div class="menusection">		
 					<h3>Soups</h3>
-					<ul>
+					<ul class="noindent">
 						<li><span class="menuitem">Miso</span>
 						<span class="ItemDescription">mushroom, tofu</span>
 						<span class="ItemPrice">$4.95</span></li>
@@ -393,7 +427,7 @@
 				</div><!-- .menusection END -->
 				<div class="menusection">	
 					<h3>Salads</h3>
-					<ul>
+					<ul class="noindent">
 						<li><span class="menuitem">Beef Salad</span>
 						<span class="ItemDescription"></span>
 						<span class="ItemPrice">$11.95</span></li>
@@ -407,9 +441,9 @@
 				</div><!-- .menusection END -->
 				<div class="menusection">
 					<h3>Side Orders (add to any Entree)</h3>
-					<ul>
+					<ul class="noindent">
 						<li>Rice
-							<ul>
+							<ul class="noindent">
 								<li><span class="menuitem">Small Portion</span>
 									<span class="ItemDescription">White Thai Rice</span>
 									<span class="ItemPrice">$1.95</span></li>
@@ -419,7 +453,7 @@
 							</ul>
 						</li>
 						<li>Shrimp
-							<ul>
+							<ul class="noindent">
 								<li><span class="menuitem">Small Order</span>
 									<span class="ItemDescription"></span>
 									<span class="ItemPrice">$1.95</span></li>
@@ -444,7 +478,7 @@
 				</div><!-- .menusection END -->
 				<div class="menusection">
 					<h3>Fried Rice</h3>
-					<ul>
+					<ul class="noindent">
 						<li><span class="menuitem">Fried Rice</span>
 						<span class="ItemDescription">broccoli, egg, carrot, onion, bean sprout</span>
 						<span class="ItemPrice">$10.95</span></li>
@@ -464,7 +498,7 @@
 				</div><!-- .menusection END -->
 				<div class="menusection">
 					<h3>Thai Style Stir Fried Noodles</h3>
-					<ul>
+					<ul class="noindent">
 						<li><span class="menuitem">Pad Thai</span>
 						<span class="ItemDescription">tofu, egg, bean sprout, peanut</span>
 						<span class="ItemPrice">$15.95</span></li>
@@ -490,7 +524,7 @@
 				</div><!-- .menusection END -->
 				<div class="menusection">
 					<h3>Thai Curry</h3>
-					<ul>
+					<ul class="noindent">
 						<li><span class="menuitem">Green Curry</span>
 						<span class="ItemDescription">coconut milk, green pea, bamboo, basil, hot pepper</span>
 						<span class="ItemPrice">$15.95</span></li>
@@ -519,12 +553,12 @@
 				</div><!-- .menusection END -->
 				<div class="menusection">
 					<h3>Main Courses</h3>
-					<ul>
+					<ul class="noindent">
 						<li><span class="menuitem">Padga Prow</span>
 						<span class="ItemDescription">basil, mushroom, onion, bell pepper</span>
 						<span class="ItemPrice">$14.95</span></li>
 						<li><span class="menuitem">Thai Spice Gaprow Kai</span>
-						<span class="ItemDescription">ground chicken, basil ,egg, spicy sauce</span>
+						<span class="ItemDescription">ground chicken, basil, egg, spicy sauce</span>
 						<span class="ItemPrice">$15.95</span></li>
 						<li><span class="menuitem">Pad Prik</span>
 						<span class="ItemDescription">baby corn, mushroom, onion, bamboo</span>
@@ -572,7 +606,7 @@
 				</div><!-- .menusection END -->
 				<div class="menusection">
 					<h3>Add-Ons</h3>
-					<ul>
+					<ul class="noindent">
 						<li><span class="menuitem">Crab Cakes</span>
 						<span class="ItemDescription"></span>
 						<span class="ItemPrice">$11.95</span></li>
@@ -589,7 +623,7 @@
 				</div><!-- .menusection END -->
 				<div class="menusection">
 					<h3>Desserts</h3>
-					<ul>
+					<ul class="noindent">
 						<li><span class="menuitem">Thai Custard</span>
 						<span class="ItemDescription"></span>
 						<span class="ItemPrice">$3.95</span></li>
@@ -612,7 +646,7 @@
 				</div><!-- .menusection END -->
 				<div class="menusection">
 					<h3>Beverages</h3>
-					<ul>
+					<ul class="noindent">
 						<li><span class="menuitem">Thai Iced Tea</span>
 						<span class="ItemDescription"></span>
 						<span class="ItemPrice">$1.95</span></li>
@@ -638,24 +672,28 @@
 					Menu prices subject to change without notice.</h4>
 				</div><!-- .menusection END -->
 			</div><!-- .columns END -->
-			<div class ="title"><span><a id="A3">Google &reg; Map</a></span></div>
+			
+			<div class ="title"><span><a id="A3"></a>Google &reg; Map</span></div>
+			<a href="ThaiSpice.html#top">Return to Top &#10548;</a>
 			<div class="section">
-				<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=1320%20West%20Devon%20Avenue%2C%20Chicago%2C%20IL%2C%20United%20States&key=AIzaSyCB4bk-mZF8RU6H0x0lBY6QtPSLDlm5_fI"></iframe>					
+				<iframe width="350" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=1320%20West%20Devon%20Avenue%2C%20Chicago%2C%20IL%2C%20United%20States&key=AIzaSyCB4bk-mZF8RU6H0x0lBY6QtPSLDlm5_fI"></iframe>					
 			</div> <!-- .section END -->
-			<div class ="title"><span><a id="A4">Directions</a></span></div>
+			<div class ="title"><span><a id="A4"></a>Directions</span></div>
+			<a href="ThaiSpice.html#top">Return to Top &#10548;</a>
 			<div class="story">
 				<p>Thai Spice Restaurant is located at 1320 West Devon Avenue between Lakewood and Wayne avenues on the north side of the street in the Rogers Park neighborhood of Chicago. The restaurant is two and a half blocks west of Sheridan Road and the north shore campus of Loyola University Chicago.</p>
 				<p>Thai Spice Restaurant is also easily accessible via mass transit being two blocks south and two blocks west of the Loyola Red Line "EL" stop. For easy walking from the Loyola "EL" station, walk south to Devon Avenue and then west two and a half blocks to the restaurant.</p>
-			</div>				
-			<div class="footer"><a id="A5"></a>
-				<div class ="title"><span><a id="A5">Contact Us</a></span></div>
+			</div>	
+			<div class ="title"><span><a id="A5"></a>Contact Us</span></div>
+			<a href="ThaiSpice.html#top">Return to Top &#10548;</a>	
+			<div class="footer">
 				<p>You may contact Anthony and Vatsana at:</p>
 				<p><b>Thai Spice Restaurant</b><br/>
 				1320 West Devon Avenue<br/>
 				Chicago, IL 60626<br/>
 				Tel: (773) 973-0504</p>
-				<span>Email: <a href="mailto:anthony@thaispicechicago.com">anthony@thaispicechicago.com</a></span>
-			</div><!--.footer END-->			
+				<span>Email: <a href="mailto:anthony@thaispicechicago.com">anthony@thaispicechicago.com</a></span>				
+			</div><!--.footer END-->	
 		</div><!-- .container END -->
 	</body>
 </html>
