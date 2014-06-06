@@ -11,6 +11,7 @@
 		<!-- <base href="http://www.thaispicechicago.com">
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"> -->
 		<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<style>
 			html { 
 				font-size: 80%; 
@@ -27,6 +28,7 @@
 				border: 10px solid GoldenRod;
 				margin: 0 auto;
 				max-width: 1000px;
+				opacity: 0.9;
 			}
 			.container > a {margin-left:10px;}
 			.title1 {color: GoldenRod; font-size:24pt; font-weight:bold; font-family: 'Arizonia', cursive;}
@@ -47,7 +49,7 @@
 				display: none;
 				float: right;
 				text-decoration: none;
-				padding: 19px 10px;
+				padding: 15px 15px;
 			}
 			.menu {
 				background-image: -webkit-linear-gradient(left, #FF0000, #CC0000, #FF0000);
@@ -61,6 +63,7 @@
 				-ms-transition: all 0.3s ease-out;
 				-o-transition: all 0.3s ease-out;
 				transition: all 0.3s ease-out; 
+				text-align: center;
 				width: 100%;
 			}
 			.menu ul { 
@@ -102,11 +105,11 @@
 				text-decoration: none;
 			}
 			.menu ul li > a { 
-				height:15px;
+				height:10px;
 				padding: 19px 12px;	
 			}
 			.menu ul > li a:hover {
-				background-color: rgba(112, 112, 112, 0.9);
+				background-color: #5A5A5A;
 				color: #fff;
 			}
 			.menu ul ul { 
@@ -163,7 +166,6 @@
 			.menu, .menu > ul ul {
 				overflow: hidden;
 				max-height: 0;
-				background-color: #f4f4f4;
 			}
 			.menu > li > ul.sub-menu {
 			padding: 0px;
@@ -185,7 +187,7 @@
 				display: inline;
 			}
 			.menu > ul {
-				border-top: 1px solid #808080;
+				border-top: 1px solid #FFFFFF;
 			}
 			.menu li, .menu > ul > li {
 				display: block;
@@ -194,7 +196,7 @@
 				color: #000;
 				display: block;
 				padding: 0.8em;
-				border-bottom: 1px solid #808080;
+				border-bottom: 1px solid #FFFFFF;
 				position: relative;
 			}
 			.menu li.has-submenu > a:after {
@@ -274,11 +276,11 @@
 			}
 			.section {
 				text-align: center;
-				padding: 10px;
 			}
 			.footer {
 				padding: 10px;
 			}	
+			.footer > span {display: block;}
 			@media screen and (min-width: 600px) { 
 				html {font-size: 100%;}
 				.title1 {font-size:36pt;}
@@ -312,22 +314,13 @@
 			});
 		});
 		</script>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-42534150-1', 'stignatius.org');
-		  ga('send', 'pageview');
-
-		</script>
+	
 	</head>
 	<body>
 		<a id="top"></a>
 		<div class="container">
 			<header class="head cf">
-				<a class="menu-link" href="#menu">Navigation</a>
+				<a class="menu-link" href="#menu"><i class="fa fa-bars fa-lg"></i></a>
 				<nav id="menu" class="menu">
 					<ul>
 						<li><a href="ThaiSpice.html">Home</a></li>
@@ -370,7 +363,7 @@
 					<h3>Appetizers</h3>
 					<ul class="noindent">
 						<li><span class="menuitem">Sampling Platter</span>
-						<span class="ItemDescription"></span>
+						<span class="ItemDescription">Potsticker, Satay Chicken, Crab Puff</span>
 						<span class="ItemPrice">$17.95</span></li>
 						<li><span class="menuitem">Satay Chicken (4 pieces)</span>
 						<span class="ItemDescription">chicken breast seasoned with Thai herbs</span>
@@ -669,7 +662,7 @@
 			<div class ="title"><span><a id="A3"></a>Google &reg; Map</span></div>
 			<a href="ThaiSpice.html#top">Return to Top &#10548;</a>
 			<div class="section">
-				<iframe width="350" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=1320%20West%20Devon%20Avenue%2C%20Chicago%2C%20IL%2C%20United%20States&key=AIzaSyCB4bk-mZF8RU6H0x0lBY6QtPSLDlm5_fI"></iframe>					
+				<iframe width="280" height="320" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=1320%20West%20Devon%20Avenue%2C%20Chicago%2C%20IL%2C%20United%20States&key=AIzaSyCB4bk-mZF8RU6H0x0lBY6QtPSLDlm5_fI"></iframe>					
 			</div> <!-- .section END -->
 			<div class ="title"><span><a id="A4"></a>Directions</span></div>
 			<a href="ThaiSpice.html#top">Return to Top &#10548;</a>
@@ -685,7 +678,20 @@
 				1320 West Devon Avenue<br/>
 				Chicago, IL 60626<br/>
 				Tel: (773) 973-0504</p>
-				<span>Email: <a href="mailto:anthony@thaispicechicago.com">anthony@thaispicechicago.com</a></span>				
+				<span>Email: <a href="mailto:anthony@thaispicechicago.com">anthony@thaispicechicago.com</a></span>
+				<span><a href="https://www.facebook.com/thaispicechicago?rf=113578008676034">Please visit our Thai Spice facebook page.</a></span>
+				<!-- AddThis Button BEGIN
+				<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+					<a class="addthis_button_preferred_1"></a>
+					<a class="addthis_button_preferred_2"></a>
+					<a class="addthis_button_preferred_3"></a>
+					<a class="addthis_button_preferred_4"></a>
+					<a class="addthis_button_compact"></a>
+					<a class="addthis_counter addthis_bubble_style"></a>
+				</div>
+				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+				<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-538ff4412f9e7cb1"></script>
+				<!-- AddThis Button END -->
 			</div><!--.footer END-->	
 		</div><!-- .container END -->
 	</body>
