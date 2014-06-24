@@ -1,308 +1,315 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
+		<title>St. Ignatius Church, Chicago | Music Photos</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="index, follow">
+		<meta name="copyright" content="Copyright (c) June 2014">
+		<meta name="description" content="The music photographs page for St. Ignatius Church, Chicago, IL">
+		<base href="http://www.stignatiuschurch.org">
+		<link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
+		<link type="text/css" rel="stylesheet" href="/assets/css/jquery.galleryview-3.0-dev.css">
+		<!-- Font source for bars icon in responsive nav menu -->
+		<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<!-- JQuery and JQuery ui sources -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<!-- JQuery Timer and Easing plugins -->
+		<script type="text/javascript" src="/assets/js/jquery.timers-1.2.js"></script>
+		<script type="text/javascript" src="/assets/js/jquery.easing.1.3.js"></script>
+		<!-- GalleryView Javascript file -->
+		<script type="text/javascript" src="/assets/js/jquery.galleryview-3.0-dev.js"></script>
+		<script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
+		<!-- JQuery responsive menu  -->
+		<script>
+		jQuery( document ).ready( function( $ ) {
+			$('body').addClass('js');
+			  var $menu = $('#menu'),
+				  $menulink = $('.menu-link'),
+				  $menuTrigger = $('.has-submenu > a');
 
-<title>St. Ignatius Church, Chicago | Music Photos</title>
+			$menulink.click(function(e) {
+				e.preventDefault();
+				$menulink.toggleClass('active');
+				$menu.toggleClass('active');
+			});
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index,follow" />
-<meta name="copyright" content="Copyright (c) March 2014" />
-<meta name="description" content="The music photographs page for St. Ignatius Church, Chicago, IL"/>
-<base href="http://www.stignatiuschurch.org">
+			$menuTrigger.click(function(e) {
+				e.preventDefault();
+				var $this = $(this);
+				$this.toggleClass('active').next('ul').toggleClass('active');
+				});
+			});
+		</script>
+		<!-- GalleryView photo gallery settings -->
+		<script type="text/javascript">
+			$(function(){
+				$('#photos').galleryView({
+				panel_width: 600,
+				panel_height: 400,
+				panel_animation: 'crossfade',
+				panel_scale: 'fit',
+				show_filmstrip: true,
+				show_filmstrip_nav: true,
+				autoplay: true,
+				frame_scale: 'fit',
+				frame_width: 120,
+				frame_height: 80,
+				show_captions: true,
+				show_infobar: true,
+				enable_overlays: true,
+				});
+			});
+		</script>
+		<!-- Google analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<!-- css stylesheets -->
-<link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
-<link type="text/css" rel="stylesheet" href="/assets/css/jquery.galleryview-3.0-dev.css">
-<!-- First, call the jquery and jquery ui -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-<!-- Second, add the jquery Timer and Easing plugins -->
-<script type="text/javascript" src="/assets/js/jquery.timers-1.2.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.easing.1.3.js"></script>
-<!-- Third, add the GalleryView Javascript and CSS files -->
-<script type="text/javascript" src="/assets/js/jquery.galleryview-3.0-dev.js"></script>
-<!-- Cycle2 jquery files -->
-<script type="text/javascript" src="/assets/js/jquery.cycle2.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.cycle2.center.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.cycle2.caption2.min.js"></script>
-<script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
+		  ga('create', 'UA-42534150-1', 'stignatiuschurch.org');
+		  ga('send', 'pageview');
 
-<script>
-jQuery( document ).ready( function( $ ) {
-	$('body').addClass('js');
-	  var $menu = $('#menu'),
-		  $menulink = $('.menu-link'),
-		  $menuTrigger = $('.has-submenu > a');
-
-	$menulink.click(function(e) {
-		e.preventDefault();
-		$menulink.toggleClass('active');
-		$menu.toggleClass('active');
-	});
-
-	$menuTrigger.click(function(e) {
-		e.preventDefault();
-		var $this = $(this);
-		$this.toggleClass('active').next('ul').toggleClass('active');
-		});
-	});
-</script>
-<script type="text/javascript">
-	$(function(){
-		$('#photos').galleryView({
-		panel_width: 600,
-		panel_height: 400,
-		panel_animation: 'crossfade',
-		panel_scale: 'fit',
-		show_filmstrip: true,
-		show_filmstrip_nav: true,
-		autoplay: true,
-		frame_scale: 'fit',
-		frame_width: 120,
-		frame_height: 80,
-		show_captions: true,
-		show_infobar: true,
-		enable_overlays: true,
-		});
-	});
-</script>
-</head>
-<body>
-	<div class="container">										
-		<div class="image">
-			<img src="/assets/images/140120aPatWinCrop.jpg" alt="St. Ignatius" width="100%" height="auto">
-		</div>
-		<div class="logo">
-			<span>St. Ignatius Church &#8211; Chicago,&nbsp;IL</span>
-		</div><!--.logo END-->
-		<header class="head cf">
-		
-			<a class="menu-link" href="#menu">Menu</a>
+		</script>
+	</head>
+	<body>
+		<div class="container">										
+			<div class="image">
+				<img src="/assets/images/140120aPatWinCrop.jpg" alt="St. Ignatius" width="100%" height="auto">
+			</div>
+			<div class="logo">
+				<span>St. Ignatius Church &#8211; Chicago,&nbsp;IL</span>
+			</div><!--.logo END-->
+			<header class="head cf">
 			
-			<nav id="menu" class="menu">
-				<ul>
-					<li><a href="http://www.stignatiuschurch.org">Home</a></li>
-					<li><a href="/assets/pages/AboutTheParish.html#A2">Map</a></li>
-					<li><a href="/assets/pages/AboutTheParish.html#A3">Mass&nbsp;Schedule</a></li>
-					<li class="has-submenu"><a href="#">About&nbsp;the&nbsp;Parish</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/AboutTheParish.html">Parish Information</a></li>
-							<li><a href="/assets/pages/Bulletins.html">Bulletin</a></li>
-							<li><a href="/assets/pages/AboutTheParish.html#A4">Office Hours</a></li>
-							<li><a href="/assets/pages/StaffDirectory.html">Parish Staff</a></li>
-							<li><a href="/assets/pages/AboutTheParish.html#A6">Parish History</a></li>
-							<li class="has-submenu"><a href="#">Join the Parish</a>
-								<ul>
-									<li><a href="/assets/pages/ParishRegistrationENG.html" target="_blank">English Registration</a></li>
-									<li><a href="/assets/pdf/SpanishRegistration.pdf" target="_blank">Spanish Registration</a></li>
-								</ul>
-							</li>
-							<li class="has-submenu"><a href="#">Restoration Projects</a>
-								<ul>
-									<li><a href="/assets/pages/RestorationChurch.html">Church Restoration</a></li>
-									<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
-								</ul>
-							</li>
-							<li><a href="/assets/pages/ParishPhotos.html">Photographs</a></li>
-						</ul>
-					</li>
-					<li class="has-submenu"><a href="#">Ministries</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/MinistriesMain.html">About</a></li>
-							<li><a href="/assets/pdf/LMSchedule.pdf" target="_blank">Minister Schedule</a></li>
-							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee Charter</a></li>
-							<li><a href="/assets/pages/LCJobDescription.html">Liturgy Committee Job Description</a></li>
-						</ul>
-					</li>
-					<li class="has-submenu"><a href="#">Ignatian Services</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/IgnatianServicesMain.html">About</a></li>
-							<li><a href="/assets/pages/IgnatianServicesPhotos.html">Ignatian Services Photos</a></li>	        			 
-						</ul>
-					</li>
-					<li class="has-submenu"><a href="#"><b>Music</b></a>
-						<ul>
-							<li><a href="/assets/pages/MusicMinistryMain.html">About</a></li>
-							<li class="has-submenu"><a href="#">Choir Materials</a>
-								<ul>
-									<li><a href="/assets/pages/MusicChoirRehSched.html">Rehearsal Schedule</a></li>
-									<li><a href="/assets/pages/MusicChoirRepertoire.html">Choir Repertoire</a></li>
-									<li><a href="/assets/pages/MusicCantorSchedules.html">Cantor Schedule</a></li>
-								</ul>
-							</li>
-							<li class="has-submenu"><a href="#">Wedding Music</a>
-								<ul>
-									<li><a href="/assets/pages/MusicWeddingPlanning.html">Wedding Music Planning</a></li>
-									<li><a href="/assets/pages/MusicWeddingOrgan.html">Wedding Organ Selections</a></li>
-									<li><a href="/assets/pages/MusicWeddingVocal.html">Wedding Vocal Selections</a></li>
-								</ul>
-							</li>
-							<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
-							<li><a href="/assets/pages/MusicPhotos.html"><b>Music Photos</b></a></li>
-						</ul>
-					 </li> 
-					<li class="has-submenu"><a href="#">Groups</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/Groups.html">About</a></li>
-							<li><a href="/assets/pages/CirculoDeOracion.html">Circulo de Oraci&#243;n</a></li>
-							<li class="has-submenu"><a href="#">Glenola Club</a>
-								<ul>
-									<li><a href="/assets/pages/GlenolaClub.html">About</a></li>
-									<li><a href="/assets/pages/GlenolaPhotos.html">Glenola Photos</a></li>
-								</ul>
-							</li>
-							<li><a href="http://hermandadsenordelosmilagroschicago.org/index.html" target="_blank">Hermandad del Se&#241;or de los Milagros</a></li>
-							<li><a href="http://www.kofc-university1687.org/Pages/default.aspx" target="_blank">Knights of Columbus</a></li>
-							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></li>
-						</ul>
-					</li>
-					<li><a href="/assets/pages/Links.html">Links</a></li>
-					<li class="has-submenu"><a href="#">Giving</a>
-						<ul>
-							<li><a href="https://www.parishpay.com/nonprofit/login.html?pc=m9wuf360" target="_blank">Online Giving</a></li>
-							<li><a href="/assets/pages/CapitalCampaign.html">Capital Campaign</a></li>
-						</ul>
-					</li>
+				<a class="menu-link" href="#menu"><i class="fa fa-bars fa-3x"></i></a>
+				
+				<nav id="menu" class="menu">
+					<ul>
+						<li><a href="http://www.stignatiuschurch.org">Home</a></li>
+						<li><a href="/assets/pages/AboutTheParish.html#A2">Map</a></li>
+						<li><a href="/assets/pages/AboutTheParish.html#A3">Mass&nbsp;Schedule</a></li>
+						<li class="has-submenu"><a href="#">About&nbsp;the&nbsp;Parish</a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/AboutTheParish.html">Parish Information</a></li>
+								<li><a href="/assets/pages/Bulletins.html">Bulletin</a></li>
+								<li><a href="/assets/pages/AboutTheParish.html#A4">Office Hours</a></li>
+								<li><a href="/assets/pages/StaffDirectory.html">Parish Staff</a></li>
+								<li><a href="/assets/pages/AboutTheParish.html#A6">Parish History</a></li>
+								<li class="has-submenu"><a href="#">Join the Parish</a>
+									<ul>
+										<li><a href="/assets/pages/ParishRegistrationENG.html" target="_blank">English Registration</a></li>
+										<li><a href="/assets/pdf/SpanishRegistration.pdf" target="_blank">Spanish Registration</a></li>
+									</ul>
+								</li>
+								<li class="has-submenu"><a href="#">Restoration Projects</a>
+									<ul>
+										<li><a href="/assets/pages/RestorationChurch.html">Church Restoration</a></li>
+										<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
+									</ul>
+								</li>
+								<li><a href="/assets/pages/ParishPhotos.html">Photographs</a></li>
+								<li><a href="/assets/pages/WindowGallery.html">Window Photographs</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#">Ministries</a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/MinistriesMain.html">About</a></li>
+								<li><a href="/assets/pdf/LMSchedule.pdf" target="_blank">Minister Schedule</a></li>
+								<li><a href="/assets/pages/LCCharter.html">Liturgy Committee Charter</a></li>
+								<li><a href="/assets/pages/LCJobDescription.html">Liturgy Committee Job Description</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#">Ignatian Services</a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/IgnatianServicesMain.html">About</a></li>
+								<li><a href="/assets/pages/IgnatianServicesPhotos.html">Ignatian Services Photos</a></li>	        			 
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#"><b>Music</b></a>
+							<ul>
+								<li><a href="/assets/pages/MusicMinistryMain.html">About</a></li>
+								<li class="has-submenu"><a href="#">Choir Materials</a>
+									<ul>
+										<li><a href="/assets/pages/MusicChoirRehSched.html">Rehearsal Schedule</a></li>
+										<li><a href="/assets/pages/MusicChoirRepertoire.html">Choir Repertoire</a></li>
+										<li><a href="/assets/pages/MusicCantorSchedules.html">Cantor Schedule</a></li>
+									</ul>
+								</li>
+								<li class="has-submenu"><a href="#">Wedding Music</a>
+									<ul>
+										<li><a href="/assets/pages/MusicWeddingPlanning.html">Wedding Music Planning</a></li>
+										<li><a href="/assets/pages/MusicWeddingOrgan.html">Wedding Organ Selections</a></li>
+										<li><a href="/assets/pages/MusicWeddingVocal.html">Wedding Vocal Selections</a></li>
+									</ul>
+								</li>
+								<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
+								<li><a href="/assets/pages/MusicPhotos.html"><b>Music Photos</b></a></li>
+							</ul>
+						 </li> 
+						<li class="has-submenu"><a href="#">Groups</a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/Groups.html">About</a></li>
+								<li><a href="/assets/pages/CirculoDeOracion.html">Circulo de Oraci&#243;n</a></li>
+								<li class="has-submenu"><a href="#">Glenola Club</a>
+									<ul>
+										<li><a href="/assets/pages/GlenolaClub.html">About</a></li>
+										<li><a href="/assets/pages/GlenolaPhotos.html">Glenola Photos</a></li>
+									</ul>
+								</li>
+								<li><a href="http://hermandadsenordelosmilagroschicago.org/index.html" target="_blank">Hermandad del Se&#241;or de los Milagros</a></li>
+								<li><a href="http://www.kofc-university1687.org/Pages/default.aspx" target="_blank">Knights of Columbus</a></li>
+								<li><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></li>
+							</ul>
+						</li>
+						<li><a href="/assets/pages/Links.html">Links</a></li>
+						<li class="has-submenu"><a href="#">Giving</a>
+							<ul>
+								<li><a href="https://www.parishpay.com/nonprofit/login.html?pc=m9wuf360" target="_blank">Online Giving</a></li>
+								<li><a href="/assets/pages/CapitalCampaign.html">Capital Campaign</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</header>
+			<div class ="title"><span>Music Ministry Photographs</span></div>
+			<div id="photogallery">
+				
+				<p>Many thanks to Mercedes Mac Laughlin who took these photographs.</p>
+				<ul id="photos">
+					<li><img 
+						data-frame="/assets/images/070430CentennialMass01web.jpg" 
+						src="/assets/images/070430CentennialMass01web.jpg" 
+						title="Combined Choir" 
+						data-description="The parish choir and the coro hispano sing for the Centennial Mass in 2007 at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/021119FrontMusicArea02.jpg" 
+						src="/assets/images/021119FrontMusicArea02.jpg" 
+						title="Front Choir Area" 
+						data-description="The front choir risers and piano at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/070527OrganFacadeWeb.jpg" 
+						src="/assets/images/070527OrganFacadeWeb.jpg" 
+						title="Choir Loft" 
+						data-description="The choir loft and organ at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/030615Men'sChoir03web.jpg" 
+						src="/assets/images/030615Men'sChoir03web.jpg" 
+						title="Men's Choir" 
+						data-description="The men's choir sings for mass at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/030615Men'sChoir12web.jpg" 
+						src="/assets/images/030615Men'sChoir12web.jpg" 
+						title="Men's Choir" 
+						data-description="The men's choir sings for mass at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/031123CoroHispanoyNinos.JPG" 
+						src="/assets/images/031123CoroHispanoyNinos.JPG" 
+						title="Coro Hispano y Ninos" 
+						data-description="The Coro Hispano y Ninos at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/031207MessiahConcert.jpg" 
+						src="/assets/images/031207MessiahConcert.jpg" 
+						title="Messiah Concert" 
+						data-description=" at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/051204MessiahConcert03.jpg" 
+						src="/assets/images/051204MessiahConcert03.jpg" 
+						title="Messiah Concert" 
+						data-description="The 2005 Messiah concert at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/MessiahRehearsal.jpg" 
+						src="/assets/images/MessiahRehearsal.jpg" 
+						title="Messiah Rehearsal" 
+						data-description="The Messiah choir rehearses at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/061204Pastor'sReception08web.jpg" 
+						src="/assets/images/061204Pastor'sReception08web.jpg" 
+						title="Pastor's Reception" 
+						data-description="The pastor's reception before the Messiah concert at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/061204MessiahConcert05web.jpg" 
+						src="/assets/images/061204MessiahConcert05web.jpg" 
+						title="Messiah Concert" 
+						data-description="The 2006 Messiah concert at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/061204MessiahConcert08web.jpg" 
+						src="/assets/images/061204MessiahConcert08web.jpg" 
+						title="Messiah Concert" 
+						data-description="The 2006 Messiah concert at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/061204MessiahConcert13web.jpg" 
+						src="/assets/images/061204MessiahConcert13web.jpg" 
+						title="Messiah Concert" 
+						data-description="The 2006 Messiah concert at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/061204MessiahConcert15web.jpg" 
+						src="/assets/images/061204MessiahConcert15web.jpg" 
+						title="Messiah Concert" 
+						data-description="The 2006 Messiah concert at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/061204MessiahConcert20web.jpg" 
+						src="/assets/images/061204MessiahConcert20web.jpg" 
+						title="Messiah Concert" 
+						data-description="The 2006 Messiah concert at St. Ignatius Church, Chicago, IL.">
+					<li><img 
+						data-frame="/assets/images/130421KnightsMass01.JPG" 
+						src="/assets/images/130421KnightsMass01.JPG" 
+						title="Choir Rehearsing" 
+						data-description="The parish choir rehearses before mass at St. Ignatius Church, Chicago, IL.">
 				</ul>
-			</nav>
-			<div class="clear"></div>
-		</header>
-		<div class ="title"><span>Music Ministry Photographs</span></div>
-		<div id="photogallery">
+				<p>For more information on each photograph, please click on the "i" icon on the left side of the gallery.<br/> To turn off the captions, simply click the icon again.</p>
+			</div><!--photogallery END-->	
 			
-			<p>Many thanks to Mercedes Mac Laughlin who took these photographs.</p>
-			<ul id="photos">
-				<li><img 
-					data-frame="/assets/images/070430CentennialMass01.JPG" 
-					src="/assets/images/070430CentennialMass01.JPG" 
-					title="Combined Choir" 
-					data-description="The parish choir and the coro hispano sing for the Centennial Mass in 2007 at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/021119FrontMusicArea02.jpg" 
-					src="/assets/images/021119FrontMusicArea02.jpg" 
-					title="Front Choir Area" 
-					data-description="The front choir risers and piano at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/070527OrganFacade.jpg" 
-					src="/assets/images/070527OrganFacade.jpg" 
-					title="Choir Loft" 
-					data-description="The choir loft and organ at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/030615Men'sChoir03.JPG" 
-					src="/assets/images/030615Men'sChoir03.JPG" 
-					title="Men's Choir" 
-					data-description="The men's choir sings for mass at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/030615Men'sChoir12.JPG" 
-					src="/assets/images/030615Men'sChoir12.JPG" 
-					title="Men's Choir" 
-					data-description="The men's choir sings for mass at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/031123CoroHispanoyNinos.JPG" 
-					src="/assets/images/031123CoroHispanoyNinos.JPG" 
-					title="Coro Hispano y Ninos" 
-					data-description="The Coro Hispano y Ninos at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/031207MessiahConcert.jpg" 
-					src="/assets/images/031207MessiahConcert.jpg" 
-					title="Messiah Concert" 
-					data-description=" at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/051204MessiahConcert03.jpg" 
-					src="/assets/images/051204MessiahConcert03.jpg" 
-					title="Messiah Concert" 
-					data-description="The 2005 Messiah concert at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/MessiahRehearsal.jpg" 
-					src="/assets/images/MessiahRehearsal.jpg" 
-					title="Messiah Rehearsal" 
-					data-description="The Messiah choir rehearses at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/061204Pastor'sReception08.JPG" 
-					src="/assets/images/061204Pastor'sReception08.JPG" 
-					title="Pastor's Reception" 
-					data-description="The pastor's reception before the Messiah concert at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/061204MessiahConcert05.JPG" 
-					src="/assets/images/061204MessiahConcert05.JPG" 
-					title="Messiah Concert" 
-					data-description="The 2006 Messiah concert at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/061204MessiahConcert08.JPG" 
-					src="/assets/images/061204MessiahConcert08.JPG" 
-					title="Messiah Concert" 
-					data-description="The 2006 Messiah concert at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/061204MessiahConcert13.JPG" 
-					src="/assets/images/061204MessiahConcert13.JPG" 
-					title="Messiah Concert" 
-					data-description="The 2006 Messiah concert at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/061204MessiahConcert15.JPG" 
-					src="/assets/images/061204MessiahConcert15.JPG" 
-					title="Messiah Concert" 
-					data-description="The 2006 Messiah concert at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/061204MessiahConcert20.JPG" 
-					src="/assets/images/061204MessiahConcert20.JPG" 
-					title="Messiah Concert" 
-					data-description="The 2006 Messiah concert at St. Ignatius Church, Chicago, IL.">
-				<li><img 
-					data-frame="/assets/images/130421KnightsMass01.JPG" 
-					src="/assets/images/130421KnightsMass01.JPG" 
-					title="Choir Rehearsing" 
-					data-description="The parish choir rehearses before mass at St. Ignatius Church, Chicago, IL.">
-			</ul>
-			<p>For more information on each photograph, please click on the "i" icon on the left side of the gallery.<br/> To turn off the captions, simply click the icon again.</p>
-		</div><!--photogallery END-->	
-		
-		<div class="footer">
-			<div class="columnleft">
-				<p><b>Weekend Mass Schedule</b><br/>
-				Sat 5:00 p.m. &#8211; Chapel<br/>
-				Sun 8:00 a.m. &#8211; Church<br/>
-				Sun 10:00 a.m. &#8211; Church<br/>
-				Sun 12:00 p.m. &#8211; Church (Spanish)<br/>
-				Sun 6:00 p.m. &#8211; Chapel</p>
-				<p><b>Weekday Mass Schedule</b><br/>
-				Mon. &#8211; Fri. at 7:00 and 8:00 a.m. &#8211; Chapel<br/>
-				Saturday Daily Mass at 8:00 a.m. &#8211; Chapel</p>
-				<p><b>Adoration</b><br/>
-				Friday 6:30 p.m. &#8211; 8:30 p.m.</p>
-				<p><b>Reconciliation</b><br/>
-				Saturday 4:30 p.m. &#8211; 5:00 p.m.</p>
-			</div>
-			<div class="columncenter">
-				<p><b>Rev. Joseph M. Jackson, Ph. D., pastor</b><br/>
-				Rev. Kinoti Kithuri, associate<br/>
-				Rev. William Grogan, resident<br/>
-				Rev. Patrick McAteer, S. J., resident<br/>
-				Rev. Raul Mora, deacon<br/>
-				Rev. Rogelio Soto, deacon</p>
-			</div>	
-			<div class="columnright">
-				<p><b>St. Ignatius Church</b><br/>
-				6559 North Glenwood Avenue<br/>
-				Chicago, IL 60626<br/>
-				Tel:(773) 764-5936<br/>
-				Fax:(773) 764-4360</p>
-				<!-- AddThis Button BEGIN -->
-				<div class="addthis_toolbox addthis_default_style ">
-				<a class="addthis_button_preferred_1"></a>
-				<a class="addthis_button_preferred_2"></a>
-				<a class="addthis_button_preferred_3"></a>
-				<a class="addthis_button_preferred_4"></a>
-				<a class="addthis_button_compact"></a>
-				<a class="addthis_counter addthis_bubble_style"></a>
+			<div class="footer">
+				<div class="columnleft">
+					<p><b>Weekend Mass Schedule</b><br/>
+					Sat 5:00 p.m. &#8211; Chapel<br/>
+					Sun 8:00 a.m. &#8211; Church<br/>
+					Sun 10:00 a.m. &#8211; Church<br/>
+					Sun 12:00 p.m. &#8211; Church (Spanish)<br/>
+					Sun 6:00 p.m. &#8211; Chapel</p>
+					<p><b>Weekday Mass Schedule</b><br/>
+					Mon. &#8211; Fri. at 7:00 and 8:00 a.m. &#8211; Chapel<br/>
+					Saturday Daily Mass at 8:00 a.m. &#8211; Chapel</p>
+					<p><b>Adoration</b><br/>
+					Friday 6:30 p.m. &#8211; 8:30 p.m.</p>
+					<p><b>Reconciliation</b><br/>
+					Saturday 4:30 p.m. &#8211; 5:00 p.m.</p>
 				</div>
-				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51cabaef03c9a8db"></script>
-				<!-- AddThis Button END -->
-			</div>
-			<div class="clear"></div>
-		</div><!--.footer END-->
-	</div>
-</body>
+				<div class="columncenter">
+					<p><b>Rev. Joseph M. Jackson, Ph. D., pastor</b><br/>
+					Rev. Kinoti Kithuri, associate<br/>
+					Rev. William Grogan, resident<br/>
+					Rev. Patrick McAteer, S. J., resident<br/>
+					Rev. Raul Mora, deacon<br/>
+					Rev. Rogelio Soto, deacon</p>
+				</div>	
+				<div class="columnright">
+					<p><b>St. Ignatius Church</b><br/>
+					6559 North Glenwood Avenue<br/>
+					Chicago, IL 60626<br/>
+					Tel:(773) 764-5936<br/>
+					Fax:(773) 764-4360</p>
+					<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style ">
+					<a class="addthis_button_preferred_1"></a>
+					<a class="addthis_button_preferred_2"></a>
+					<a class="addthis_button_preferred_3"></a>
+					<a class="addthis_button_preferred_4"></a>
+					<a class="addthis_button_compact"></a>
+					<a class="addthis_counter addthis_bubble_style"></a>
+					</div>
+					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51cabaef03c9a8db"></script>
+					<!-- AddThis Button END -->
+				</div>
+				<div class="clear"></div>
+			</div><!--.footer END-->
+		</div>
+	</body>
 </html>
