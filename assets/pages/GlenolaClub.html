@@ -1,329 +1,338 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-
-<title>St. Ignatius Church, Chicago | Glenola Club</title>
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index,follow" />
-<meta name="copyright" content="Copyright (c) February 2014" />
-<meta name="description" content="The main information page for the St. Ignatius Glenola Club, Chicago, IL"/>
-<base href="http://www.stignatiuschurch.org">
-
-<link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
-
-<script>
-jQuery( document ).ready( function( $ ) {
-	
-	$('body').addClass('js');
-	  var $menu = $('#menu'),
-		  $menulink = $('.menu-link'),
-		  $menuTrigger = $('.has-submenu > a');
-
-	$menulink.click(function(e) {
-		e.preventDefault();
-		$menulink.toggleClass('active');
-		$menu.toggleClass('active');
-	});
-
-	$menuTrigger.click(function(e) {
-		e.preventDefault();
-		var $this = $(this);
-		$this.toggleClass('active').next('ul').toggleClass('active');
-	});
-});
-</script>
-
-</head>
-<body>
-	<div class="container">										
-		<div class="image">
-			<img src="/assets/images/140122aPatWinCropMary.jpg" alt="St. Ignatius" width="100%" height="auto">
-		</div>
-		<div class="logo">
-			<span>St. Ignatius Church &#8211; Chicago,&nbsp;IL</span>
-		</div><!--.logo END-->
-		<header class="head cf">
-		
-			<a class="menu-link" href="#menu">Menu</a>
+	<head>
+		<title>St. Ignatius Church, Chicago | Glenola Club</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="index, follow">
+		<meta name="copyright" content="Copyright (c) February 2014">
+		<meta name="description" content="The main information page for the St. Ignatius Glenola Club, Chicago, IL">
+		<base href="http://www.stignatiuschurch.org">
+		<link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
+		<!-- Font source for bars icon in responsive nav menu -->
+		<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<!-- JQuery source -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
+		<!-- Drop down menu JQuery -->
+		<script>
+		jQuery( document ).ready( function( $ ) {
 			
-			<nav id="menu" class="menu">
-				<ul>
-					<li><a href="http://www.stignatiuschurch.org">Home</a></li>
-					<li><a href="/assets/pages/AboutTheParish.html#A2">Map</a></li>
-					<li><a href="/assets/pages/AboutTheParish.html#A3">Mass&nbsp;Schedule</a></li>
-					<li class="has-submenu"><a href="#">About&nbsp;the&nbsp;Parish</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/AboutTheParish.html">Parish Information</a></li>
-							<li><a href="/assets/pages/Bulletins.html">Bulletin</a></li>
-							<li><a href="/assets/pages/AboutTheParish.html#A4">Office Hours</a></li>
-							<li><a href="/assets/pages/StaffDirectory.html">Parish Staff</a></li>
-							<li><a href="/assets/pages/AboutTheParish.html#A6">Parish History</a></li>
-							<li class="has-submenu"><a href="#">Join the Parish</a>
-								<ul>
-									<li><a href="/assets/pages/ParishRegistrationENG.html" target="_blank">English Registration</a></li>
-									<li><a href="/assets/pdf/SpanishRegistration.pdf" target="_blank">Spanish Registration</a></li>
-								</ul>
-							</li>
-							<li class="has-submenu"><a href="#">Restoration Projects</a>
-								<ul>
-									<li><a href="/assets/pages/RestorationChurch.html">Church Restoration</a></li>
-									<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
-								</ul>
-							</li>
-							<li><a href="/assets/pages/ParishPhotos.html">Photographs</a></li>
-						</ul>
-					</li>
-					<li class="has-submenu"><a href="#">Ministries</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/MinistriesMain.html">About</a></li>
-							<li><a href="/assets/pdf/LMSchedule.pdf" target="_blank">Minister Schedule</a></li>
-							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee Charter</a></li>
-							<li><a href="/assets/pages/LCJobDescription.html">Liturgy Committee Job Description</a></li>
-						</ul>
-					</li>
-					<li class="has-submenu"><a href="#">Ignatian Services</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/IgnatianServicesMain.html">About</a></li>
-							<li><a href="/assets/pages/IgnatianServicesPhotos.html">Ignatian Services Photos</a></li>	        			 
-						</ul>
-					</li>
-					<li class="has-submenu"><a href="#">Music</a>
-						<ul>
-							<li><a href="/assets/pages/MusicMinistryMain.html">About</a></li>
-							<li class="has-submenu"><a href="#">Choir Materials</a>
-								<ul>
-									<li><a href="/assets/pages/MusicChoirRehSched.html">Rehearsal Schedule</a></li>
-									<li><a href="/assets/pages/MusicChoirRepertoire.html">Choir Repertoire</a></li>
-									<li><a href="/assets/pages/MusicCantorSchedules.html">Cantor Schedule</a></li>
-								</ul>
-							</li>
-							<li class="has-submenu"><a href="#">Wedding Music</a>
-								<ul>
-									<li><a href="/assets/pages/MusicWeddingPlanning.html">Wedding Music Planning</a></li>
-									<li><a href="/assets/pages/MusicWeddingOrgan.html">Wedding Organ Selections</a></li>
-									<li><a href="/assets/pages/MusicWeddingVocal.html">Wedding Vocal Selections</a></li>
-								</ul>
-							</li>
-							<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
-							<li><a href="/assets/pages/MusicPhotos.html">Music Photos</a></li>
-						</ul>
-					 </li> 
-					<li class="has-submenu"><a href="#"><b>Groups</b></a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/Groups.html">About</a></li>
-							<li><a href="/assets/pages/CirculoDeOracion.html">Circulo de Oraci&#243;n</a></li>
-							<li class="has-submenu"><a href="#"><b>Glenola Club</b></a>
-								<ul>
-									<li><a href="/assets/pages/GlenolaClub.html"><b>About</b></a></li>
-									<li><a href="/assets/pages/GlenolaPhotos.html">Glenola Photos</a></li>
-								</ul>
-							</li>
-							<li><a href="http://hermandadsenordelosmilagroschicago.org/index.html" target="_blank">Hermandad del Se&#241;or de los Milagros</a></li>
-							<li><a href="http://www.kofc-university1687.org/Pages/default.aspx" target="_blank">Knights of Columbus</a></li>
-							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></li>
-						</ul>
-					</li>
-					<li><a href="/assets/pages/Links.html">Links</a></li>
-					<li class="has-submenu"><a href="#">Giving</a>
-						<ul>
-							<li><a href="https://www.parishpay.com/nonprofit/login.html?pc=m9wuf360" target="_blank">Online Giving</a></li>
-							<li><a href="/assets/pages/CapitalCampaign.html">Capital Campaign</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<div class="clear"></div>
-		</header>
-		<div class ="title"><span>The Glenola Club of Loyola Center</span></div>	
-		<div class="article">
-			<img src="/assets/images/GlenolaLogoColored.JPG" alt="Glenola Logo" width="20%" height="auto">
-			<p>The Glenola Club is the women's organization associated with St. Ignatius Parish. Throughout each year, the Glenola Club sponsors educational, cultural, and fund raising events. It continues to enroll women attracted to its spiritually enriching and benevolent activities. The Glenola Club is a non-profit organization, incorporated September 23, 1921 under the State of Illinois for social, civic, educational, and benevolent activities.</p>
-			<h4>Invocation</h4>
-			<h4>O Holy Spirit, we implore you to inspire and guide the members of this club that their work may redound to the greater honor and glory of God. Amen.</h4>
-			<p>Mrs. T. J. Byrne - 1922</p>
-			<p><a href="/assets/pages/GlenolaPhotos.html">Please also visit the Glenola Club photographs page.</a></p>
-		</div>
-		<div class ="title"><span>2013-2014 Calendar of Events</span></div>
-		<div class="section">
-			<div class="announcement">
-				<span class="heading">JULY 2013</span>
-				<span class="heading">Summer Dessert Party</span>
-				<span class="when">Saturday, July 20, 12:30 p.m.</span>
-				<span class="where">Holy Name Room</span>
-				<span class="detail">Chairperson:<br/>Mrs. Maureen Smith</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">SEPTEMBER</span>
-				<span class="heading">Board Meeting</span>
-				<span class="when">Saturday,September 14, 9:30 a.m.</span>
-				<span class="where">Rectory Dining Room</span>
-			</div>
-			<div class="announcement">	
-				<span class="heading">Glenola Sunday</span>
-				<span class="when">Sunday, September 22,  8:00 a.m. & 10:00 a.m.</span>
-				<span class="when">8:00 a.m. and 10:00 a.m., Mass for Living and Deceased Members</span>
-				<span class="where">Main Church</span>
-				<span class="when">9:00 a.m. and 11:00 a.m., Social following each mass</span>
-				<span class="where">Holy Name Room</span>
-				<span class="detail">Hostesses:<br/>Mrs. Maureen Smith<br/>Ms. Cheryl Sporlein<br/>Ms. Chris Wolff</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">OCTOBER</span>
-				<span class="heading">Board Meeting</span>
-				<span class="when">Saturday, October 12, 9:30 a.m.</span>
-				<span class="where">Rectory Dining Room</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">NOVEMBER</span>
-				<span class="heading">Annual Benefit Party</span>
-				<span class="when">Saturday, November 16</span>
-				<span class="where">Holy Name Room</span>
-				<span class="where">11:30 a.m., Social Hour</span>
-				<span class="where">12:30 p.m., Luncheon and Raffles</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">DECEMBER</span>
-				<span class="heading">Christmas Social With Santa</span>
-				<span class="when">Sunday, December 15, 9:00 a.m. and 11:00 a.m.</span>
-				<span class="where">Holy Name Room</span>
-				<span class="detail">Hostesses:<br/>Mrs. Maureen Smith<br/>Ms. Cheryl Sporlein<br/>Ms. Chris Wolff</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">JANUARY 2014</span>
-				<span class="heading">Board Meeting</span>
-				<span class="when">Saturday, January 11, 9:30 a.m.</span>
-				<span class="where">Rectory Dining Room</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">MARCH</span>
-				<span class="heading">Lenten Day of Reflection</span>
-				<span class="when">Tuesday, March 11</span>
-				<span class="where">10:00 a.m., Mass, St. Ignatius Chapel</span>
-				<span class="where">11:00 a.m., First Conference, Holy Name Room</span>
-				<span class="where">12:00 p.m., Lunch, Holy Name Room</span>
-				<span class="where">1:00 p.m., Second Conference, Holy Name Room</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">APRIL</span>
-				<span class="heading">Spring Luncheon</span>
-				<span class="when">Saturday, April 12, 11:30 a.m. - 2:00 p.m.</span>
-				<span class="where">Monastero's Ristorante, 3935 W. Devon Avenue</span>
-				<span class="detail">Luncheon Chairperson: Mrs. Marie Roti<br/>Program Chairperson: Mrs. Peggy Cusick</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">JUNE</span>
-				<span class="heading">Joint Board Meeting</span>
-				<span class="when">Saturday, June 14, 9:30 a.m.</span>
-				<span class="where">Rectory Dining Room</span>
-				<span class="detail">Outgoing and Incoming Board Members</span>
-			</div>			
-		</div><!--.section END-->
-		<div class ="title"><span>Glenola Club History</span></div>
-		<div class="article">
-			<img src="/assets/images/GlenolaLogoColored.JPG" alt="Glenola Logo" width="20%" height="auto">
-			<p>In May, 1921, when our parish was only fourteen years old, the women of St. Ignatius Parish responded to a request from their pastor, Rev. D. M. Johnson, S.J., that they continue their fund raising efforts by formally organizing their efforts into a Club. Three months later, on September 23, 1921, the Glenola Club of Loyola Center was incorporated under the laws of the State of Illinois.</p>
+			$('body').addClass('js');
+			  var $menu = $('#menu'),
+				  $menulink = $('.menu-link'),
+				  $menuTrigger = $('.has-submenu > a');
 
-			<p>Glenola Club's active membership was drawn from the women living in St. Ignatius Parish. In the early years, women were proposed for membership by an active member of the Club and endorsed by another active member. Today, in a less formal era, any woman belonging to the parish who wishes to join  may become a member. Glenola also has non-resident members. Any active member in good standing who ceases to live within a 20 mile radius of the parish of the Club may apply to continue membership as a non-resident member. Glenola Club had- at its peak membership- more than 600 women enrolled in the club- the largest catholic women's club in the Midwest.</p>
+			$menulink.click(function(e) {
+				e.preventDefault();
+				$menulink.toggleClass('active');
+				$menu.toggleClass('active');
+			});
 
-			<p>A look into Glenola's yearly directory today reveals that we have Glenola Club members living outside the city in Skokie, Wheeling, Mt. Prospect, Park Ridge, Prospect Heights, Glenview, Evanston, La Grange Park, Morton Grove, Downers Grove and even as far away as New York, Louisiana and Wisconsin.</p>
+			$menuTrigger.click(function(e) {
+				e.preventDefault();
+				var $this = $(this);
+				$this.toggleClass('active').next('ul').toggleClass('active');
+			});
+		});
+		</script>
+		<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			<p>All past presidents of the club are made life members of the club at the conclusion of their term in office, with all the rights and privileges of the club without paying dues. To date, forty-two women have held the office of president from 1921 to 2003, the Glenola Club president has served two years instead of a one year term.</p>
+		  ga('create', 'UA-42534150-1', 'stignatiuschurch.org');
+		  ga('send', 'pageview');
 
-			<p>As the popularity of the Club's programs and parties increased, Glenola branched out offering membership to the younger women of the parish. The Glenola Junior had their own officers, meetings, and events. And- with the passing of the time- the juniors made the transition, crossing over into the senior club. Mrs. Michael Wrenn, 1999-2001, was elected as president both the Glenola Juniors and, later, the Glenola Club.</p>
-
-			<p>From the 30s to the 60s, the Glenola Club drew hundreds of ladies to its fund raising bridge parties and raffles and to the heavily patronized Annual Holiday Bazaar- all held in the newly built St. Ignatius Gymnasium.</p>
-
-			<p>For many years, starting in the 30s, Glenola conducted its business from the stage of the art deco Loyola Community theatre. After the monthly program was concluded, several hundred members and their guest would walk up the stairs near the entrance of the auditorium to their spacious meeting room overlooking the church bell tower and chapel. Cluster of women gathered in smaller groups to enjoy their traditional post meeting tea.</p>
-
-			<p>Money that the whole parish helped the Glenola Club to raise went back to the parish and to worthwhile civic and catholic organizations. In the past 82 years, Glenola has given thousands of dollars to facilitate parish projects and to help individual parishioners and families- especially the children- who needed assistance. Things as basic as food, clothing, eye glasses, rent money, tuition were all part of Glenola's effort to provide help wherever help was needed.</p>
-
-			<p>Starting its 93rd year in September 2014, Glenola continues to enroll women attracted to its social, civic, educational and benevolent activities. 
-			New members in the current year include women newly arrived in the parish as well women with multi generational ties with the Glenola Club.</p>
-			<p><a href="/assets/pages/GlenolaPhotos.html">Please also visit the Glenola Club photographs page.</a></p>
-		</div>
-		<div class ="title"><span>Glenola Club Officers</span></div>
-		<div class="section">
-			<div class="announcement">
-				<span class="heading"><a href="mailto:clng2006@yahoo.com">Ms. Catherine Long</a></span>
-				<span class="detail">President</span>
+		</script>
+	</head>
+	<body>
+		<div class="container">										
+			<div class="image">
+				<img src="/assets/images/140122aPatWinCropMary.jpg" alt="St. Ignatius" width="100%" height="auto">
 			</div>
-			<div class="announcement">
-				<span class="heading">Ms. Maureen Smith</span>
-				<span class="detail">First Vice President</span>
+			<div class="logo">
+				<span>St. Ignatius Church &#8211; Chicago,&nbsp;IL</span>
+			</div><!--.logo END-->
+			<header class="head cf">
+			
+				<a class="menu-link" href="#menu"><i class="fa fa-bars fa-3x"></i></a>
+				
+				<nav id="menu" class="menu">
+					<ul>
+						<li><a href="http://www.stignatiuschurch.org">Home</a></li>
+						<li><a href="/assets/pages/AboutTheParish.html#A2">Map</a></li>
+						<li><a href="/assets/pages/AboutTheParish.html#A3">Mass&nbsp;Schedule</a></li>
+						<li class="has-submenu"><a href="#">About&nbsp;the&nbsp;Parish</a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/AboutTheParish.html">Parish Information</a></li>
+								<li><a href="/assets/pages/Bulletins.html">Bulletin</a></li>
+								<li><a href="/assets/pages/AboutTheParish.html#A4">Office Hours</a></li>
+								<li><a href="/assets/pages/StaffDirectory.html">Parish Staff</a></li>
+								<li><a href="/assets/pages/AboutTheParish.html#A6">Parish History</a></li>
+								<li class="has-submenu"><a href="#">Join the Parish</a>
+									<ul>
+										<li><a href="/assets/pages/ParishRegistrationENG.html" target="_blank">English Registration</a></li>
+										<li><a href="/assets/pdf/SpanishRegistration.pdf" target="_blank">Spanish Registration</a></li>
+									</ul>
+								</li>
+								<li class="has-submenu"><a href="#">Restoration Projects</a>
+									<ul>
+										<li><a href="/assets/pages/RestorationChurch.html">Church Restoration</a></li>
+										<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
+									</ul>
+								</li>
+								<li><a href="/assets/pages/ParishPhotos.html">Photographs</a></li>
+								<li><a href="/assets/pages/WindowGallery.html">Window Photographs</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#">Ministries</a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/MinistriesMain.html">About</a></li>
+								<li><a href="/assets/pdf/LMSchedule.pdf" target="_blank">Minister Schedule</a></li>
+								<li><a href="/assets/pages/LCCharter.html">Liturgy Committee Charter</a></li>
+								<li><a href="/assets/pages/LCJobDescription.html">Liturgy Committee Job Description</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#">Ignatian Services</a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/IgnatianServicesMain.html">About</a></li>
+								<li><a href="/assets/pages/IgnatianServicesPhotos.html">Ignatian Services Photos</a></li>	        			 
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#">Music</a>
+							<ul>
+								<li><a href="/assets/pages/MusicMinistryMain.html">About</a></li>
+								<li class="has-submenu"><a href="#">Choir Materials</a>
+									<ul>
+										<li><a href="/assets/pages/MusicChoirRehSched.html">Rehearsal Schedule</a></li>
+										<li><a href="/assets/pages/MusicChoirRepertoire.html">Choir Repertoire</a></li>
+										<li><a href="/assets/pages/MusicCantorSchedules.html">Cantor Schedule</a></li>
+									</ul>
+								</li>
+								<li class="has-submenu"><a href="#">Wedding Music</a>
+									<ul>
+										<li><a href="/assets/pages/MusicWeddingPlanning.html">Wedding Music Planning</a></li>
+										<li><a href="/assets/pages/MusicWeddingOrgan.html">Wedding Organ Selections</a></li>
+										<li><a href="/assets/pages/MusicWeddingVocal.html">Wedding Vocal Selections</a></li>
+									</ul>
+								</li>
+								<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
+								<li><a href="/assets/pages/MusicPhotos.html">Music Photos</a></li>
+							</ul>
+						 </li> 
+						<li class="has-submenu"><a href="#"><b>Groups</b></a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/Groups.html">About</a></li>
+								<li><a href="/assets/pages/CirculoDeOracion.html">Circulo de Oraci&#243;n</a></li>
+								<li class="has-submenu"><a href="#"><b>Glenola Club</b></a>
+									<ul>
+										<li><a href="/assets/pages/GlenolaClub.html"><b>About</b></a></li>
+										<li><a href="/assets/pages/GlenolaPhotos.html">Glenola Photos</a></li>
+									</ul>
+								</li>
+								<li><a href="http://hermandadsenordelosmilagroschicago.org/index.html" target="_blank">Hermandad del Se&#241;or de los Milagros</a></li>
+								<li><a href="http://www.kofc-university1687.org/Pages/default.aspx" target="_blank">Knights of Columbus</a></li>
+								<li><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></li>
+							</ul>
+						</li>
+						<li><a href="/assets/pages/Links.html">Links</a></li>
+						<li class="has-submenu"><a href="#">Giving</a>
+							<ul>
+								<li><a href="https://www.parishpay.com/nonprofit/login.html?pc=m9wuf360" target="_blank">Online Giving</a></li>
+								<li><a href="/assets/pages/CapitalCampaign.html">Capital Campaign</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</header>
+			<div class ="title"><span>The Glenola Club of Loyola Center</span></div>	
+			<div class="article">
+				<img src="/assets/images/GlenolaLogoColored.JPG" alt="Glenola Logo" width="20%" height="auto">
+				<p>The Glenola Club is the women's organization associated with St. Ignatius Parish. Throughout each year, the Glenola Club sponsors educational, cultural, and fund raising events. It continues to enroll women attracted to its spiritually enriching and benevolent activities. The Glenola Club is a non-profit organization, incorporated September 23, 1921 under the State of Illinois for social, civic, educational, and benevolent activities.</p>
+				<h4>Invocation</h4>
+				<h4>O Holy Spirit, we implore you to inspire and guide the members of this club that their work may redound to the greater honor and glory of God. Amen.</h4>
+				<p>Mrs. T. J. Byrne - 1922</p>
+				<p><a href="/assets/pages/GlenolaPhotos.html">Please also visit the Glenola Club photographs page.</a></p>
 			</div>
-			<div class="announcement">
-				<span class="heading">Mrs. Peggy Cusick</span>
-				<span class="detail">Second Vice President</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">Mrs. Marie Roti</span>
-				<span class="detail">Recording Secretary</span>
-			</div>
-			<div class="announcement">
-				<span class="heading"><a href="mailto:mercedes@stignatiuschurch.org">Mrs. Mercedes Mac Laughlin</a></span>
-				<span class="detail">Corresponding Secretary</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">Ms. Cheryl Sporlein</span>
-				<span class="detail">Financial Secretary</span>
-			</div>
-			<div class="announcement">
-				<span class="heading">Stephanie DeCaluwe</span>
-				<span class="detail">Treasurer</span>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="columnleft">
-				<p><b>Weekend Mass Schedule</b><br/>
-				Sat 5:00 p.m. &#8211; Chapel<br/>
-				Sun 8:00 a.m. &#8211; Church<br/>
-				Sun 10:00 a.m. &#8211; Church<br/>
-				Sun 12:00 p.m. &#8211; Church (Spanish)<br/>
-				Sun 6:00 p.m. &#8211; Chapel</p>
-				<p><b>Weekday Mass Schedule</b><br/>
-				Mon. &#8211; Fri. at 7:00 and 8:00 a.m. &#8211; Chapel<br/>
-				Saturday Daily Mass at 8:00 a.m. &#8211; Chapel</p>
-				<p><b>Adoration</b><br/>
-				Friday 6:30 p.m. &#8211; 8:30 p.m.</p>
-				<p><b>Reconciliation</b><br/>
-				Saturday 4:30 p.m. &#8211; 5:00 p.m.</p>
-			</div>
-			<div class="columncenter">
-				<p><b>Rev. Joseph M. Jackson, Ph. D., pastor</b><br/>
-				Rev. Kinoti Kithuri, associate<br/>
-				Rev. William Grogan, resident<br/>
-				Rev. Patrick McAteer, S. J., resident<br/>
-				Rev. Raul Mora, deacon<br/>
-				Rev. Rogelio Soto, deacon</p>
-			</div>	
-			<div class="columnright">
-				<p><b>St. Ignatius Church</b><br/>
-				6559 North Glenwood Avenue<br/>
-				Chicago, IL 60626<br/>
-				Tel:(773) 764-5936<br/>
-				Fax:(773) 764-4360</p>
-				<!-- AddThis Button BEGIN -->
-				<div class="addthis_toolbox addthis_default_style ">
-				<a class="addthis_button_preferred_1"></a>
-				<a class="addthis_button_preferred_2"></a>
-				<a class="addthis_button_preferred_3"></a>
-				<a class="addthis_button_preferred_4"></a>
-				<a class="addthis_button_compact"></a>
-				<a class="addthis_counter addthis_bubble_style"></a>
+			<div class ="title"><span>2013-2014 Calendar of Events</span></div>
+			<div class="section">
+				<div class="announcement">
+					<span class="heading">JULY 2013</span>
+					<span class="heading">Summer Dessert Party</span>
+					<span class="when">Saturday, July 20, 12:30 p.m.</span>
+					<span class="where">Holy Name Room</span>
+					<span class="detail">Chairperson:<br/>Mrs. Maureen Smith</span>
 				</div>
-				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51cabaef03c9a8db"></script>
-				<!-- AddThis Button END -->
+				<div class="announcement">
+					<span class="heading">SEPTEMBER</span>
+					<span class="heading">Board Meeting</span>
+					<span class="when">Saturday,September 14, 9:30 a.m.</span>
+					<span class="where">Rectory Dining Room</span>
+				</div>
+				<div class="announcement">	
+					<span class="heading">Glenola Sunday</span>
+					<span class="when">Sunday, September 22,  8:00 a.m. & 10:00 a.m.</span>
+					<span class="when">8:00 a.m. and 10:00 a.m., Mass for Living and Deceased Members</span>
+					<span class="where">Main Church</span>
+					<span class="when">9:00 a.m. and 11:00 a.m., Social following each mass</span>
+					<span class="where">Holy Name Room</span>
+					<span class="detail">Hostesses:<br/>Mrs. Maureen Smith<br/>Ms. Cheryl Sporlein<br/>Ms. Chris Wolff</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">OCTOBER</span>
+					<span class="heading">Board Meeting</span>
+					<span class="when">Saturday, October 12, 9:30 a.m.</span>
+					<span class="where">Rectory Dining Room</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">NOVEMBER</span>
+					<span class="heading">Annual Benefit Party</span>
+					<span class="when">Saturday, November 16</span>
+					<span class="where">Holy Name Room</span>
+					<span class="where">11:30 a.m., Social Hour</span>
+					<span class="where">12:30 p.m., Luncheon and Raffles</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">DECEMBER</span>
+					<span class="heading">Christmas Social With Santa</span>
+					<span class="when">Sunday, December 15, 9:00 a.m. and 11:00 a.m.</span>
+					<span class="where">Holy Name Room</span>
+					<span class="detail">Hostesses:<br/>Mrs. Maureen Smith<br/>Ms. Cheryl Sporlein<br/>Ms. Chris Wolff</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">JANUARY 2014</span>
+					<span class="heading">Board Meeting</span>
+					<span class="when">Saturday, January 11, 9:30 a.m.</span>
+					<span class="where">Rectory Dining Room</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">MARCH</span>
+					<span class="heading">Lenten Day of Reflection</span>
+					<span class="when">Tuesday, March 11</span>
+					<span class="where">10:00 a.m., Mass, St. Ignatius Chapel</span>
+					<span class="where">11:00 a.m., First Conference, Holy Name Room</span>
+					<span class="where">12:00 p.m., Lunch, Holy Name Room</span>
+					<span class="where">1:00 p.m., Second Conference, Holy Name Room</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">APRIL</span>
+					<span class="heading">Spring Luncheon</span>
+					<span class="when">Saturday, April 12, 11:30 a.m. - 2:00 p.m.</span>
+					<span class="where">Monastero's Ristorante, 3935 W. Devon Avenue</span>
+					<span class="detail">Luncheon Chairperson: Mrs. Marie Roti<br/>Program Chairperson: Mrs. Peggy Cusick</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">JUNE</span>
+					<span class="heading">Joint Board Meeting</span>
+					<span class="when">Saturday, June 14, 9:30 a.m.</span>
+					<span class="where">Rectory Dining Room</span>
+					<span class="detail">Outgoing and Incoming Board Members</span>
+				</div>			
+			</div><!--.section END-->
+			<div class ="title"><span>Glenola Club History</span></div>
+			<div class="article">
+				<img src="/assets/images/GlenolaLogoColored.JPG" alt="Glenola Logo" width="20%" height="auto">
+				<p>In May, 1921, when our parish was only fourteen years old, the women of St. Ignatius Parish responded to a request from their pastor, Rev. D. M. Johnson, S.J., that they continue their fund raising efforts by formally organizing their efforts into a Club. Three months later, on September 23, 1921, the Glenola Club of Loyola Center was incorporated under the laws of the State of Illinois.</p>
+
+				<p>Glenola Club's active membership was drawn from the women living in St. Ignatius Parish. In the early years, women were proposed for membership by an active member of the Club and endorsed by another active member. Today, in a less formal era, any woman belonging to the parish who wishes to join  may become a member. Glenola also has non-resident members. Any active member in good standing who ceases to live within a 20 mile radius of the parish of the Club may apply to continue membership as a non-resident member. Glenola Club had- at its peak membership- more than 600 women enrolled in the club- the largest catholic women's club in the Midwest.</p>
+
+				<p>A look into Glenola's yearly directory today reveals that we have Glenola Club members living outside the city in Skokie, Wheeling, Mt. Prospect, Park Ridge, Prospect Heights, Glenview, Evanston, La Grange Park, Morton Grove, Downers Grove and even as far away as New York, Louisiana and Wisconsin.</p>
+
+				<p>All past presidents of the club are made life members of the club at the conclusion of their term in office, with all the rights and privileges of the club without paying dues. To date, forty-two women have held the office of president from 1921 to 2003, the Glenola Club president has served two years instead of a one year term.</p>
+
+				<p>As the popularity of the Club's programs and parties increased, Glenola branched out offering membership to the younger women of the parish. The Glenola Junior had their own officers, meetings, and events. And- with the passing of the time- the juniors made the transition, crossing over into the senior club. Mrs. Michael Wrenn, 1999-2001, was elected as president both the Glenola Juniors and, later, the Glenola Club.</p>
+
+				<p>From the 30s to the 60s, the Glenola Club drew hundreds of ladies to its fund raising bridge parties and raffles and to the heavily patronized Annual Holiday Bazaar- all held in the newly built St. Ignatius Gymnasium.</p>
+
+				<p>For many years, starting in the 30s, Glenola conducted its business from the stage of the art deco Loyola Community theatre. After the monthly program was concluded, several hundred members and their guest would walk up the stairs near the entrance of the auditorium to their spacious meeting room overlooking the church bell tower and chapel. Cluster of women gathered in smaller groups to enjoy their traditional post meeting tea.</p>
+
+				<p>Money that the whole parish helped the Glenola Club to raise went back to the parish and to worthwhile civic and catholic organizations. In the past 82 years, Glenola has given thousands of dollars to facilitate parish projects and to help individual parishioners and families- especially the children- who needed assistance. Things as basic as food, clothing, eye glasses, rent money, tuition were all part of Glenola's effort to provide help wherever help was needed.</p>
+
+				<p>Starting its 93rd year in September 2014, Glenola continues to enroll women attracted to its social, civic, educational and benevolent activities. 
+				New members in the current year include women newly arrived in the parish as well women with multi generational ties with the Glenola Club.</p>
+				<p><a href="/assets/pages/GlenolaPhotos.html">Please also visit the Glenola Club photographs page.</a></p>
 			</div>
-			<div class="clear"></div>
-		</div><!--.footer END-->
-	</div>
-</body>
+			<div class ="title"><span>Glenola Club Officers</span></div>
+			<div class="section">
+				<div class="announcement">
+					<span class="heading"><a href="mailto:clng2006@yahoo.com">Ms. Catherine Long</a></span>
+					<span class="detail">President</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">Ms. Maureen Smith</span>
+					<span class="detail">First Vice President</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">Mrs. Peggy Cusick</span>
+					<span class="detail">Second Vice President</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">Mrs. Marie Roti</span>
+					<span class="detail">Recording Secretary</span>
+				</div>
+				<div class="announcement">
+					<span class="heading"><a href="mailto:mercedes@stignatiuschurch.org">Mrs. Mercedes Mac Laughlin</a></span>
+					<span class="detail">Corresponding Secretary</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">Ms. Cheryl Sporlein</span>
+					<span class="detail">Financial Secretary</span>
+				</div>
+				<div class="announcement">
+					<span class="heading">Stephanie DeCaluwe</span>
+					<span class="detail">Treasurer</span>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="columnleft">
+					<p><b>Weekend Mass Schedule</b><br/>
+					Sat 5:00 p.m. &#8211; Chapel<br/>
+					Sun 8:00 a.m. &#8211; Church<br/>
+					Sun 10:00 a.m. &#8211; Church<br/>
+					Sun 12:00 p.m. &#8211; Church (Spanish)<br/>
+					Sun 6:00 p.m. &#8211; Chapel</p>
+					<p><b>Weekday Mass Schedule</b><br/>
+					Mon. &#8211; Fri. at 7:00 and 8:00 a.m. &#8211; Chapel<br/>
+					Saturday Daily Mass at 8:00 a.m. &#8211; Chapel</p>
+					<p><b>Adoration</b><br/>
+					Friday 6:30 p.m. &#8211; 8:30 p.m.</p>
+					<p><b>Reconciliation</b><br/>
+					Saturday 4:30 p.m. &#8211; 5:00 p.m.</p>
+				</div>
+				<div class="columncenter">
+					<p><b>Rev. Joseph M. Jackson, Ph. D., pastor</b><br/>
+					Rev. Kinoti Kithuri, associate<br/>
+					Rev. William Grogan, resident<br/>
+					Rev. Patrick McAteer, S. J., resident<br/>
+					Rev. Raul Mora, deacon<br/>
+					Rev. Rogelio Soto, deacon</p>
+				</div>	
+				<div class="columnright">
+					<p><b>St. Ignatius Church</b><br/>
+					6559 North Glenwood Avenue<br/>
+					Chicago, IL 60626<br/>
+					Tel:(773) 764-5936<br/>
+					Fax:(773) 764-4360</p>
+					<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style ">
+					<a class="addthis_button_preferred_1"></a>
+					<a class="addthis_button_preferred_2"></a>
+					<a class="addthis_button_preferred_3"></a>
+					<a class="addthis_button_preferred_4"></a>
+					<a class="addthis_button_compact"></a>
+					<a class="addthis_counter addthis_bubble_style"></a>
+					</div>
+					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51cabaef03c9a8db"></script>
+					<!-- AddThis Button END -->
+				</div>
+				<div class="clear"></div>
+			</div><!--.footer END-->
+		</div>
+	</body>
 </html>

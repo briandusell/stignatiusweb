@@ -1,284 +1,293 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-
-<title>St. Ignatius Church, Chicago | Groups</title>
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index,follow" />
-<meta name="copyright" content="Copyright (c) January 2014" />
-<meta name="description" content="The parish organization page for St. Ignatius Church, Chicago, IL"/>
-<base href="http://www.stignatiuschurch.org">
-
-<link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
-
-<script>
-jQuery( document ).ready( function( $ ) {
-	
-	$('body').addClass('js');
-	  var $menu = $('#menu'),
-		  $menulink = $('.menu-link'),
-		  $menuTrigger = $('.has-submenu > a');
-
-	$menulink.click(function(e) {
-		e.preventDefault();
-		$menulink.toggleClass('active');
-		$menu.toggleClass('active');
-	});
-
-	$menuTrigger.click(function(e) {
-		e.preventDefault();
-		var $this = $(this);
-		$this.toggleClass('active').next('ul').toggleClass('active');
-	});
-});
-</script>
-
-</head>
-<body>
-	<div class="container">										
-		<div class="image">
-			<img src="/assets/images/HFCrop3.jpg" alt="St. Ignatius" width="100%" height="auto">
-		</div>
-		<div class="logo">
-			<span>St. Ignatius Church &#8211; Chicago,&nbsp;IL</span>
-		</div><!--.logo END-->
-		<header class="head cf">
-		
-			<a class="menu-link" href="#menu">Menu</a>
+	<head>
+		<title>St. Ignatius Church, Chicago | Groups</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="index, follow">
+		<meta name="copyright" content="Copyright (c) June 2014">
+		<meta name="description" content="The parish organization page for St. Ignatius Church, Chicago, IL">
+		<base href="http://www.stignatiuschurch.org">
+		<link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
+		<!-- Font source for bars icon in responsive nav menu -->
+		<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<!-- JQuery source -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
+		<!-- JQuery Responsive menu  -->
+		<script>
+		jQuery( document ).ready( function( $ ) {
 			
-			<nav id="menu" class="menu">
-				<ul>
-					<li><a href="http://www.stignatiuschurch.org">Home</a></li>
-					<li><a href="/assets/pages/AboutTheParish.html#A2">Map</a></li>
-					<li><a href="/assets/pages/AboutTheParish.html#A3">Mass&nbsp;Schedule</a></li>
-					<li class="has-submenu"><a href="#">About&nbsp;the&nbsp;Parish</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/AboutTheParish.html">Parish Information</a></li>
-							<li><a href="/assets/pages/Bulletins.html">Bulletin</a></li>
-							<li><a href="/assets/pages/AboutTheParish.html#A4">Office Hours</a></li>
-							<li><a href="/assets/pages/StaffDirectory.html">Parish Staff</a></li>
-							<li><a href="/assets/pages/AboutTheParish.html#A6">Parish History</a></li>
-							<li class="has-submenu"><a href="#">Join the Parish</a>
-								<ul>
-									<li><a href="/assets/pages/ParishRegistrationENG.html" target="_blank">English Registration</a></li>
-									<li><a href="/assets/pdf/SpanishRegistration.pdf" target="_blank">Spanish Registration</a></li>
-								</ul>
-							</li>
-							<li class="has-submenu"><a href="#">Restoration Projects</a>
-								<ul>
-									<li><a href="/assets/pages/RestorationChurch.html">Church Restoration</a></li>
-									<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
-								</ul>
-							</li>
-							<li><a href="/assets/pages/ParishPhotos.html">Photographs</a></li>
-						</ul>
-					</li>
-					<li class="has-submenu"><a href="#">Ministries</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/MinistriesMain.html">About</a></li>
-							<li><a href="/assets/pdf/LMSchedule.pdf" target="_blank">Minister Schedule</a></li>
-							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee Charter</a></li>
-							<li><a href="/assets/pages/LCJobDescription.html">Liturgy Committee Job Description</a></li>
-						</ul>
-					</li>
-					<li class="has-submenu"><a href="#">Ignatian Services</a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/IgnatianServicesMain.html">About</a></li>
-							<li><a href="/assets/pages/IgnatianServicesPhotos.html">Ignatian Services Photos</a></li>	        			 
-						</ul>
-					</li>
-					<li class="has-submenu"><a href="#">Music</a>
-						<ul>
-							<li><a href="/assets/pages/MusicMinistryMain.html">About</a></li>
-							<li class="has-submenu"><a href="#">Choir Materials</a>
-								<ul>
-									<li><a href="/assets/pages/MusicChoirRehSched.html">Rehearsal Schedule</a></li>
-									<li><a href="/assets/pages/MusicChoirRepertoire.html">Choir Repertoire</a></li>
-									<li><a href="/assets/pages/MusicCantorSchedules.html">Cantor Schedule</a></li>
-								</ul>
-							</li>
-							<li class="has-submenu"><a href="#">Wedding Music</a>
-								<ul>
-									<li><a href="/assets/pages/MusicWeddingPlanning.html">Wedding Music Planning</a></li>
-									<li><a href="/assets/pages/MusicWeddingOrgan.html">Wedding Organ Selections</a></li>
-									<li><a href="/assets/pages/MusicWeddingVocal.html">Wedding Vocal Selections</a></li>
-								</ul>
-							</li>
-							<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
-							<li><a href="/assets/pages/MusicPhotos.html">Music Photos</a></li>
-						</ul>
-					 </li> 
-					<li class="has-submenu"><a href="#"><b>Groups</b></a>
-						<ul class="sub-menu">
-							<li><a href="/assets/pages/Groups.html"><b>About</b></a></li>
-							<li><a href="/assets/pages/CirculoDeOracion.html">Circulo de Oraci&#243;n</a></li>
-							<li class="has-submenu"><a href="#">Glenola Club</a>
-								<ul>
-									<li><a href="/assets/pages/GlenolaClub.html">About</a></li>
-									<li><a href="/assets/pages/GlenolaPhotos.html">Glenola Photos</a></li>
-								</ul>
-							</li>
-							<li><a href="http://hermandadsenordelosmilagroschicago.org/index.html" target="_blank">Hermandad del Se&#241;or de los Milagros</a></li>
-							<li><a href="http://www.kofc-university1687.org/Pages/default.aspx" target="_blank">Knights of Columbus</a></li>
-							<li><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></li>
-						</ul>
-					</li>
-					<li><a href="/assets/pages/Links.html">Links</a></li>
-					<li class="has-submenu"><a href="#">Giving</a>
-						<ul>
-							<li><a href="https://www.parishpay.com/nonprofit/login.html?pc=m9wuf360" target="_blank">Online Giving</a></li>
-							<li><a href="/assets/pages/CapitalCampaign.html">Capital Campaign</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<div class="clear"></div>
-		</header>
-		<div class ="title"><span>Groups And Committees at St. Ignatius</span></div>
-		<div class="section">
-			<div class="group">
-				<span class="heading">Parish Council</span> 
-				<span class="when">In Formation</span>
-				<span class="where">Rectory Dining Room</span>
-				<span class="detail">The Pastoral Council is a group of nine to twelve parishioners who represent all aspects of the parish whose purpose is to consult with and advise the pastor on parish issues and initiatives.</span>
+			$('body').addClass('js');
+			  var $menu = $('#menu'),
+				  $menulink = $('.menu-link'),
+				  $menuTrigger = $('.has-submenu > a');
+
+			$menulink.click(function(e) {
+				e.preventDefault();
+				$menulink.toggleClass('active');
+				$menu.toggleClass('active');
+			});
+
+			$menuTrigger.click(function(e) {
+				e.preventDefault();
+				var $this = $(this);
+				$this.toggleClass('active').next('ul').toggleClass('active');
+			});
+		});
+		</script>
+		<!-- Google analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-42534150-1', 'stignatiuschurch.org');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	<body>
+		<div class="container">										
+			<div class="image">
+				<img src="/assets/images/HFCrop3.jpg" alt="St. Ignatius" width="100%" height="auto">
 			</div>
-			<div class="group">
-				<span class="heading">Finance Council</span> 
-				<span class="when">Monthly Meetings</span>
-				<span class="where">Rectory Dining Room</span>
-				<span class="detail">The Finance Council is an appointed committee of parishioners whose purpose is to consult with and advise the pastor on parish financial issues and fund raising initiatives.</span>
-			</div>
-			<div class="group">
-				<span class="heading"><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></span> 
-				<span class="when">Monthly Meetings</span>
-				<span class="where">Rectory Dining Room</span>
-				<span class="detail">The Liturgy Committee is a group of parishioners whose purpose is to consult with and advise the pastor on the planning and coordination of parish liturgical celebrations and volunteer ministries.</span>
-			</div>
-			<div class="group">
-				<span class="heading"><a href="/assets/pages/IgnatianServicesMain.html">Ignatian Services</a></span> 
-				<span class="when">Wednesday 2 p.m. &#8211; 4 p.m.;	Friday 10 a.m. &#8211; 12 p.m.</span>
-				<span class="where">Food Pantry</span>
-				<span class="detail">Ignatian Services is the social service expression of St. Ignatius Church. Its purpose is to provide assistance to those members of our neighborhood who are in need and its primary ministry is the distribution of food through our food pantry. Together, our volunteers, benefactors, parishioners, and clients form a community. This is why we say that WE ARE ALL IGNATIAN SERVICES.</span>
-			</div>
-			<div class="group">
-				<span class="heading"><a href="/assets/pages/GlenolaClub.html">Glenola Club of Loyola Center</a></span> 
-				<span class="when">Monthly Meetings</span>
-				<span class="where">Rectory Dining Room/Holy Name Room</span>
-				<span class="detail">Founded in September 1921, the Glenola Club is the women's organization associated with St. Ignatius Parish. It continues to enroll women attracted to its social, civic, educational and benevolent activities. Throughout each year, the Glenola Club sponsors educational, cultural, and fund raising events.</span>
-			</div>
-			<div class="group">
-				<span class="heading"><a href="http://www.kofc-university1687.org/Pages/default.aspx">Knights of Columbus University&nbsp;Council&nbsp;1687</a></span> 
-				<span class="when">Monthly Meetings</span>
-				<span class="where">Holy Name Room</span>
-				<span class="detail">Knights of Columbus, University Council 1687 is the local chapter of the national Knights of Columbus Catholic men's organization. It organizes fund raising initiatives on behalf of the parish and the national organization. It also coordinates beneficial services such as blood drives for the St. Ignatius parish community.</span>
-			</div>
-			<div class="group">
-				<span class="heading">Legion of Mary</span> 
-				<span class="when">Saturday Morning</span>
-				<span class="where">Rectory Library</span>
-				<span class="detail">The Legion of Mary is the local chapter if the international faith and service organization founded in Ireland in the 1920's. Its members gather every Saturday morning after the daily mass to pray the rosary and hold meetings.</span>
-			</div>
-			<div class="group">
-				<span class="heading"><a href="/assets/pages/MusicMinistryMain.html">Parish Choir</a></span> 
-				<span class="when">Tuesday 7:30 - 9:00 p.m.</span>
-				<span class="where">Music Rehearsal Room</span>
-				<span class="detail">The Parish Choir is an SATB (soprano-alto-tenor-bass) chorus for teens and adults that sings for the 10 a.m. mass each Sunday. The parish choir sings a wide range of repertoire including hymnody, chant, Renaissance polyphony, choral anthems, and contemporary music. </span>
-			</div>
-			<div class="group">
-				<span class="heading"><a href="/assets/pages/CirculoDeOracion.html">Circulo de Oraci&#243;n</a></span> 
-				<span class="when">Friday 7:00 - 9:00 p.m.</span>
-				<span class="where">Holy Name Room</span>
-				<span class="detail">The Circulo de Oraci&#243;n is the charismatic Hispanic prayer group affiliated with St. Ignatius parish. This group holds weekly prayer meetings.</span>
-			</div>
-			<div class="group">
-				<span class="heading">Grupo Del Rosario</span> 
-				<span class="when">Thursday at 7:30 p.m.</span>
-				<span class="where">Chapel</span>
-				<span class="detail">The Grupo Del Rosario is the Spanish Rosary Society. This group gathers to pray the Rosary every Thursday evening in the Chapel.</span>
-			</div>
-			<div class="group">
-				<span class="heading"><a href="/assets/pages/MusicMinistryMain.html">Coro de Ni&#241;os</a></span> 
-				<span class="when">Saturday Morning</span>
-				<span class="where">Music Rehearsal Room</span>
-				<span class="detail">The Coro de Ni&#241;os is the parish's primary children's choir which sings for the 12 p.m. Spanish mass on average three times a month from September - May. </span>
-			</div>
-			<div class="group">
-				<span class="heading"><a href="/assets/pages/MusicMinistryMain.html">Coro Hispano</a></span> 
-				<span class="when">Sunday Morning at 11:30 a.m.</span>
-				<span class="where">Main Church</span>
-				<span class="detail">The Coro Hispano is a teen and adult choir which currently rehearses on Sunday mornings at 11:30 a.m. and sings in Spanish for the 12 p.m. mass each Sunday. This choir sings beautiful Hispanic liturgical songs and often sings together with the Hispanic children's choir, the Coro de Niños. The choir is accompanied by piano, bass, and percussion.</span>
-			</div>
-			<div class="group">
-				<span class="heading"><a href="http://hermandadsenordelosmilagroschicago.org/index.html">Hermandad del Se&#241;or de los Milagros</a></span> 
-				<span class="when">Monthly Meetings</span>
-				<span class="where">Holy Name Room</span>
-				<span class="detail">The Hermandad del Se&#241;or de los Milagros is a Peruvian devotional society affiliated with St, Ignatius parish for over 35 years. Each year, on the third Sunday in October, the Hermandad sponsors a triduum, solemn mass, and outdoor procession in honor of el Se&#241;or de los Milagros (Our Lord of the Miracles).</span>
-			</div>
-			<div class="group">
-				<span class="heading">Comite Guadalupano</span> 
-				<span class="when"></span>
-				<span class="where"></span>
-				<span class="detail">The Comite Guadalupano is a devotional society devoted to the patroness of the Americas, the Virgen of Guadalupe (Our Lady of Guadalupe). Each year, on December 12th, they sponsor a triduum, ma&#241;anitas, and solemn mass in honor of the Virgen de Guadalupe.</span>
-			</div>
-			<div class="group">
-				<span class="heading">Coro Virgen de la Nube</span> 
-				<span class="when"></span>
-				<span class="where"></span>
-				<span class="detail">The Coro Virgen de la Nube is an Ecuadorian devotional society devoted to the patroness of Ecuador, Virgen de la Nube (Virgen of the Clouds). Each year, on January 1st, they sponsor a triduum, solemn mass, and outdoor procession in honor of the Virgen de la Nube.</span>
-			</div>
-		</div><!-- .section END -->
-		<div class="footer">
-			<div class="columnleft">
-				<p><b>Weekend Mass Schedule</b><br/>
-				Sat 5:00 p.m. &#8211; Chapel<br/>
-				Sun 8:00 a.m. &#8211; Church<br/>
-				Sun 10:00 a.m. &#8211; Church<br/>
-				Sun 12:00 p.m. &#8211; Church (Spanish)<br/>
-				Sun 6:00 p.m. &#8211; Chapel</p>
-				<p><b>Weekday Mass Schedule</b><br/>
-				Mon. &#8211; Fri. at 7:00 and 8:00 a.m. &#8211; Chapel<br/>
-				Saturday Daily Mass at 8:00 a.m. &#8211; Chapel</p>
-				<p><b>Adoration</b><br/>
-				Friday 6:30 p.m. &#8211; 8:30 p.m.</p>
-				<p><b>Reconciliation</b><br/>
-				Saturday 4:30 p.m. &#8211; 5:00 p.m.</p>
-			</div>
-			<div class="columncenter">
-				<p><b>Rev. Joseph M. Jackson, Ph. D., pastor</b><br/>
-				Rev. Kinoti Kithuri, associate<br/>
-				Rev. William Grogan, resident<br/>
-				Rev. Patrick McAteer, S. J., resident<br/>
-				Rev. Raul Mora, deacon<br/>
-				Rev. Rogelio Soto, deacon</p>
-			</div>	
-			<div class="columnright">
-				<p><b>St. Ignatius Church</b><br/>
-				6559 North Glenwood Avenue<br/>
-				Chicago, IL 60626<br/>
-				Tel:(773) 764-5936<br/>
-				Fax:(773) 764-4360</p>
-				<!-- AddThis Button BEGIN -->
-				<div class="addthis_toolbox addthis_default_style ">
-				<a class="addthis_button_preferred_1"></a>
-				<a class="addthis_button_preferred_2"></a>
-				<a class="addthis_button_preferred_3"></a>
-				<a class="addthis_button_preferred_4"></a>
-				<a class="addthis_button_compact"></a>
-				<a class="addthis_counter addthis_bubble_style"></a>
+			<div class="logo">
+				<span>St. Ignatius Church &#8211; Chicago,&nbsp;IL</span>
+			</div><!--.logo END-->
+			<header class="head cf">
+			
+				<a class="menu-link" href="#menu"><i class="fa fa-bars fa-3x"></i></a>
+				
+				<nav id="menu" class="menu">
+					<ul>
+						<li><a href="http://www.stignatiuschurch.org">Home</a></li>
+						<li><a href="/assets/pages/AboutTheParish.html#A2">Map</a></li>
+						<li><a href="/assets/pages/AboutTheParish.html#A3">Mass&nbsp;Schedule</a></li>
+						<li class="has-submenu"><a href="#">About&nbsp;the&nbsp;Parish</a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/AboutTheParish.html">Parish Information</a></li>
+								<li><a href="/assets/pages/Bulletins.html">Bulletin</a></li>
+								<li><a href="/assets/pages/AboutTheParish.html#A4">Office Hours</a></li>
+								<li><a href="/assets/pages/StaffDirectory.html">Parish Staff</a></li>
+								<li><a href="/assets/pages/AboutTheParish.html#A6">Parish History</a></li>
+								<li class="has-submenu"><a href="#">Join the Parish</a>
+									<ul>
+										<li><a href="/assets/pages/ParishRegistrationENG.html" target="_blank">English Registration</a></li>
+										<li><a href="/assets/pdf/SpanishRegistration.pdf" target="_blank">Spanish Registration</a></li>
+									</ul>
+								</li>
+								<li class="has-submenu"><a href="#">Restoration Projects</a>
+									<ul>
+										<li><a href="/assets/pages/RestorationChurch.html">Church Restoration</a></li>
+										<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
+									</ul>
+								</li>
+								<li><a href="/assets/pages/ParishPhotos.html">Photographs</a></li>
+								<li><a href="/assets/pages/WindowGallery.html">Window Photographs</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#">Ministries</a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/MinistriesMain.html">About</a></li>
+								<li><a href="/assets/pdf/LMSchedule.pdf" target="_blank">Minister Schedule</a></li>
+								<li><a href="/assets/pages/LCCharter.html">Liturgy Committee Charter</a></li>
+								<li><a href="/assets/pages/LCJobDescription.html">Liturgy Committee Job Description</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#">Ignatian Services</a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/IgnatianServicesMain.html">About</a></li>
+								<li><a href="/assets/pages/IgnatianServicesPhotos.html">Ignatian Services Photos</a></li>	        			 
+							</ul>
+						</li>
+						<li class="has-submenu"><a href="#">Music</a>
+							<ul>
+								<li><a href="/assets/pages/MusicMinistryMain.html">About</a></li>
+								<li class="has-submenu"><a href="#">Choir Materials</a>
+									<ul>
+										<li><a href="/assets/pages/MusicChoirRehSched.html">Rehearsal Schedule</a></li>
+										<li><a href="/assets/pages/MusicChoirRepertoire.html">Choir Repertoire</a></li>
+										<li><a href="/assets/pages/MusicCantorSchedules.html">Cantor Schedule</a></li>
+									</ul>
+								</li>
+								<li class="has-submenu"><a href="#">Wedding Music</a>
+									<ul>
+										<li><a href="/assets/pages/MusicWeddingPlanning.html">Wedding Music Planning</a></li>
+										<li><a href="/assets/pages/MusicWeddingOrgan.html">Wedding Organ Selections</a></li>
+										<li><a href="/assets/pages/MusicWeddingVocal.html">Wedding Vocal Selections</a></li>
+									</ul>
+								</li>
+								<li><a href="/assets/pages/RestorationOrgan.html">Organ Restoration</a></li>
+								<li><a href="/assets/pages/MusicPhotos.html">Music Photos</a></li>
+							</ul>
+						 </li> 
+						<li class="has-submenu"><a href="#"><b>Groups</b></a>
+							<ul class="sub-menu">
+								<li><a href="/assets/pages/Groups.html"><b>About</b></a></li>
+								<li><a href="/assets/pages/CirculoDeOracion.html">Circulo de Oraci&#243;n</a></li>
+								<li class="has-submenu"><a href="#">Glenola Club</a>
+									<ul>
+										<li><a href="/assets/pages/GlenolaClub.html">About</a></li>
+										<li><a href="/assets/pages/GlenolaPhotos.html">Glenola Photos</a></li>
+									</ul>
+								</li>
+								<li><a href="http://hermandadsenordelosmilagroschicago.org/index.html" target="_blank">Hermandad del Se&#241;or de los Milagros</a></li>
+								<li><a href="http://www.kofc-university1687.org/Pages/default.aspx" target="_blank">Knights of Columbus</a></li>
+								<li><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></li>
+							</ul>
+						</li>
+						<li><a href="/assets/pages/Links.html">Links</a></li>
+						<li class="has-submenu"><a href="#">Giving</a>
+							<ul>
+								<li><a href="https://www.parishpay.com/nonprofit/login.html?pc=m9wuf360" target="_blank">Online Giving</a></li>
+								<li><a href="/assets/pages/CapitalCampaign.html">Capital Campaign</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</header>
+			<div class ="title"><span>Groups And Committees at St. Ignatius</span></div>
+			<div class="section">
+				<div class="group">
+					<span class="heading">Parish Council</span> 
+					<span class="when">In Formation</span>
+					<span class="where">Rectory Dining Room</span>
+					<span class="detail">The Pastoral Council is a group of nine to twelve parishioners who represent all aspects of the parish whose purpose is to consult with and advise the pastor on parish issues and initiatives.</span>
 				</div>
-				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51cabaef03c9a8db"></script>
-				<!-- AddThis Button END -->
-			</div>
-			<div class="clear"></div>
-		</div><!--.footer END-->
-	</div>
-</body>
+				<div class="group">
+					<span class="heading">Finance Council</span> 
+					<span class="when">Monthly Meetings</span>
+					<span class="where">Rectory Dining Room</span>
+					<span class="detail">The Finance Council is an appointed committee of parishioners whose purpose is to consult with and advise the pastor on parish financial issues and fund raising initiatives.</span>
+				</div>
+				<div class="group">
+					<span class="heading"><a href="/assets/pages/LCCharter.html">Liturgy Committee</a></span> 
+					<span class="when">Monthly Meetings</span>
+					<span class="where">Rectory Dining Room</span>
+					<span class="detail">The Liturgy Committee is a group of parishioners whose purpose is to consult with and advise the pastor on the planning and coordination of parish liturgical celebrations and volunteer ministries.</span>
+				</div>
+				<div class="group">
+					<span class="heading"><a href="/assets/pages/IgnatianServicesMain.html">Ignatian Services</a></span> 
+					<span class="when">Wednesday 2 p.m. &#8211; 4 p.m.;	Friday 10 a.m. &#8211; 12 p.m.</span>
+					<span class="where">Food Pantry</span>
+					<span class="detail">Ignatian Services is the social service expression of St. Ignatius Church. Its purpose is to provide assistance to those members of our neighborhood who are in need and its primary ministry is the distribution of food through our food pantry. Together, our volunteers, benefactors, parishioners, and clients form a community. This is why we say that WE ARE ALL IGNATIAN SERVICES.</span>
+				</div>
+				<div class="group">
+					<span class="heading"><a href="/assets/pages/GlenolaClub.html">Glenola Club of Loyola Center</a></span> 
+					<span class="when">Monthly Meetings</span>
+					<span class="where">Rectory Dining Room/Holy Name Room</span>
+					<span class="detail">Founded in September 1921, the Glenola Club is the women's organization associated with St. Ignatius Parish. It continues to enroll women attracted to its social, civic, educational and benevolent activities. Throughout each year, the Glenola Club sponsors educational, cultural, and fund raising events.</span>
+				</div>
+				<div class="group">
+					<span class="heading"><a href="http://www.kofc-university1687.org/Pages/default.aspx">Knights of Columbus University&nbsp;Council&nbsp;1687</a></span> 
+					<span class="when">Monthly Meetings</span>
+					<span class="where">Holy Name Room</span>
+					<span class="detail">Knights of Columbus, University Council 1687 is the local chapter of the national Knights of Columbus Catholic men's organization. It organizes fund raising initiatives on behalf of the parish and the national organization. It also coordinates beneficial services such as blood drives for the St. Ignatius parish community.</span>
+				</div>
+				<div class="group">
+					<span class="heading">Legion of Mary</span> 
+					<span class="when">Saturday Morning</span>
+					<span class="where">Rectory Library</span>
+					<span class="detail">The Legion of Mary is the local chapter if the international faith and service organization founded in Ireland in the 1920's. Its members gather every Saturday morning after the daily mass to pray the rosary and hold meetings.</span>
+				</div>
+				<div class="group">
+					<span class="heading"><a href="/assets/pages/MusicMinistryMain.html">Parish Choir</a></span> 
+					<span class="when">Tuesday 7:30 - 9:00 p.m.</span>
+					<span class="where">Music Rehearsal Room</span>
+					<span class="detail">The Parish Choir is an SATB (soprano-alto-tenor-bass) chorus for teens and adults that sings for the 10 a.m. mass each Sunday. The parish choir sings a wide range of repertoire including hymnody, chant, Renaissance polyphony, choral anthems, and contemporary music. </span>
+				</div>
+				<div class="group">
+					<span class="heading"><a href="/assets/pages/CirculoDeOracion.html">Circulo de Oraci&#243;n</a></span> 
+					<span class="when">Friday 7:00 - 9:00 p.m.</span>
+					<span class="where">Holy Name Room</span>
+					<span class="detail">The Circulo de Oraci&#243;n is the charismatic Hispanic prayer group affiliated with St. Ignatius parish. This group holds weekly prayer meetings.</span>
+				</div>
+				<div class="group">
+					<span class="heading">Grupo Del Rosario</span> 
+					<span class="when">Thursday at 7:30 p.m.</span>
+					<span class="where">Chapel</span>
+					<span class="detail">The Grupo Del Rosario is the Spanish Rosary Society. This group gathers to pray the Rosary every Thursday evening in the Chapel.</span>
+				</div>
+				<div class="group">
+					<span class="heading"><a href="/assets/pages/MusicMinistryMain.html">Coro de Ni&#241;os</a></span> 
+					<span class="when">Saturday Morning</span>
+					<span class="where">Music Rehearsal Room</span>
+					<span class="detail">The Coro de Ni&#241;os is the parish's primary children's choir which sings for the 12 p.m. Spanish mass on average three times a month from September - May. </span>
+				</div>
+				<div class="group">
+					<span class="heading"><a href="/assets/pages/MusicMinistryMain.html">Coro Hispano</a></span> 
+					<span class="when">Sunday Morning at 11:30 a.m.</span>
+					<span class="where">Main Church</span>
+					<span class="detail">The Coro Hispano is a teen and adult choir which currently rehearses on Sunday mornings at 11:30 a.m. and sings in Spanish for the 12 p.m. mass each Sunday. This choir sings beautiful Hispanic liturgical songs and often sings together with the Hispanic children's choir, the Coro de Niños. The choir is accompanied by piano, bass, and percussion.</span>
+				</div>
+				<div class="group">
+					<span class="heading"><a href="http://hermandadsenordelosmilagroschicago.org/index.html">Hermandad del Se&#241;or de los Milagros</a></span> 
+					<span class="when">Monthly Meetings</span>
+					<span class="where">Holy Name Room</span>
+					<span class="detail">The Hermandad del Se&#241;or de los Milagros is a Peruvian devotional society affiliated with St, Ignatius parish for over 35 years. Each year, on the third Sunday in October, the Hermandad sponsors a triduum, solemn mass, and outdoor procession in honor of el Se&#241;or de los Milagros (Our Lord of the Miracles).</span>
+				</div>
+				<div class="group">
+					<span class="heading">Comite Guadalupano</span> 
+					<span class="when"></span>
+					<span class="where"></span>
+					<span class="detail">The Comite Guadalupano is a devotional society devoted to the patroness of the Americas, the Virgen of Guadalupe (Our Lady of Guadalupe). Each year, on December 12th, they sponsor a triduum, ma&#241;anitas, and solemn mass in honor of the Virgen de Guadalupe.</span>
+				</div>
+				<div class="group">
+					<span class="heading">Coro Virgen de la Nube</span> 
+					<span class="when"></span>
+					<span class="where"></span>
+					<span class="detail">The Coro Virgen de la Nube is an Ecuadorian devotional society devoted to the patroness of Ecuador, Virgen de la Nube (Virgen of the Clouds). Each year, on January 1st, they sponsor a triduum, solemn mass, and outdoor procession in honor of the Virgen de la Nube.</span>
+				</div>
+			</div><!-- .section END -->
+			<div class="footer">
+				<div class="columnleft">
+					<p><b>Weekend Mass Schedule</b><br/>
+					Sat 5:00 p.m. &#8211; Chapel<br/>
+					Sun 8:00 a.m. &#8211; Church<br/>
+					Sun 10:00 a.m. &#8211; Church<br/>
+					Sun 12:00 p.m. &#8211; Church (Spanish)<br/>
+					Sun 6:00 p.m. &#8211; Chapel</p>
+					<p><b>Weekday Mass Schedule</b><br/>
+					Mon. &#8211; Fri. at 7:00 and 8:00 a.m. &#8211; Chapel<br/>
+					Saturday Daily Mass at 8:00 a.m. &#8211; Chapel</p>
+					<p><b>Adoration</b><br/>
+					Friday 6:30 p.m. &#8211; 8:30 p.m.</p>
+					<p><b>Reconciliation</b><br/>
+					Saturday 4:30 p.m. &#8211; 5:00 p.m.</p>
+				</div>
+				<div class="columncenter">
+					<p><b>Rev. Joseph M. Jackson, Ph. D., pastor</b><br/>
+					Rev. Kinoti Kithuri, associate<br/>
+					Rev. William Grogan, resident<br/>
+					Rev. Patrick McAteer, S. J., resident<br/>
+					Rev. Raul Mora, deacon<br/>
+					Rev. Rogelio Soto, deacon</p>
+				</div>	
+				<div class="columnright">
+					<p><b>St. Ignatius Church</b><br/>
+					6559 North Glenwood Avenue<br/>
+					Chicago, IL 60626<br/>
+					Tel:(773) 764-5936<br/>
+					Fax:(773) 764-4360</p>
+					<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style ">
+					<a class="addthis_button_preferred_1"></a>
+					<a class="addthis_button_preferred_2"></a>
+					<a class="addthis_button_preferred_3"></a>
+					<a class="addthis_button_preferred_4"></a>
+					<a class="addthis_button_compact"></a>
+					<a class="addthis_counter addthis_bubble_style"></a>
+					</div>
+					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51cabaef03c9a8db"></script>
+					<!-- AddThis Button END -->
+				</div>
+				<div class="clear"></div>
+			</div><!--.footer END-->
+		</div>
+	</body>
 </html>

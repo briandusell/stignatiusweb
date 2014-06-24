@@ -1,23 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
 <title>St. Ignatius Church, Chicago | Music Wedding Planning</title>
-
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index,follow" />
-<meta name="copyright" content="Copyright (c) March 2014" />
-<meta name="description" content="The wedding music planning page for St. Ignatius Church, Chicago, IL"/>
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Copyright (c) June 2014">
+<meta name="description" content="The wedding music planning page for St. Ignatius Church, Chicago, IL">
+<meta name="keywords" content="wedding music, wedding ceremony, sacrament, matrimony, music ministry, St. Ignatius, catholic, church, Chicago, Rogers Park, Glenwood Avenue">
 <base href="http://www.stignatiuschurch.org">
-
 <link type="text/css" rel="stylesheet" href="/assets/css/stignatiuscombined.css">
-
+<!-- Font source for bars icon in responsive nav menu -->
+<link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- JQuery source -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
 <script>window.jQuery || document.write('<script src="library/js/jquery-1.9.1.min.js"><\/script>')</script>
-
+<!-- JQuery responsive menu -->
 <script>
 jQuery( document ).ready( function( $ ) {
 	
@@ -39,7 +38,17 @@ jQuery( document ).ready( function( $ ) {
 	});
 });
 </script>
+<!-- Google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-42534150-1', 'stignatiuschurch.org');
+  ga('send', 'pageview');
+
+</script>
 </head>
 <body>
 	<div class="container">										
@@ -51,7 +60,7 @@ jQuery( document ).ready( function( $ ) {
 		</div><!--.logo END-->
 		<header class="head cf">
 		
-			<a class="menu-link" href="#menu">Menu</a>
+			<a class="menu-link" href="#menu"><i class="fa fa-bars fa-3x"></i></a>
 			
 			<nav id="menu" class="menu">
 				<ul>
@@ -78,6 +87,7 @@ jQuery( document ).ready( function( $ ) {
 								</ul>
 							</li>
 							<li><a href="/assets/pages/ParishPhotos.html">Photographs</a></li>
+							<li><a href="/assets/pages/WindowGallery.html">Window Photographs</a></li>
 						</ul>
 					</li>
 					<li class="has-submenu"><a href="#">Ministries</a>
@@ -241,55 +251,108 @@ jQuery( document ).ready( function( $ ) {
 			</ul>
 			<p>Please refer to the <a href="/assets/pages/MusicWeddingOrgan.html">Wedding Organ Music</a>and <a href="/assets/pages/MusicWeddingVocal.html">Wedding Vocal Music</a> pages which have audio examples of wedding music recorded at St. Ignatius. Please listen to the examples and complete the form as much as possible in advance of your wedding music planning meeting. These examples represent only some of the most well known and frequently performed musical selections for weddings. Remember, that while the default mode for weddings in the church is to perform the Prelude, Processionals, and Recessional on the organ with the rest of the liturgy accompanied on the piano, you may request to have the entire liturgy accompanied by either instrument.</p>
 		</div>	
-		<div class ="title"><span>Wedding Music Planning Form</span></div>		
+		<!-- <div class ="title"><span>Wedding Music Planning Form</span></div>		
 		<div class="formstyle">
-			<form action="http://www.stignatiuschurch.org/assets/php/musicmain.php" method="post">
-				<h4>Your Name</h4>
-				<span class="formline">First&nbsp;name&nbsp;<input type="text" class="txt-med" name="fname" value="" required /></span>
-				<span class="formline">Last&nbsp;name&nbsp;<input type="text" class="txt-med" name="lname" value="" required /><span>
-				
-				<h4>Address Information</h4>
-				<p>
-				Street&nbsp;Address <input type="text" class="txt-med" name="streetaddress" size="35" value="" /></p>
-				<p>Apt/Suite&nbsp;<input type="text" class="txt-med" name="aptsuite" size="15" value="" /></p>
-				<span class="formline">City&nbsp;<input type="text" class="txt-med" name="city" size="10" value="" /></span>
-				<span class="formline">State&nbsp;<input type="text" class="txt-med" name="state" size="10" value="" /></span>
-				<span class="formline">Zip&nbsp;<input type="text" class="txt-med" name="zip" size="10" value="" /></span>
-				</p>
-				<h4>Telephone and e-mail</h4>
-				<p>Telephone&nbsp;(mobile): <input type="text" class="txt-med" name="ctelephone" size="13" value="" /></p>
-				<p>Telephone&nbsp;(home): <input type="text" class="txt-med" name="htelephone" size="13" value="" /></p>
-				<p>E-mail: <input type="email" class="txt-med" name="email" size="35" placeholder="name@something.com" value="" required /></p>
-				<p>Have you sung in a choir before? 
-					<input type="radio" name="1yesno" value="Yes">Yes</input>
-					<input type="radio" name="1yesno" value="No">No</input>
-				</p>
-				<p>Can you read music? 
-					<input type="radio" name="2yesno" value="Yes">Yes</input>
-					<input type="radio" name="2yesno" value="No">No</input>
-				</p>
-				<p>Do you play a musical instrument? 
-					<input type="radio" name="3yesno" value="Yes">Yes</input>
-					<input type="radio" name="3yesno" value="No">No</input>
-				</p>
-				<p>Are you able to attend weekly choir practices? 
-					<input type="radio" name="4yesno" value="Yes">Yes</input>
-					<input type="radio" name="4yesno" value="No">No</input>
-				</p>
-				<p>In what area of the music ministry would you like to participate? 
-				<select name="interestarea">
-					<option value="">Select One</option>
-					<option value="Parish Choir">Parish Choir</option>
-					<option value="Coro Hispano">Coro Hispano</option>
-					<option value="Cantor">Cantor</option>
-					<option value="Coro de Niños">Coro de Niños</option>
-					<option value="Children's Choir">Children's Choir</option>
-					<option value="Instrumentalist">Instrumentalist</option>
-				</select>
-				<p>What other areas of the music ministry interest you? <input type="text" class="txt-med" name="otherinterest" value="" /></p>
-				<p><input type="submit" value="Submit Form" /></p>
+<form action="http://www.stignatiuschurch.org/assets/php/weddingform.php" method="post">
+<h4>Wedding Information</h4>
+<p>Date <input type="text" class="txt-med" name="weddingdate" value="" required />
+Time <input type="text" class="txt-med" name="weddingtime" value="" required /></p>
+<p>Will your wedding take place in the church or in the chapel? </p>
+<select name="venue">
+	<option value="">Select One</option>
+	<option value="Parish Choir">Church</option>
+	<option value="Coro Hispano">Chapel</option>
+</select>
+<p>Will you be having a full mass or only a ceremony? </p>
+<select name="liturgytype">
+	<option value="">Select One</option>
+	<option value="Parish Choir">Full Mass</option>
+	<option value="Coro Hispano">Ceremony</option>
+</select>
+
+<h4>Rehearsal Information</h4>
+<p>Date <input type="text" class="txt-med" name="rehearsaldate" value="" required />
+Time <input type="text" class="txt-med" name="weddingtime" value="" required /></p>
+
+<h4>Contact Information</h4>
+<p>Bride’s Name
+<span class="formline">First&nbsp;name&nbsp;<input type="text" class="txt-med" name="fname" value="" required /></span>
+<span class="formline">Last&nbsp;name&nbsp;<input type="text" class="txt-med" name="lname" value="" required /><span></p>
+<p>Telephone&nbsp;(mobile): <input type="text" class="txt-med" name="bctelephone" size="13" value="" required />
+Telephone&nbsp;(home): <input type="text" class="txt-med" name="bhtelephone" size="13" value="" /></p>
+<p>E-mail: <input type="email" class="txt-med" name="email" size="35" placeholder="bridesname@something.com" value="" required /></p>
+<p>Groom’s Name
+<span class="formline">First&nbsp;name&nbsp;<input type="text" class="txt-med" name="fname" value="" required /></span>
+<span class="formline">Last&nbsp;name&nbsp;<input type="text" class="txt-med" name="lname" value="" required /><span></p>
+<p>Telephone&nbsp;(mobile): <input type="text" class="txt-med" name="gctelephone" size="13" value="" required />
+Telephone&nbsp;(home): <input type="text" class="txt-med" name="ghtelephone" size="13" value="" /></p>
+<p>E-mail: <input type="email" class="txt-med" name="email" size="35" placeholder="groomsname@something.com" value="" required /></p>
+Presider
+<span class="formline">First&nbsp;name&nbsp;<input type="text" class="txt-med" name="fname" value="" /></span>
+<span class="formline">Last&nbsp;name&nbsp;<input type="text" class="txt-med" name="lname" value="" /><span>
+<p>Telephone&nbsp;(mobile): <input type="text" class="txt-med" name="pctelephone" size="13" value="" />
+Telephone&nbsp;(home): <input type="text" class="txt-med" name="phtelephone" size="13" value="" /></p>
+<p>E-mail: <input type="email" class="txt-med" name="email" size="35" placeholder="presidersname@something.com" value="" /></p>
+Ogranist/Pianist
+<span class="formline">First&nbsp;name&nbsp;<input type="text" class="txt-med" name="fname" value="" /></span>
+<span class="formline">Last&nbsp;name&nbsp;<input type="text" class="txt-med" name="lname" value="" /><span>
+<p>Telephone&nbsp;(mobile): <input type="text" class="txt-med" name="octelephone" size="13" value="" />
+Telephone&nbsp;(home): <input type="text" class="txt-med" name="ohtelephone" size="13" value="" /></p>
+<p>E-mail: <input type="email" class="txt-med" name="email" size="35" placeholder="organistsname@something.com" value="" /></p>
+Cantor/Soloist
+<span class="formline">First&nbsp;name&nbsp;<input type="text" class="txt-med" name="fname" value="" /></span>
+<span class="formline">Last&nbsp;name&nbsp;<input type="text" class="txt-med" name="lname" value="" /><span>
+<p>Telephone&nbsp;(mobile): <input type="text" class="txt-med" name="cctelephone" size="13" value="" />
+Telephone&nbsp;(home): <input type="text" class="txt-med" name="chtelephone" size="13" value="" /></p>
+<p>E-mail: <input type="email" class="txt-med" name="email" size="35" placeholder="cantorsname@something.com" value="" /></p>
+Instrumentalist(s)
+<span class="formline">First&nbsp;name&nbsp;<input type="text" class="txt-med" name="fname" value="" /></span>
+<span class="formline">Last&nbsp;name&nbsp;<input type="text" class="txt-med" name="lname" value="" /><span>
+<p>Telephone&nbsp;(mobile): <input type="text" class="txt-med" name="ictelephone" size="13" value="" />
+Telephone&nbsp;(home): <input type="text" class="txt-med" name="ihtelephone" size="13" value="" /></p>
+<p>E-mail: <input type="email" class="txt-med" name="email" size="35" placeholder="instrumentalistsname@something.com" value="" /></p>
+
+<h4>People in the Wedding Party<h4>
+<p> How many Bridesmaids?
+<select name="groomsmen" required >
+  <option value="01">1</option><option value="02">2</option><option value="03">3</option>
+  <option value="04">4</option><option value="05">5</option><option value="06">6</option>
+  <option value="07">7</option><option value="08">8</option></option>
+</select ></p>
+<p> How many Groomsmen?
+<select name="groomsmen" required >
+  <option value="01">1</option><option value="02">2</option><option value="03">3</option>
+  <option value="04">4</option><option value="05">5</option><option value="06">6</option>
+  <option value="07">7</option><option value="08">8</option></option>
+</select ></p>
+<p>Flowergirl(s)? 
+	<input type="radio" name="fgyesno" value="Yes">Yes</input>
+	<input type="radio" name="fgyesno" value="No">No</input>
+</p>
+<p>Ring Bearer (s)? 
+	<input type="radio" name="rbyesno" value="Yes">Yes</input>
+	<input type="radio" name="rbyesno" value="No">No</input>
+</p>
+<h4>Prelude Music</h4>
+<p>Prelude 1: <input type="text" class="txt-med" name="prelude1" value="" /></p>
+<p>Prelude 2: <input type="text" class="txt-med" name="prelude2" value="" /></p>
+<p>Prelude 3: <input type="text" class="txt-med" name="prelude3" value="" /></p>
+<p>Prelude 4: <input type="text" class="txt-med" name="prelude4" value="" /></p>
+<p>Seating of Parents: <input type="text" class="txt-med" name="parents" value="" /></p>
+<p>Bridesmaids Processional: <input type="text" class="txt-med" name="bmprocessional" value="" /></p>
+<p>Bridal Processional: <input type="text" class="txt-med" name="bprocessional" value="" /></p>
+<p>Responsorial Psalm: <input type="text" class="txt-med" name="psalm" value="" /></p>
+<p>Gospel Acclamation: <input type="text" class="txt-med" name="gospelacc" value="" /></p>
+<p>Candle Ceremony (optional): <input type="text" class="txt-med" name="candleceremony" value="" /></p>
+<p>Offertory: <input type="text" class="txt-med" name="offertory" value="" /></p>
+<p>Eucharistic Acclamations: <input type="text" class="txt-med" name="euchacc" value="" /></p>
+<p>Lamb of God: <input type="text" class="txt-med" name="lamb" value="" /></p>
+<p>Communion Song/Hymn: <input type="text" class="txt-med" name="communion" value="" /></p>
+<p>Devotion to Mary (optional): <input type="text" class="txt-med" name="marydevotion" value="" /></p>
+<p>Recessional: <input type="text" class="txt-med" name="recessional" value="" /></p>
+<p><input type="submit" value="Submit Form" /></p>
 			</form>
-		</div>
+		</div> -->
 		<div class="footer">
 			<div class="columnleft">
 				<p><b>Weekend Mass Schedule</b><br/>

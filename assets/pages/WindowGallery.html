@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>St. Ignatius Church, Chicago | Index</title>
+		<title>St. Ignatius Church, Chicago | Stained Glass</title>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="St. Ignatius Church is a Roman Catholic parish located at 6559 North Glenwood Avenue, Chicago, IL in the Rogers Park neighborhood of Chicago." />
-		<meta name="keywords" content="St. Ignatius, Chicago, catholic, church, religious art, Ignatian Services, food pantry, Light of the World, music ministry, wedding, volunteer ministry, Rogers Park, Glenwood Avenue, Deagan chime, Easter, Good Friday, Triduum, Paschal" />
+		<meta name="description" content="A photo gallery of the ten Emil Frei Co. stained glass windows at St. Ignatius Catholic Church,6559 North Glenwood Avenue, Chicago, IL." />
+		<meta name="keywords" content="St. Ignatius, Chicago, catholic, church, religious art, stained glass, Emil Frei, architecture, wedding, Rogers Park, annunciation, nativity, wedding at cana, Mary Magdalene anoints Jesus, World War I, memorial, holy family" />
 		<meta name="robots" content="index, follow" />
 		<meta name="copyright" content="2014" />
 		<base href="http://www.stignatiuschurch.org">
@@ -53,6 +53,15 @@
 		  ga('send', 'pageview');
 
 		</script>
+		<style> 
+		.controls {
+			text-align:center;
+			position:absolute;
+			opacity:0.8;
+			width:40%;
+			z-index:600;
+		}
+		</style>
 	</head>
 	<body>
 		<div class="container">										
@@ -155,97 +164,44 @@
 				</nav>
 				<div class="clear"></div>
 			</header>
-			<div class="cycle2-wrapper">
+			<div class ="title"><span>St. Ignatius Stained Glass Windows</span></div>
+			<div class="article" style="text-align: center; font-size: 10pt;">
+				<p>This slide show is manually controlled. Clicking on the arrows advances the slides forward or backward.</p>
+			</div>
+			
+				<span id=prev><img src="assets/css/leftarrow.png" alt="left arrow"></span>
+				<span id=next><img src="assets/css/rightarrow.png" alt="right arrow"></span>
+			
+			<div class="cycle2-gallerywrap">
+				<div class="cycle-pager"></div>	
+				<div id="alt-caption" style="text-align:center; font-weight:bold;"></div>					
 				<div class="cycle-slideshow" 
 					data-cycle-loader="wait"
-					data-cycle-fx="fade"
-					data-cycle-timeout="9000"
+					data-cycle-fx="fade"				
 					data-cycle-center-horz="true"
-					data-cycle-center-vert="true"
-					data-cycle-slides="> div"
-					data-cycle-slides="> a"								
+					data-cycle-caption="#alt-caption"
+					data-cycle-caption-template="{{alt}}"			
+					data-cycle-next="#next"
 					data-cycle-pager=".cycle-pager"
-					>
-					<div>
-						<a href="/assets/pages/AboutTheParish.html"><img src="http://www.stignatiuschurch.org/assets/images/140421ChurchFacadeCrop.jpg" alt="St. Ignatius" width="100%" height="auto"></a>
-						<div class="cycle-overlay">Worship at St. Ignatius Parish<br/>
-						Weekend Masses: Sat. 5 p.m., Sunday 8 a.m., 10 a.m., 12&nbsp;p.m.&nbsp;(Spanish),&nbsp;and&nbsp;6&nbsp;p.m.</div>
-					</div>
-					<div>
-						<a href="index.html#I5"><img src="http://www.stignatiuschurch.org/assets/images/140218BroadwayCellarsCrop.jpg" alt="Broadway Cellars Restaurant" width="100%" height="auto"></a>
-						<div class="cycle-overlay">Broadway Cellars Share Day<br/>Saturday, July 12 - Broadway Cellars Restaurant</div>
-					</div>
-					<div>
-						<a href="/assets/pages/CapitalCampaign.html">
-							<img src="http://www.stignatiuschurch.org/assets/images/140218CapitalCampaignCrop.JPG" alt="St. Ignatius Capital Campaign" width="100%" height="auto">
-						</a>
-						<div class="cycle-overlay">St. Ignatius Parish Capital Campaign<br/>Celebrating Our Faith - Building Our Future</div>
-					</div>
-				</div>	
-				<div class="cycle-pager"></div>
-			</div>
-			<div class ="title"><span>Parish Events</span></div>
-			<div class="section">
-				<div class="announcement">
-					<span class="heading">Encountering Your Faith<br/>St. Ignatius Summer Education Series</span> 
-					<span class="when">Thursday Evenings at 7:30 p.m.</span>
-					<span class="where">Canteen</span>
-					<span class="detail">The Liturgy Committee is sponsoring a summer faith education series. This six part series will meet on <b>June 19, 26, July 10, 17, 24, and 31</b>. Topics include: Jonah, The Prodigal Son, Catholic Prayers, An Understanding of Purgatory, Confession, the life of St. Ignatius and more.</span>
-				</div>				
-				<div class="announcement">
-					<span class="heading"><a id="I5"></a>Broadway Cellars Share Day</span>
-					<span class="when">Saturday, July 12</span>
-					<span class="where"><a href="www.broadwaycellars.net">Broadway Cellars Restaurant</a><br/>
-					5900 N. Broadway, Chicago, IL<br/>
-					(773) 944-1208</span>
-					<span class="detail">Broadway Cellars Restaurant graciously donates 10% of the total sales from this day to St. Ignatius Parish. Come and dine with your fellow St. Ignatius Parishioners at a beautiful local restaurant.</span>
-					<span class="detail">Hours of operation:<br/>
-					Monday through Friday 5 &#8211; 10 p.m.<br/>
-					Weekend Brunch 10:30 a.m. &#8211; 3 p.m.<br/>
-					Saturday Dinner 5 &#8211; 10 p.m.<br/> 
-					Sunday Dinner 3 &#8211; 9 p.m.</span>
+					data-cycle-prev="#prev"
+					data-cycle-timeout="0"
+					>					
+					<img src="/assets/images/140620HolyFamilyWeb.jpg" alt="Holy Family Window" width="100%" height="auto">
+					<img src="/assets/images/140620AnnunciationWeb.jpg" alt="The Annunciation" width="100%" height="auto">
+					<img src="/assets/images/140620NativityWeb.jpg" alt="The Nativity" width="100%" height="auto">
+					<img src="/assets/images/140620CircumcisionWeb.jpg" alt="The Presentation" width="100%" height="auto">
+					<img src="/assets/images/140620TempleTeachingWeb.jpg" alt="Jesus in the Temple" width="100%" height="auto">
+					<img src="/assets/images/140620CanaWeb.jpg" alt="Wedding at Cana" width="100%" height="auto">
+					<img src="/assets/images/140620TeachingWeb.jpg" alt="Jesus and the Children" width="100%" height="auto">
+					<img src="/assets/images/140620WashingFeetWeb.jpg" alt="Mary Magdalene Anoints Jesus" width="100%" height="auto">
+					<img src="/assets/images/140620ResurrectionWeb.jpg" alt="The Resurrection" width="100%" height="auto">
+					<img src="/assets/images/140620PatrioticWeb.jpg" alt="Patriotic Window" width="100%" height="auto">
 				</div>					
-				<div class="announcement">
-					<span class="heading">Family Mass</span> 
-					<span class="when">Second Sunday of each month, 10 a.m. mass</span>
-					<span class="where">Main Church</span>
-					<span class="detail">Please join us for the family mass on the second Sunday of each month (September - June) at the 10 a.m. mass.</span>
-				</div>
-				<div class="announcement">
-					<span class="heading">Market Day</span>
-					<span class="when">Resumes in September</span>
-					<span class="where">Holy Name Room</span>
-					<span class="detail">St. Ignatius participates in the Market Day monthly grocery fundraising program. A portion of the profits go to assist parish programs. Order food items online through <a href="www.marketday.com">Market Day's convenient website</a> and pick up your purchases from the Holy Name Room once a month. The Market Day program does not take place during July and August. The next Market Day Pick up is in September in the Holy Name Room. Check back soon for the fall schedule.</span>
-				</div>
-			</div>
-			<div class="title"><span>Schedules and Information</span></div>
-			<div class="section">
-				<div class="announcement">
-					<span class="heading"><a href="/assets/pdf/LMSchedule.pdf" target="_blank">Liturgical Minister Schedule</a></span>
-					<span class="when">June 2014</span>
-					<span class="detail">Wondering when you are scheduled to be a Lector or Eucharistic Minister? Please click on the link above to view the schedule.</span>
-				</div>
-				<div class="announcement">
-					<span class="heading">Archdiocesan Video "Draw Near"</span>
-					<iframe width="100%" height="250" src="http://www.youtube.com/embed/co0qalRkEJs" allowfullscreen></iframe>
-				</div>
-				<div class="announcement">
-					<span class="heading"><a href="/assets/pdf/FY2012_AnnualReport.pdf" target="_blank">Parish Annual Report</a></span>
-					<span class="when">As of 06/30/2013</span>
-					<span class="detail">Read our <a href="/assets/pdf/FY2012_AnnualReport.pdf" target="_blank">St. Ignatius Parish Annual Report</a> which is filled with information about our parish's ministries and finances.</span>
-				</div>
-				<div class="announcement">
-					<span class="heading">St. Ignatius Parish Transformation Process</span>
-					<span class="detail">Shaping the vision of our parish's future, the parish transformation process is an archdiocesan program where each parish discerns its present and creates a vision for the future. Please read the <a href="/assets/pdf/130618StIgnatiusParishActionPlan.pdf" target="_blank">St. Ignatius Parish Mission and Action Plan.</a> </span>
-				</div>
-				<div class="announcement">
-					<span class="heading"><a href="/assets/pages/CapitalCampaign.html">St. Ignatius Parish Capital Campaign</a></span>
-					<span class="when">Contribute Now</span>
-					<span class="where"></span>
-					<span class="detail">Support the future of our parish. Please contribute to the Celebrating Our Faith Building Our Future St. Ignatius Parish Capital Campaign. In March of 2012, St. Ignatius launched a multi-year capital fund raising campaign with a goal of raising $500,000 to enhance our parish ministries and continue the maintenance and restoration of our magnificent church. To date, (June 2013), we have raised nearly $400,000 toward our $500,000 goal.</span>
-				</div>
-			</div>
-			<div class="clear"></div>
+			</div> <!-- .cycle2-gallerywrap END -->
+			<div class="article">
+				<p>The ten stained glass windows in the main sanctuary of St. Ignatius Church, Chicago, IL were designed and constructed by the Emil Frei Company of St. Louis, MO. In this era (1918), the Frei company specialized in painting on glass techniques and were known for the great detail of their depictions of biblical scenes. Two primary windows at the crossing, the Holy Family Window on the south side and the Patriotic Window on the north are larger and have multiple scenes depicted in each window. The Patriotic Window is unique for its depiction of soldiers in uniform and is a memorial to those fallen in World War I. The remaining eight windows each depict a scene from Jesus' life beginning with the Annunciation and ending with the Resurrection. The four smaller windows of the south facade depict four of the five Joyful Mysteries of the Rosary. Each window is of a monumental scale being over 40 feet in height.</p>
+				<p>Special thanks to Tom Gnidovic for taking and editing these photographs.</p>
+			</div>				
 			<div class="footer">
 				<div class="columnleft">
 					<p><b>Weekend Mass Schedule</b><br/>

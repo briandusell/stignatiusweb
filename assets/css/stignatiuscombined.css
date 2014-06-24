@@ -1,4 +1,4 @@
-@charset "ISO-8859-1";
+@charset "utf-8";
 
 /* =============================================================================
    HTML5 display definitions
@@ -194,8 +194,19 @@ body {
 	text-align: center;
 	padding-bottom: 10px;
 }
-.cycle-slideshow { display:none; }
+.cycle-slideshow { width: 100%; height: auto; margin: auto; overflow: hidden; }
+.cycle-slideshow img { filter:alpha(opacity=0); }
+.cycle-overlay { 
+	font-family: tahoma, arial;
+	font-size: 10pt;
+	padding: 5px;
+	text-align: center;
+}
+#prev {cursor:pointer; position:fixed; opacity: 0.8; left:5%; top:50%; z-index:600;}
+#next {cursor:pointer; position:fixed; opacity:0.8; right:5%; top:50%; z-index:600;}
 .cycle-pager { display:none; }
+.cycle2-gallerywrap {margin: 0 auto;}
+
 #photogallery { text-align: center; padding-top: 20px; padding-bottom: 20px;}
 .gv_galleryWrap { margin: 0 auto;}
 .title {
@@ -396,6 +407,9 @@ body {
 @media screen and (max-width: 885px) {
     
     a.menu-link {
+		position:absolute;
+		top:0;
+		right:0;
 		display: block;
 		color: #fff;
 		background-color: rgba(112, 112, 112, 0.9);
@@ -476,14 +490,15 @@ body {
 
 @media screen and (min-width: 600px) { 
    html { 
-		font-size: 85%; 
+		font-size: 80%; 
 	}
 	.logo { 
 		font-size:24px;
 	}
-	.cycle-slideshow { display:block; width: 80%; height: auto; margin: auto; overflow: hidden; }
-	.cycle-slideshow img { filter:alpha(opacity=0); }
-
+	.cycle2-wrapper {display:block; width:80%; margin:0 auto;}
+	.cycle2-gallerywrap {width:50%;}
+	#prev {left:15%;}
+	#next {right:15%;}
 	/* anchors */
 	.cycle-slideshow > a { 
 		position: absolute; top: 0; left: 0;
@@ -508,14 +523,14 @@ body {
 		background: black;
 		bottom: 0;
 		color: white;
-		font-family: tahoma, arial;
-		font-size: 14pt;
+		font-size: 12pt;
 		opacity: .7;
-		padding: 15px;
+		padding: 10px;
 		position: absolute;  
-		width: 100%; 
+		width: 98%; 
 		z-index: 130;
 	}
+	
 	/* pager */
 	.cycle-pager { 
 		display:block;
@@ -528,12 +543,21 @@ body {
 	.cycle-pager span.cycle-pager-active { color: #D69746;}
 	.cycle-pager > * { cursor: pointer;}
 
+	
 	/* prev / next links */
-	.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
-	.cycle-prev { left: 0;}
-	.cycle-next { right: 0;}
+	.cycle-prev, .cycle-next { 
+		position: absolute; 
+		top: 0; 
+		width: 30%; 
+		opacity: 0; 
+		filter: alpha(opacity=0); 
+		z-index: 800; 
+		height: 100%; 
+		cursor: pointer; 
+	}
+	.cycle-prev { left: 0;  background: url(http://www.stignatiuschurch.org/assets/css/leftarrow.png) 50% 50% no-repeat;}
+	.cycle-next { right: 0; background: url(http://www.stignatiuschurch.org/assets/css/rightarrow.png) 50% 50% no-repeat;}
 	.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
-
 
 	.title span {font-size:24pt;}
 	.section {
@@ -601,6 +625,9 @@ body {
 		padding: 5px;
 		width: 30%;
 	}
-	
+	.cycle-overlay { 
+		font-size: 14pt;
+		padding: 15px;
+	}
 	.formstyle .formline { display: inline; padding-bottom: 10px; }
 }
